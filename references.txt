@@ -1,0 +1,307 @@
+[reference]
+[ref-id]Fowler
+[ref-text]Fowler M. Refactoring: improving the design of existing code. Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.; 1999.
+[ref-image]
+[ref-url]https://www.amazon.com/gp/product/0201485672/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0201485672&linkCode=as2&tag=croc03-20&linkId=56BPTQ4RB2MNWEUW
+[ref-end]
+
+[reference]
+[ref-id]Page
+[ref-text]Page-Jones M. Fundamentals of object-oriented design in UML. Addison-Wesley Professional; 1999.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Llano
+[ref-text]Llano MT, Pooley R. UML specification and correction of object-oriented anti-patterns. In: Proceedings of the 2009 fourth international conference on software engineering advances, ICSEA ‘09, Washington, DC, USA; 2009. p. 39–44.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Rumbaugh
+[ref-text]Rumbaugh J, Blaha M, Premerlani W, Eddy F, Lorensen W. Object-oriented modeling and design. Upper Saddle River, NJ, USA: Prentice-Hall, Inc.; 1991.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Simon
+[ref-text]Simon F, Seng O, Mohaupt T. Code quality management: Technische Qualität industrieller Softwaresysteme Transparent und Vergleichbar Gemacht. dpunkt-Verlag; 2006.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Trifu
+[ref-text]Trifu A. Automated strategy based restructuring of object oriented code. In: Proceedings of the 7th German workshop on software-reengineering (WSR); 2005.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Semmle
+[ref-text]Semmle Code Tool. Available at: http://semmle.com/semmlecode/; 2012.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Khomh
+[ref-text]Khomh F, Di Penta M, Guehénéuc Y-G, Antoniol G. An exploratory study of the impact of anti-patterns on software changeability. Technical report EPM-RT-2009-02. Iecole Polytechnique de Montreal; April 2009.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Choinzon
+[ref-text]Choinzon M, Ueda Y. Detecting defects in object oriented designs using design metrics. In: Proceeding of the 2006 conference on knowledge-based software engineering, Amsterdam, The Netherlands; 2006. p. 61–72.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Johnson
+[ref-text]Johnson P, Rees C. Reusability through fine-grain inheritance. Softw Pract Exp December 1992; 22:1049–68.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Budd
+[ref-text]Budd T. An introduction to object-oriented programming. 3rd ed. Addison Wesley; 2001.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Lippert
+[ref-text]Lippert M, Roock S. Refactoring in large software projects: performing complex restructurings successfully. John Wiley and Sons; 2006.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Sonargraph
+[ref-text]Sonargraph-quality: A tool for assessing and monitoring technical quality. 
+[ref-image]
+[ref-url]https://www.hello2morrow.com/products/sonargraph/quality
+[ref-end]
+
+[reference]
+[ref-id]Stal
+[ref-text]Stal M. Software architecture refactoring. Tutorial. In: The international conference on object oriented programming, systems, languages and applications (OOPSLA); 2007.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]BlochJ
+[ref-text]Bloch J. How to design a good API and why it matters. In: Companion to the 21st ACM SIGPLAN symposium on object-oriented programming systems, languages, and applications (OOPSLA ‘06); 2006.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Schader
+[ref-text]Schader M, Korthaus A. The unified modeling language: technical aspects and applications. Physica; 1998.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Shalloway
+[ref-text]Shalloway A, Trott JR. Design patterns explained: a new perspective on object-oriented design. Addison-Wesley; 2004.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Van
+[ref-text]Van Emden E, Moonen L. Java quality assurance by detecting code smells. In: Proceedings of the ninth working conference on reverse engineering (WCRE’02), Washington, DC, USA; 2002. p. 97.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Stan4J
+[ref-text]Structural Analysis for Java Tool (Stan4J).
+[ref-image]
+[ref-url]http://stan4j.com/
+[ref-end] 
+
+[reference]
+[ref-id]Gil
+[ref-text]Gil JY, Maman I. Micro patterns in Java code. SIGPLAN Notes October 2005;40:97–116.
+[ref-image]
+[ref-url]
+[ref-end] 
+
+[reference]
+[ref-id]Ratzinger
+[ref-text]Ratzinger J, Fischer M, Gall H. Improving evolvability through refactoring. In: Proceed- ings of the 2005 international workshop on mining software repositories, MSR ‘05, New York, NY, USA; 2005. p. 1–5.
+[ref-image]
+[ref-url]
+[ref-end] 
+
+ [reference]
+ [ref-id]Demeyer
+ [ref-text]Demeyer S, Ducasse S, Nierstrasz O. Object-oriented reengineering patterns. Morgan Kaufmann; 2002.
+ [ref-image]
+ [ref-url]
+ [ref-end] 
+
+[reference]
+[ref-id]Page-Jones
+[ref-text]Page-Jones M. The practical guide to structured systems design. 2nd ed. Prentice Hall; 1988.
+[ref-image]
+[ref-url]
+[ref-end] 
+
+[reference]
+[ref-id]SDMetrics
+[ref-text]SDMetrics. A UML design quality metrics tool; 2012.
+[ref-image]
+[ref-url]http://www.sdmetrics.com
+[ref-end] 
+
+[reference]
+[ref-id]Marquardt
+[ref-text]Marquardt K. Dependency structures–architectural diagnoses and therapies. In: Proc. of EuroPLoP; 2001.
+[ref-image]
+[ref-url]
+[ref-end] 
+
+[reference]
+[ref-id]Miller
+[ref-text]Miller BK. Object-oriented architecture measures. In: Proceedings of the thirty-second annual Hawaii international conference on system sciences, vol. 8. HICSS ‘99; 1999. p. 8069.
+[ref-image]
+[ref-url]
+[ref-end] 
+
+[reference]
+[ref-id]Beyer
+[ref-text]Beyer D, Lewerentz C. Crocopat: efficient pattern analysis in object-oriented programs. In: Proceedings of the 11th IEEE international workshop on program comprehension, IWPC’03, Washington, DC, USA; 2003. p. 294.
+[ref-image]
+[ref-url]
+[ref-end] 
+
+[reference]
+[ref-id]MartinRC
+[ref-text]Martin RC. Agile software development, principles, patterns, and practices. Addison-Wesley; 2003.
+[ref-image]
+[ref-url]http://amzn.to/2p7QazO
+[ref-end]  
+
+[reference]
+[ref-id]Hannemann
+[ref-text]Hannemann J, Kiczales G. Design pattern implementation in Java and AspectJ. In: Proceedings of the 17th ACM SIGPLAN conference on object-oriented program- ming, systems, languages, and applications, OOPSLA ‘02, New York, NY, USA; 2002. p. 161–73.
+[ref-image]
+[ref-url]
+[ref-end]  
+
+[reference]
+[ref-id]Bloch
+[ref-text]Bloch J. Effective Java. 2nd ed. Addison-Wesley; 2008.
+[ref-image]
+[ref-url]http://amzn.to/2pDfi2T
+[ref-end]  
+
+[reference]
+[ref-id]TrifuA
+[ref-text]Trifu A. Towards automated restructuring of object oriented systems [Ph.D. thesis]. Universitét Karlsruhe (TH), Fakultét fér Informatik; 2008.
+[ref-image]
+[ref-url]
+[ref-end]  
+
+[reference]
+[ref-id]MeyerB
+[ref-text]Meyer B. The many faces of inheritance: a taxonomy of taxonomy. Computer May 1996;29(5):105–8.
+[ref-image]
+[ref-url]
+[ref-end]   
+
+[reference]
+[ref-id]Biehl
+[ref-text]Biehl M. APL – a language for automated anti-pattern analysis of OO-software. CS 846: Source Transformation Systems, Project Report. University of Waterloo; 2006.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Arévalo
+[ref-text]Arévalo G. High-level views in object-oriented systems using formal concept analysis [Ph.D. thesis]. The University of Bern; 2004.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Dudziak
+[ref-text]Dudziak T, Wloka J. Tool-supported discovery and refactoring of structural weaknesses in code [Master’s thesis]. Faculty of Computer Science, Technische Universität Berlin; February 2002.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Wake
+[ref-text]Wake WC. Refactoring workbook. Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.; 2003.
+[ref-image]
+[ref-url]http://amzn.to/2qjtWZx
+[ref-end]
+
+[reference]
+[ref-id]Binder
+[ref-text]Binder RV. Testing object-oriented systems: models, patterns, and tools. Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.; 1999.
+[ref-image]
+[ref-url]http://amzn.to/2p7WjMu
+[ref-end]
+
+[reference]
+[ref-id]MeyerB2
+[ref-text]Meyer B. Touch of class: learning to program well with objects and contracts. Springer; 2009.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Arie
+[ref-text]Arie Deursen, Leon M.F. Moonen, A. Bergh, and Gerard Kok, “Refactoring Test Code”, Technical Report, CWI, Amsterdam, The Netherlands, 2001
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Gerard
+[ref-text]Gerard Meszaros, “xUnit Test Patterns: Refactoring Test Code”, Addison-Wesley, 2007
+[ref-image]
+[ref-url]http://amzn.to/2p7SA1v
+[ref-end]
+
+[reference]
+[ref-id]VanR
+[ref-text]Van Rompaey, Bart, et al., "On the Detection of Test Smells: A Metrics-based Approach for General Fixture and Eager Test" IEEE Transactions Software Engineering, 2007
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Michaela
+[ref-text]Michaela Greiler, Arie van Deursen, Margaret-Anne Storey. Automated Detection of Test Fixture Strategies and Smells. Accepted for publication in the Proceedings of the Sixth International Conference on Software Testing, Verification and Validation, IEEE Computer Society.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Girish
+[ref-text]Girish Suryanarayana, Ganesh Samarthyam, and Tushar Sharma, Refactoring for Software Design Smells: Managing Technical Debt, 1st ed. Morgan Kaufmann, 2014.
+[ref-image]
+[ref-url]http://bit.ly/DesignSmells
+[ref-end]
+
+[reference]
+[ref-id]Tushar
+[ref-text]Tushar Sharma, Marios Fragkoulis, and Diomidis Spinellis, “Does your configuration code smell?” in Proceedings of the 13th International Workshop on Mining Software Repositories, ser. MSR’16, 2016, pp. 189–200.
+[ref-image]
+[ref-url]
+[ref-end]

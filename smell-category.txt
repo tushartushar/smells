@@ -1,0 +1,23 @@
+[define-smell-category]
+[smell-category-id]CODE
+[smell-category-name]Code Smells
+[smell-category-parent]
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]DESIGN
+[smell-category-name]Design Smells
+[smell-category-parent]CODE
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]TEST
+[smell-category-name]Test Smells
+[smell-category-parent]CODE
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]CONFIG
+[smell-category-name]Configuration Smells
+[smell-category-parent]
+[define-smell-category-end]

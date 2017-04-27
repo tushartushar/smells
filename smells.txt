@@ -1,0 +1,270 @@
+[smell]
+[smell-id]MA
+[smell-category]DESIGN
+
+[smell-name]Missing Abstraction
+[smell-description]This smell arises when clumps of data or encoded strings are used instead of creating a class or an interface. 
+[smell-ref]Girish
+[smell-aka]Also known as "Primitive obsession" [Fowler].
+[smell-end]
+
+[smell]
+[smell-id]IA
+[smell-category]DESIGN
+
+[smell-name]Imperative Abstraction
+[smell-description]This smell arises when an operation is turned into a class. 
+[smell-ref]Girish
+[smell-aka]Also known as "Operation class" [Llano,Rumbaugh].
+[smell-end]
+
+[smell]
+[smell-id]IA2
+[smell-category]DESIGN
+
+[smell-name]Incomplete Abstraction
+[smell-description]This smell arises when an abstraction does not support complementary or interrelated methods completely. 
+[smell-ref]Girish
+[smell-aka]It is also known as "Class supports incomplete behavior" [Page] and "Half-hearted operations" [Simon].
+[smell-end]
+
+[smell]
+[smell-id]MA2
+[smell-category]DESIGN
+
+[smell-name]Multifaceted Abstraction
+[smell-description]This smell arises when an abstraction has more than one responsibility assigned to it. 
+[smell-ref]Girish
+[smell-aka]The smell is also known as "Divergent change" [Fowler], "Conceptualization abuse" [Trifu], and "Lack of cohesion" [Semmle].
+[smell-end]
+
+[smell]
+[smell-id]UA
+[smell-category]DESIGN
+
+[smell-name]Unnecessary Abstraction
+[smell-description]This smell occurs when an abstraction that is actually not needed (and thus could have been avoided) gets introduced in a software design. 
+[smell-ref]Girish
+[smell-aka]This smells is also known as "Irrelevant class" [Llano], "Lazy class" [Fowler], "Freeloader" [Khomh], "Small class" [Choinzon,Johnson], "Mini-class" [Simon], and "No responsibility" [Budd].
+[smell-end]
+
+[smell]
+[smell-id]UA2
+[smell-category]DESIGN
+
+[smell-name]Unutilized Abstraction
+[smell-description]This smell arises when an abstraction is left unused (either not directly used or not reachable).
+[smell-ref]Girish
+[smell-aka]It is commonly referred as "Unused classes" [Lippert,Sonargraph] and "Speculative generality" [Fowler].
+[smell-end]
+
+[smell]
+[smell-id]DA
+[smell-category]DESIGN
+
+[smell-name]Duplicate Abstraction
+[smell-description]This smell arises when two or more abstractions have identical names or identical implementation or both. 
+[smell-ref]Girish
+[smell-aka]It is also known as "Alternative classes with different interfaces" [Fowler] and "Duplicate design artifacts" [Stal].
+[smell-end]
+
+[smell]
+[smell-id]DE
+[smell-category]DESIGN
+
+[smell-name]Deficient Encapsulation
+[smell-description]This smell occurs when the declared accessibility of one or more members of an abstraction is more permissive than actually required.
+[smell-ref]Girish
+[smell-aka]The smell is also known as "Hideable public attributes/methods" [Sonargraph], and "Unencapsulated class" [Choinzon].
+[smell-end]
+
+[smell]
+[smell-id]LE
+[smell-category]DESIGN
+
+[smell-name]Leaky Encapsulation
+[smell-description]This smell arises when an abstraction "exposes" or "leaks" implementation details through its public interface.
+[smell-ref]Girish
+[smell-aka]It is also referred as "Leaking implementation details in API" [Bloch].
+[smell-end]
+
+[smell]
+[smell-id]ME
+[smell-category]DESIGN
+
+[smell-name]Missing Encapsulation
+[smell-description]This smell occurs when implementation variations are not encapsulated within an abstraction or hierarchy. 
+[smell-ref]Girish
+[smell-aka]This smell is also known as "Nested generalization" [Rumbaugh], "Class explosion" [Schader], and "Combinatorial explosion" [Shalloway].
+[smell-end]
+
+[smell]
+[smell-id]UE
+[smell-category]DESIGN
+
+[smell-name]Unexploited Encapsulation
+[smell-description]This smell arises when client DESIGN uses explicit type checks (using chained if-else or switch statements that check for the type of the object) instead of exploiting the variation in types already encapsulated within a hierarchy. 
+[smell-ref]Girish
+[smell-aka]This smell is also known as "Simulated polymorphism" [SISSy], "Improper use of switch statement" [Fowler], and "instanceof checks" [Van].
+[smell-end]
+
+[smell]
+[smell-id]BM
+[smell-category]DESIGN
+
+[smell-name]Broken Modularization
+[smell-description]This smell arises when data and/or methods that ideally should have been localized into a single abstraction are separated and spread across multiple abstractions. 
+[smell-aka]This smell is also known as "Class passively stores data" [Semmle], "Data class" [Fowler, Martin, Choinzon, InFusion], "Data records" [Stan4J], "Record (class)" [Gil], "Data container" [Ratzinger], "Misplaced operations" [Demeyer], "Feature envy" [Fowler, InFusion], and "Misplaced control" [Trifu].
+[smell-ref]Girish
+[smell-end]
+
+[smell]
+[smell-id]IM
+[smell-category]DESIGN
+
+[smell-name]Insufficient Modularization
+[smell-description]This smell arises when an abstraction exists that has not been completely decomposed, and a further decomposition could reduce its size, implementation complexity, or both. 
+[smell-aka]It is also referred as "God class" [SISSy], "Fat interface" [MartinRC], "Blob class" [InFusion], "Classes with complex control flow" [Semmle], and "Too much responsibility" [Budd].
+[smell-ref]Girish
+[smell-end]
+
+[smell]
+[smell-id]CM
+[smell-category]DESIGN
+
+[smell-name]Cyclically-dependent Modularization
+[smell-description]This smell arises when two or more abstractions depend on each other directly or indirectly. 
+[smell-aka]It is also known as "Dependency cycles" [SDMetrics, Marquardt, Stal], "Cyclic dependencies" [Page-Jones, Hannemann, InFusion], "Cycles" [Beyer], "Bidirectional relation" [Choinzon], and "Cyclic class relationships" [Miller].
+[smell-ref]Girish
+[smell-end]
+
+[smell]
+[smell-id]HM
+[smell-category]DESIGN
+
+[smell-name]Hub-like Modularization
+[smell-description]This smell arises when an abstraction has dependencies (both incoming and outgoing) with a large number of other abstractions. 
+[smell-aka]This smell is also known as "Bottlenecks" [Sonargraph, Page-Jones], "Local hubs" [Stan4J] and "Man-in-the-middle" [Ratzinger].
+[smell-ref]Girish
+[smell-end]
+
+[smell]
+[smell-id]MH
+[smell-category]DESIGN
+
+[smell-name]Missing Hierarchy
+[smell-description]This smell arises when a DESIGN segment uses conditional logic to explicitly manage variation in behavior where a hierarchy could have been created and used to encapsulate those variations. 
+[smell-aka]It is also known as "Tag class" [Bloch], "Missing inheritance" [Demeyer], "Collapsed type hierarchy" [TrifuA], and "Embedded features" [TrifuA].
+[smell-ref]Girish
+[smell-end]
+
+[smell]
+[smell-id]UH
+[smell-category]DESIGN
+
+[smell-name]Unnecessary Hierarchy
+[smell-description]This smell arises when the whole inheritance hierarchy is unnecessary, indicating that inheritance has been applied needlessly for the particular design context. 
+[smell-aka]This is also known as "Taxomania" [MeyerB] and "Object classes" [Llano].
+[smell-ref]Girish
+[smell-end]
+
+[smell]
+[smell-id]UH2
+[smell-category]DESIGN
+
+[smell-name]Unfactored Hierarchy
+[smell-description]This smell arises when there is unnecessary duplication among types in a hierarchy. 
+
+[smell-aka]It is also referred as "Orphan sibling method/attribute" [SISSy], "Incomplete inheritance" [Biehl], "Repeated functionality" [Arévalo], "Redundant variable declaration" [Choinzon], and "Significant sibling duplication" [InFusion].
+[smell-ref]Girish
+[smell-end]
+
+[smell]
+[smell-id]WH
+[smell-category]DESIGN
+
+[smell-name]Wide Hierarchy
+[smell-description]This smell arises when an inheritance hierarchy is "too" wide indicating that intermediate types may be missing.
+[smell-aka]This smell is also known as "Wide inheritance hierarchy" [Semmle], "Missing levels of abstraction" [Miller], "Coarse hierarchies" [Miller], and "Getting away from abstraction" [Choinzon].
+[smell-ref]Girish
+[smell-end]
+
+[smell]
+[smell-id]SH
+[smell-category]DESIGN
+
+[smell-name]Speculative Hierarchy
+[smell-description]This smell arises when one or more types in a hierarchy are provided speculatively (i.e., based on imagined needs rather than real requirements).
+[smell-aka]
+[smell-ref]Girish
+[smell-end]
+
+[smell]
+[smell-id]DH
+[smell-category]DESIGN
+
+[smell-name]Deep Hierarchy
+[smell-description]This smell arises when an inheritance hierarchy is "excessively" deep.
+[smell-aka]This smell is also known as "Distorted hierarchy" [76].
+[smell-ref]Girish
+[smell-end]
+
+[smell]
+[smell-id]RH
+[smell-category]DESIGN
+
+[smell-name]Rebellious Hierarchy
+[smell-description]This smell arises when a subtype rejects the methods provided by its supertype(s). 
+
+[smell-aka]This smell is also known as "Refused bequest" [Fowler,Wake], "Refused parent bequest" [Dudziak], "Naughty children" [Binder], and "Premature interface abstraction" [TrifuA].
+[smell-ref]Girish
+[smell-end]
+
+[smell]
+[smell-id]BH
+[smell-category]DESIGN
+
+[smell-name]Broken Hierarchy
+[smell-description]This smell arises when a supertype and its subtype conceptually do not share an "IS-A" relationship resulting in broken substitutability. 
+[smell-aka]This smell is also known as "Inappropriate use of inheritance" [Budd], "Containment by inheritance" [TrifuA], "Mistaken aggregates" [Page], "Misapplying IS A" [Page], "Improper inheritance" [Miller], "Inverse abstraction hierarchies" [Miller], "Subclasses do not redefine methods" [Lippert], and "Subclass inheriting inappropriate operations from superclass" [Page].
+[smell-ref]Girish
+[smell-end]
+
+[smell]
+[smell-id]MH2
+[smell-category]DESIGN
+
+[smell-name]Multipath Hierarchy
+[smell-description]This smell arises when a subtype inherits both directly as well as indirectly from a supertype leading to unnecessary inheritance paths in the hierarchy. 
+[smell-aka]It is also referred as "Degenerate inheritance" [Sonargraph,Beyer] and "Repeated inheritance" [MeyerB].
+[smell-ref]Girish
+[smell-end]
+
+[smell]
+[smell-id]CH
+[smell-category]DESIGN
+
+[smell-name]Cyclic Hierarchy
+[smell-description]This smell arises when a supertype in a hierarchy depends on any of its subtypes. 
+[smell-aka]This smell is also known as "Knows of derived" [SISSy], "Curious superclasses" [Beyer], "Inheritance/reference cycles" [56], "Descendant reference" [SDMetrics], "Superclass uses subclass during initialization" [43], and "Inheritance loops" [Binder].
+[smell-ref]Girish
+[smell-end]
+
+[smell]
+[smell-id]GF
+[smell-category]TEST
+[smell-name]General Fixture
+[smell-description]The general fixture smell occurs if test classes contain broad functionality in the implicit setup, and different tests only access part of the fixture. Problems caused by a general fixture are two-fold: firstly, the cause-effect relationship between fixture and the expected outcome is less visible, and tests are harder to read and understand. This can cause tests to be fragile: a change that should be unrelated affects tests because too much functionality is covered in the fixture. Secondly, the test execution performance can deteriorate, and test execution times may eventually lead to developers avoiding to execute tests.
+[smell-ref]Michaela
+[smell-aka]
+[smell-end]
+
+[smell]
+[smell-id]CIM
+[smell-category]CONFIG
+[smell-name]Insufficient Modularization (Configuration)
+[smell-description]An abstraction suffers from this smell when it is large or complex and thus can be modularized further.
+[smell-aka]
+[smell-ref]Tushar
+[smell-end]
+
