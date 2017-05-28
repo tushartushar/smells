@@ -1,23 +1,41 @@
 [define-smell-category]
-[smell-category-id]CODE
-[smell-category-name]Code Smells
-[smell-category-parent]
-[define-smell-category-end]
-
-[define-smell-category]
 [smell-category-id]DESIGN
 [smell-category-name]Design Smells
-[smell-category-parent]CODE
+[smell-category-parent]
 [define-smell-category-end]
 
 [define-smell-category]
 [smell-category-id]TEST
 [smell-category-name]Test Smells
-[smell-category-parent]CODE
+[smell-category-parent]
 [define-smell-category-end]
 
 [define-smell-category]
-[smell-category-id]CONFIG
-[smell-category-name]Configuration Smells
+[smell-category-id]IMPL
+[smell-category-name]Implementation Smells
+[smell-category-parent]
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]CONFIG_I
+[smell-category-name]Configuration Smells (Implementation)
+[smell-category-parent]
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]CONFIG_D
+[smell-category-name]Configuration Smells (Design)
+[smell-category-parent]
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]ARCH
+[smell-category-name]Architecture Smells
+[smell-category-parent]
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]DBase
+[smell-category-name]Database Smells
 [smell-category-parent]
 [define-smell-category-end]

@@ -2,7 +2,7 @@
 [ref-id]Fowler
 [ref-text]Fowler M. Refactoring: improving the design of existing code. Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.; 1999.
 [ref-image]
-[ref-url]https://www.amazon.com/gp/product/0201485672/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0201485672&linkCode=as2&tag=croc03-20&linkId=56BPTQ4RB2MNWEUW
+[ref-url]http://amzn.to/2rblDm3
 [ref-end]
 
 [reference]
@@ -12,12 +12,6 @@
 [ref-url]
 [ref-end]
 
-[reference]
-[ref-id]Llano
-[ref-text]Llano MT, Pooley R. UML specification and correction of object-oriented anti-patterns. In: Proceedings of the 2009 fourth international conference on software engineering advances, ICSEA ‘09, Washington, DC, USA; 2009. p. 39–44.
-[ref-image]
-[ref-url]
-[ref-end]
 
 [reference]
 [ref-id]Rumbaugh
@@ -26,75 +20,14 @@
 [ref-url]
 [ref-end]
 
-[reference]
-[ref-id]Simon
-[ref-text]Simon F, Seng O, Mohaupt T. Code quality management: Technische Qualität industrieller Softwaresysteme Transparent und Vergleichbar Gemacht. dpunkt-Verlag; 2006.
-[ref-image]
-[ref-url]
-[ref-end]
-
-[reference]
-[ref-id]Trifu
-[ref-text]Trifu A. Automated strategy based restructuring of object oriented code. In: Proceedings of the 7th German workshop on software-reengineering (WSR); 2005.
-[ref-image]
-[ref-url]
-[ref-end]
-
-[reference]
-[ref-id]Semmle
-[ref-text]Semmle Code Tool. Available at: http://semmle.com/semmlecode/; 2012.
-[ref-image]
-[ref-url]
-[ref-end]
-
-[reference]
-[ref-id]Khomh
-[ref-text]Khomh F, Di Penta M, Guehénéuc Y-G, Antoniol G. An exploratory study of the impact of anti-patterns on software changeability. Technical report EPM-RT-2009-02. Iecole Polytechnique de Montreal; April 2009.
-[ref-image]
-[ref-url]
-[ref-end]
-
-[reference]
-[ref-id]Choinzon
-[ref-text]Choinzon M, Ueda Y. Detecting defects in object oriented designs using design metrics. In: Proceeding of the 2006 conference on knowledge-based software engineering, Amsterdam, The Netherlands; 2006. p. 61–72.
-[ref-image]
-[ref-url]
-[ref-end]
-
-[reference]
-[ref-id]Johnson
-[ref-text]Johnson P, Rees C. Reusability through fine-grain inheritance. Softw Pract Exp December 1992; 22:1049–68.
-[ref-image]
-[ref-url]
-[ref-end]
-
-[reference]
-[ref-id]Budd
-[ref-text]Budd T. An introduction to object-oriented programming. 3rd ed. Addison Wesley; 2001.
-[ref-image]
-[ref-url]
-[ref-end]
 
 [reference]
 [ref-id]Lippert
 [ref-text]Lippert M, Roock S. Refactoring in large software projects: performing complex restructurings successfully. John Wiley and Sons; 2006.
 [ref-image]
-[ref-url]
+[ref-url]http://amzn.to/2rSdj7X
 [ref-end]
 
-[reference]
-[ref-id]Sonargraph
-[ref-text]Sonargraph-quality: A tool for assessing and monitoring technical quality. 
-[ref-image]
-[ref-url]https://www.hello2morrow.com/products/sonargraph/quality
-[ref-end]
-
-[reference]
-[ref-id]Stal
-[ref-text]Stal M. Software architecture refactoring. Tutorial. In: The international conference on object oriented programming, systems, languages and applications (OOPSLA); 2007.
-[ref-image]
-[ref-url]
-[ref-end]
 
 [reference]
 [ref-id]BlochJ
@@ -124,12 +57,6 @@
 [ref-url]
 [ref-end]
 
-[reference]
-[ref-id]Stan4J
-[ref-text]Structural Analysis for Java Tool (Stan4J).
-[ref-image]
-[ref-url]http://stan4j.com/
-[ref-end] 
 
 [reference]
 [ref-id]Gil
@@ -160,13 +87,6 @@
 [ref-end] 
 
 [reference]
-[ref-id]SDMetrics
-[ref-text]SDMetrics. A UML design quality metrics tool; 2012.
-[ref-image]
-[ref-url]http://www.sdmetrics.com
-[ref-end] 
-
-[reference]
 [ref-id]Marquardt
 [ref-text]Marquardt K. Dependency structures–architectural diagnoses and therapies. In: Proc. of EuroPLoP; 2001.
 [ref-image]
@@ -194,12 +114,6 @@
 [ref-url]http://amzn.to/2p7QazO
 [ref-end]  
 
-[reference]
-[ref-id]Hannemann
-[ref-text]Hannemann J, Kiczales G. Design pattern implementation in Java and AspectJ. In: Proceedings of the 17th ACM SIGPLAN conference on object-oriented program- ming, systems, languages, and applications, OOPSLA ‘02, New York, NY, USA; 2002. p. 161–73.
-[ref-image]
-[ref-url]
-[ref-end]  
 
 [reference]
 [ref-id]Bloch
@@ -223,22 +137,8 @@
 [ref-end]   
 
 [reference]
-[ref-id]Biehl
-[ref-text]Biehl M. APL – a language for automated anti-pattern analysis of OO-software. CS 846: Source Transformation Systems, Project Report. University of Waterloo; 2006.
-[ref-image]
-[ref-url]
-[ref-end]
-
-[reference]
 [ref-id]Arévalo
 [ref-text]Arévalo G. High-level views in object-oriented systems using formal concept analysis [Ph.D. thesis]. The University of Bern; 2004.
-[ref-image]
-[ref-url]
-[ref-end]
-
-[reference]
-[ref-id]Dudziak
-[ref-text]Dudziak T, Wloka J. Tool-supported discovery and refactoring of structural weaknesses in code [Master’s thesis]. Faculty of Computer Science, Technische Universität Berlin; February 2002.
 [ref-image]
 [ref-url]
 [ref-end]
@@ -305,3 +205,49 @@
 [ref-image]
 [ref-url]
 [ref-end]
+
+
+[reference]
+[ref-id]Riel
+[ref-text]A. J. Riel, Object-Oriented Design Heuristics. Addison-Wesley, 1996.
+[ref-image]
+[ref-url]http://amzn.to/2qyVfz3
+[ref-end]
+
+
+[reference]
+[ref-id]Brown
+[ref-text]W. Brown, R. Malveau, H. McCormick, and T. Mowbray, AntiPatterns: Refactoring software, architectures, and projects in crisis. John Wiley & Sons, 1998.
+[ref-image]<a href="https://www.amazon.com/AntiPatterns-Refactoring-Software-Architectures-Projects/dp/0471197130/ref=as_li_ss_il?s=books&ie=UTF8&qid=1493715891&sr=1-1&keywords=AntiPatterns:+Refactoring+software,+architectures,+and+projects+in+crisis&linkCode=li2&tag=croc03-20&linkId=7d20532574f897cfa0557bfd7a6bbd7c" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0471197130&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=croc03-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=croc03-20&l=li2&o=1&a=0471197130" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+[ref-url]http://amzn.to/2pCSNuh
+[ref-end]
+
+
+[reference]
+[ref-id]Joshua
+[ref-text]Joshua Garcia, Daniel Popescu, George Edwards, and Nenad Medvidovic. 2009. Toward a Catalogue of Architectural Bad Smells. In Proceedings of the 5th International Conference on the Quality of Software Architectures: Architectures for Adaptive Software Systems (QoSA '09), Raffaela Mirandola, Ian Gorton, and Christine Hofmeister (Eds.). Springer-Verlag, Berlin, Heidelberg, 146-162. DOI=http://dx.doi.org/10.1007/978-3-642-02351-4_10
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Hugo
+[ref-text]Hugo Sica de Andrade, Eduardo Almeida, and Ivica Crnkovic. 2014. Architectural bad smells in software product lines: an exploratory study. In Proceedings of the WICSA 2014 Companion Volume (WICSA '14 Companion). ACM, New York, NY, USA, , Article 12 , 6 pages. DOI=http://dx.doi.org/10.1145/2578128.2578237
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Fontana
+[ref-text]F. A. Fontana, I. Pigazzini, R. Roveda and M. Zanoni, "Automatic Detection of Instability Architectural Smells," 2016 IEEE International Conference on Software Maintenance and Evolution (ICSME), Raleigh, NC, 2016, pp. 433-437. doi: 10.1109/ICSME.2016.33
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Karwin
+[ref-text]B. Karwin, SQL Antipatterns: Avoiding the Pitfalls of Database Programming, 1st ed. Pragmatic Bookshelf, 2010.
+[ref-image]
+[ref-url]http://amzn.to/2qrk7JE
+[ref-end]
+

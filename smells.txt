@@ -1,253 +1,1066 @@
 [smell]
 [smell-id]MA
 [smell-category]DESIGN
-
 [smell-name]Missing Abstraction
 [smell-description]This smell arises when clumps of data or encoded strings are used instead of creating a class or an interface. 
 [smell-ref]Girish
-[smell-aka]Also known as "Primitive obsession" [Fowler].
+[smell-aka]PO
+[smell-aka]DC
 [smell-end]
 
 [smell]
 [smell-id]IA
 [smell-category]DESIGN
-
 [smell-name]Imperative Abstraction
 [smell-description]This smell arises when an operation is turned into a class. 
 [smell-ref]Girish
-[smell-aka]Also known as "Operation class" [Llano,Rumbaugh].
+[smell-aka]POL
 [smell-end]
 
 [smell]
 [smell-id]IA2
 [smell-category]DESIGN
-
 [smell-name]Incomplete Abstraction
 [smell-description]This smell arises when an abstraction does not support complementary or interrelated methods completely. 
 [smell-ref]Girish
-[smell-aka]It is also known as "Class supports incomplete behavior" [Page] and "Half-hearted operations" [Simon].
+[smell-aka]ILC
 [smell-end]
 
 [smell]
 [smell-id]MA2
 [smell-category]DESIGN
-
 [smell-name]Multifaceted Abstraction
 [smell-description]This smell arises when an abstraction has more than one responsibility assigned to it. 
 [smell-ref]Girish
-[smell-aka]The smell is also known as "Divergent change" [Fowler], "Conceptualization abuse" [Trifu], and "Lack of cohesion" [Semmle].
+[smell-aka]DC3
+[smell-aka]SAK
 [smell-end]
 
 [smell]
 [smell-id]UA
 [smell-category]DESIGN
-
 [smell-name]Unnecessary Abstraction
 [smell-description]This smell occurs when an abstraction that is actually not needed (and thus could have been avoided) gets introduced in a software design. 
 [smell-ref]Girish
-[smell-aka]This smells is also known as "Irrelevant class" [Llano], "Lazy class" [Fowler], "Freeloader" [Khomh], "Small class" [Choinzon,Johnson], "Mini-class" [Simon], and "No responsibility" [Budd].
+[smell-aka]LC2
+[smell-aka]POL
 [smell-end]
 
 [smell]
 [smell-id]UA2
 [smell-category]DESIGN
-
 [smell-name]Unutilized Abstraction
 [smell-description]This smell arises when an abstraction is left unused (either not directly used or not reachable).
 [smell-ref]Girish
-[smell-aka]It is commonly referred as "Unused classes" [Lippert,Sonargraph] and "Speculative generality" [Fowler].
+[smell-aka]SG
+[smell-aka]OC
+[smell-aka]UP
 [smell-end]
 
 [smell]
 [smell-id]DA
 [smell-category]DESIGN
-
 [smell-name]Duplicate Abstraction
 [smell-description]This smell arises when two or more abstractions have identical names or identical implementation or both. 
 [smell-ref]Girish
-[smell-aka]It is also known as "Alternative classes with different interfaces" [Fowler] and "Duplicate design artifacts" [Stal].
+[smell-aka]ACDI
+[smell-aka]CPP
+[smell-aka]DC2
+[smell-aka]UH2
 [smell-end]
 
 [smell]
 [smell-id]DE
 [smell-category]DESIGN
-
 [smell-name]Deficient Encapsulation
 [smell-description]This smell occurs when the declared accessibility of one or more members of an abstraction is more permissive than actually required.
 [smell-ref]Girish
-[smell-aka]The smell is also known as "Hideable public attributes/methods" [Sonargraph], and "Unencapsulated class" [Choinzon].
 [smell-end]
 
 [smell]
 [smell-id]LE
 [smell-category]DESIGN
-
 [smell-name]Leaky Encapsulation
 [smell-description]This smell arises when an abstraction "exposes" or "leaks" implementation details through its public interface.
 [smell-ref]Girish
-[smell-aka]It is also referred as "Leaking implementation details in API" [Bloch].
+[smell-aka]VDG
+[smell-aka]SAB
 [smell-end]
 
 [smell]
 [smell-id]ME
 [smell-category]DESIGN
-
 [smell-name]Missing Encapsulation
 [smell-description]This smell occurs when implementation variations are not encapsulated within an abstraction or hierarchy. 
 [smell-ref]Girish
-[smell-aka]This smell is also known as "Nested generalization" [Rumbaugh], "Class explosion" [Schader], and "Combinatorial explosion" [Shalloway].
 [smell-end]
 
 [smell]
 [smell-id]UE
 [smell-category]DESIGN
-
 [smell-name]Unexploited Encapsulation
-[smell-description]This smell arises when client DESIGN uses explicit type checks (using chained if-else or switch statements that check for the type of the object) instead of exploiting the variation in types already encapsulated within a hierarchy. 
+[smell-description]This smell arises when client class uses explicit type checks (using chained if-else or switch statements that check for the type of the object) instead of exploiting the variation in types already encapsulated within a hierarchy. 
 [smell-ref]Girish
-[smell-aka]This smell is also known as "Simulated polymorphism" [SISSy], "Improper use of switch statement" [Fowler], and "instanceof checks" [Van].
+[smell-aka]SS2
+[smell-aka]TQ
 [smell-end]
 
 [smell]
 [smell-id]BM
 [smell-category]DESIGN
-
 [smell-name]Broken Modularization
 [smell-description]This smell arises when data and/or methods that ideally should have been localized into a single abstraction are separated and spread across multiple abstractions. 
-[smell-aka]This smell is also known as "Class passively stores data" [Semmle], "Data class" [Fowler, Martin, Choinzon, InFusion], "Data records" [Stan4J], "Record (class)" [Gil], "Data container" [Ratzinger], "Misplaced operations" [Demeyer], "Feature envy" [Fowler, InFusion], and "Misplaced control" [Trifu].
+[smell-aka]DC4
 [smell-ref]Girish
 [smell-end]
 
 [smell]
 [smell-id]IM
 [smell-category]DESIGN
-
 [smell-name]Insufficient Modularization
 [smell-description]This smell arises when an abstraction exists that has not been completely decomposed, and a further decomposition could reduce its size, implementation complexity, or both. 
-[smell-aka]It is also referred as "God class" [SISSy], "Fat interface" [MartinRC], "Blob class" [InFusion], "Classes with complex control flow" [Semmle], and "Too much responsibility" [Budd].
+[smell-aka]LC
+[smell-aka]GC
+[smell-aka]BL
+[smell-aka]SAK
+[smell-aka]TLP
 [smell-ref]Girish
 [smell-end]
 
 [smell]
 [smell-id]CM
 [smell-category]DESIGN
-
 [smell-name]Cyclically-dependent Modularization
 [smell-description]This smell arises when two or more abstractions depend on each other directly or indirectly. 
-[smell-aka]It is also known as "Dependency cycles" [SDMetrics, Marquardt, Stal], "Cyclic dependencies" [Page-Jones, Hannemann, InFusion], "Cycles" [Beyer], "Bidirectional relation" [Choinzon], and "Cyclic class relationships" [Miller].
+[smell-aka]SCDG
+[smell-aka]DCP
 [smell-ref]Girish
 [smell-end]
 
 [smell]
 [smell-id]HM
 [smell-category]DESIGN
-
 [smell-name]Hub-like Modularization
 [smell-description]This smell arises when an abstraction has dependencies (both incoming and outgoing) with a large number of other abstractions. 
-[smell-aka]This smell is also known as "Bottlenecks" [Sonargraph, Page-Jones], "Local hubs" [Stan4J] and "Man-in-the-middle" [Ratzinger].
 [smell-ref]Girish
 [smell-end]
 
 [smell]
 [smell-id]MH
 [smell-category]DESIGN
-
 [smell-name]Missing Hierarchy
 [smell-description]This smell arises when a DESIGN segment uses conditional logic to explicitly manage variation in behavior where a hierarchy could have been created and used to encapsulate those variations. 
-[smell-aka]It is also known as "Tag class" [Bloch], "Missing inheritance" [Demeyer], "Collapsed type hierarchy" [TrifuA], and "Embedded features" [TrifuA].
+[smell-aka]SS2
 [smell-ref]Girish
 [smell-end]
 
 [smell]
 [smell-id]UH
 [smell-category]DESIGN
-
 [smell-name]Unnecessary Hierarchy
 [smell-description]This smell arises when the whole inheritance hierarchy is unnecessary, indicating that inheritance has been applied needlessly for the particular design context. 
-[smell-aka]This is also known as "Taxomania" [MeyerB] and "Object classes" [Llano].
 [smell-ref]Girish
 [smell-end]
 
 [smell]
 [smell-id]UH2
 [smell-category]DESIGN
-
 [smell-name]Unfactored Hierarchy
 [smell-description]This smell arises when there is unnecessary duplication among types in a hierarchy. 
-
-[smell-aka]It is also referred as "Orphan sibling method/attribute" [SISSy], "Incomplete inheritance" [Biehl], "Repeated functionality" [Arévalo], "Redundant variable declaration" [Choinzon], and "Significant sibling duplication" [InFusion].
+[smell-aka]CPP
+[smell-aka]DA
+[smell-aka]DC2
 [smell-ref]Girish
 [smell-end]
 
 [smell]
 [smell-id]WH
 [smell-category]DESIGN
-
 [smell-name]Wide Hierarchy
 [smell-description]This smell arises when an inheritance hierarchy is "too" wide indicating that intermediate types may be missing.
-[smell-aka]This smell is also known as "Wide inheritance hierarchy" [Semmle], "Missing levels of abstraction" [Miller], "Coarse hierarchies" [Miller], and "Getting away from abstraction" [Choinzon].
 [smell-ref]Girish
 [smell-end]
 
 [smell]
 [smell-id]SH
 [smell-category]DESIGN
-
 [smell-name]Speculative Hierarchy
 [smell-description]This smell arises when one or more types in a hierarchy are provided speculatively (i.e., based on imagined needs rather than real requirements).
-[smell-aka]
+[smell-aka]SG
 [smell-ref]Girish
 [smell-end]
 
 [smell]
 [smell-id]DH
 [smell-category]DESIGN
-
 [smell-name]Deep Hierarchy
 [smell-description]This smell arises when an inheritance hierarchy is "excessively" deep.
-[smell-aka]This smell is also known as "Distorted hierarchy" [76].
+[smell-aka]TDIH
 [smell-ref]Girish
 [smell-end]
 
 [smell]
 [smell-id]RH
 [smell-category]DESIGN
-
 [smell-name]Rebellious Hierarchy
 [smell-description]This smell arises when a subtype rejects the methods provided by its supertype(s). 
-
-[smell-aka]This smell is also known as "Refused bequest" [Fowler,Wake], "Refused parent bequest" [Dudziak], "Naughty children" [Binder], and "Premature interface abstraction" [TrifuA].
+[smell-aka]RB
 [smell-ref]Girish
 [smell-end]
 
 [smell]
 [smell-id]BH
 [smell-category]DESIGN
-
 [smell-name]Broken Hierarchy
 [smell-description]This smell arises when a supertype and its subtype conceptually do not share an "IS-A" relationship resulting in broken substitutability. 
-[smell-aka]This smell is also known as "Inappropriate use of inheritance" [Budd], "Containment by inheritance" [TrifuA], "Mistaken aggregates" [Page], "Misapplying IS A" [Page], "Improper inheritance" [Miller], "Inverse abstraction hierarchies" [Miller], "Subclasses do not redefine methods" [Lippert], and "Subclass inheriting inappropriate operations from superclass" [Page].
+[smell-aka]SDRM
 [smell-ref]Girish
 [smell-end]
 
 [smell]
 [smell-id]MH2
 [smell-category]DESIGN
-
 [smell-name]Multipath Hierarchy
 [smell-description]This smell arises when a subtype inherits both directly as well as indirectly from a supertype leading to unnecessary inheritance paths in the hierarchy. 
-[smell-aka]It is also referred as "Degenerate inheritance" [Sonargraph,Beyer] and "Repeated inheritance" [MeyerB].
 [smell-ref]Girish
 [smell-end]
 
 [smell]
 [smell-id]CH
 [smell-category]DESIGN
-
 [smell-name]Cyclic Hierarchy
 [smell-description]This smell arises when a supertype in a hierarchy depends on any of its subtypes. 
-[smell-aka]This smell is also known as "Knows of derived" [SISSy], "Curious superclasses" [Beyer], "Inheritance/reference cycles" [56], "Descendant reference" [SDMetrics], "Superclass uses subclass during initialization" [43], and "Inheritance loops" [Binder].
 [smell-ref]Girish
+[smell-end]
+
+[smell]
+[smell-id]DC2
+[smell-category]IMPL
+[smell-name]Duplicate Code
+[smell-description]This smell occurs when same code structure is duplicated to multiple places within a software system. Fowler defined it as follows: "If you see the same code structure in more than one place, you can be sure that your program will be better if you find a way to unify them."
+[smell-aka]DA
+[smell-aka]UH2
+[smell-aka]CPP
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]LM
+[smell-category]IMPL
+[smell-name]Long Method
+[smell-description]This smell occurs when a method is too long to understand. As Fowler says "...the longer a procedure (method) is, the more difficult it is to understand."
+[smell-aka]
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]LC
+[smell-category]DESIGN
+[smell-name]Large Class
+[smell-description]This smell occurs when a class is large containing too many variables and methods. A large size class is not only difficult to understand but also leads to other smells. As Fowler says "...a class with too many instance variables, a class with too much code is prime breeding ground for duplicated code, chaos, and death."
+[smell-aka]IM
+[smell-aka]GC
+[smell-aka]BL
+[smell-aka]TLP
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]LPL
+[smell-category]IMPL
+[smell-name]Long Parameter List
+[smell-description]This smell occurs when a method accepts a long list of parameters. According to Fowler "...long parameter lists are hard to understand, because they become inconsistent and difficult to use, and because you are forever changing them as you need more data."
+[smell-aka]
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]DC3
+[smell-category]DESIGN
+[smell-name]Divergent Change
+[smell-description]Divergent change occurs when one class is commonly changed in different ways for different reasons. 
+[smell-aka]MA2
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]SS
+[smell-category]DESIGN
+[smell-name]Shotgun Surgery
+[smell-description]This smell characterizes the situation when one kind of change leads to a lot of changes to multiple different classes. When the changes are all over the place, they are hard to find, and it's easy to miss an important change.
+[smell-aka]
+[smell-ref]Fowler
+[smell-end]
+
+
+[smell]
+[smell-id]FE
+[smell-category]DESIGN
+[smell-name]Feature Envy
+[smell-description]This smell occurs when a method seems more interested in a class other than the one it actually is in.
+[smell-aka]
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]DC
+[smell-category]DESIGN
+[smell-name]Data Clumps
+[smell-description]This smell occurs when a set of data items dispatched (as parameters to other methods) and used together. Such a bunch of data items must be encapsulated in an abstraction.
+[smell-aka]MA
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]PO
+[smell-category]DESIGN
+[smell-name]Primitive Obsession
+[smell-description]This smell occurs when primitive data types are used where an abstraction encapsulating the primitives could serve better.
+[smell-aka]MA
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]SS2
+[smell-category]DESIGN
+[smell-name]Switch Statement
+[smell-description]This smell occurs when switch statements that switches on type codes are spread across the software system instead of exploiting polymorphism.
+[smell-aka]UE
+[smell-aka]MH
+[smell-aka]TQ
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]PIH
+[smell-category]DESIGN
+[smell-name]Parallel Inheritance Hierarchies
+[smell-description]This smell occurs when introducing a subclass of one class leads to creation of another subclass of another class. It is a special case of shotgun surgery.
+[smell-aka]
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]LC2
+[smell-category]DESIGN
+[smell-name]Lazy Class
+[smell-description]This smell occurs where a class is not doing enough i.e. it does not realize a concrete responsibility. Fowler says that "Each class you create costs money to maintain and understand. A class that isn't doing enough to pay for itself should be eliminated."
+[smell-aka]UA
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]SG
+[smell-category]DESIGN
+[smell-name]Speculative Generality
+[smell-description]This smell occurs where an abstraction is created based on speculated requirements. It is often unnecessary that makes things difficult to understand and maintain. 
+[smell-aka]UA2
+[smell-aka]SH
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]TF
+[smell-category]IMPL
+[smell-name]Temporary Field
+[smell-description]This smell occurs when an instance variable is set only in certain circumstances. It makes the code difficult to understand since the purpose of the variable is not clear enough. 
+[smell-aka]
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]MC
+[smell-category]DESIGN
+[smell-name]Message Chains
+[smell-description]This smell occurs when an object is acquired by a series of object getters. Such a message chain indicate that the client is coupled to the structure of the navigation and thus, any change to the intermediate relationships causes the client to change.
+[smell-aka]
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]MM
+[smell-category]DESIGN
+[smell-name]Middle Man
+[smell-description]This smell occurs when a class is used as a middleman to merely delegate the messages from clients to classes that are implementing some useful functionality without contributing anything to the application.
+[smell-aka]
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]II
+[smell-category]DESIGN
+[smell-name]Inappropriate Intimacy
+[smell-description]This smell occurs when classes become far too intimate and spend too much time delving in each others' private parts.
+[smell-aka]
+[smell-ref]Fowler
+[smell-end]
+
+
+[smell]
+[smell-id]ACDI
+[smell-category]DESIGN
+[smell-name]Alternative Classes with Different Interfaces
+[smell-description]This smell occurs when alternative classes offer different interfaces to their clients. Such classes make it difficult for the clients to use them (for instance, explicitly checking for their type).
+[smell-aka]DA
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]ILC
+[smell-category]DESIGN
+[smell-name]Incomplete Library Class
+[smell-description]This smell occurs when a library class doesn't fulfil the requirements of a user completely.
+[smell-aka]
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]DC4
+[smell-category]DESIGN
+[smell-name]Data Class
+[smell-description]This smell occurs when a class contains only fields and possibly getters/setters without any behavior (methods). 
+[smell-aka]BM
+[smell-ref]Fowler
+[smell-end]
+
+[smell]
+[smell-id]RB
+[smell-category]DESIGN
+[smell-name]Refused Bequest
+[smell-description]This smell occurs when a subclass rejects some of the methods or properties offered by its superclass.
+[smell-aka]RH
+[smell-ref]Fowler
+[smell-end]
+
+
+[smell]
+[smell-id]CO
+[smell-category]IMPL
+[smell-name]Comments
+[smell-description]This smell occurs when comments are used as deodorant to explain the bad code. 
+[smell-aka]
+[smell-ref]Fowler
+[smell-end]
+
+
+[smell]
+[smell-id]POL
+[smell-category]DESIGN
+[smell-name]Poltergeist
+[smell-description]The smell occurs when classes are created that have limited responsibility within the operation of a system. It can appear in a number of different forms but their idea is the same, poltergeist classes do not have an important role in an OO design. Furthermore, poltergeist classes have a short life cycle and represent a waste of resources when they are used. Riel classifies 5 different ways in which this anti-pattern may appear in an OO design. 1) Irrelevant classes: An irrelevant class is a class that does not have any meaningful behaviour in the design. These types of classes are characterised for being composed only of get, set and/or print methods, 2) Agent classes: Agent classes are classes that are formed by methods that are only responsible for passing messages from one class to another, 3) Out of scope classes: A class is classified as out of the scope of the system if it sends messages to other classes but it never receives any message back, 4) Operation classes: Operation classes are characterised for being composed of only one meaningful behaviour and for having a short life cycle, and 5) Object classes: Object classes are subclasses that should be instances of their parent class instead of being classes themselves.
+[smell-aka]IA
+[smell-aka]UA
+[smell-ref]Riel
+[smell-end]
+
+[smell]
+[smell-id]GC
+[smell-category]DESIGN
+[smell-name]God Class
+[smell-description]The God class smell occurs when a huge class which is surrounded by many data classes acts as a controller (i.e. takes most of the decisions and monopolises the functionality offered by the software). The class defines many data members and methods and exhibits low cohesion. 
+[smell-aka]IM
+[smell-aka]BL
+[smell-aka]LC
+[smell-aka]TLP
+[smell-ref]Riel
+[smell-end]
+
+[smell]
+[smell-id]BL
+[smell-category]DESIGN
+[smell-name]The Blob
+[smell-description]The Blob is found in designs where one class monopolizes the processing, and other classes primarily encapsulate data. The key problem here is that the majority of the responsibilities are assigned to a single class.
+[smell-aka]IM
+[smell-aka]GC
+[smell-aka]LC
+[smell-aka]TLP
+[smell-ref]Brown
+[smell-end]
+
+[smell]
+[smell-id]LF
+[smell-category]DESIGN
+[smell-name]Lava Flow
+[smell-description]This smell is characterized by a piece of code that nobody remember the purpose and
+usage, and is largely not utilized.
+[smell-aka]
+[smell-ref]Brown
+[smell-end]
+
+[smell]
+[smell-id]FD
+[smell-category]DESIGN
+[smell-name]Functional Decomposition
+[smell-description]This smell occurs when the experienced developers coming from procedural languages background write highly procedural and non-object-oriented code in an object-oriented language. When developers are comfortable with a "main" routine that calls numerous subroutines, they may tend to make every subroutine a class, ignoring class hierarchies altogether (and pretty much ignoring object orientation entirely).
+[smell-aka]TDG
+[smell-ref]Brown
+[smell-end]
+
+[smell]
+[smell-id]GH
+[smell-category]DESIGN
+[smell-name]Golden Hammer
+[smell-description]This smell results in the misapplication of a favored tool, library, language, framework, or concept. Developers and managers are comfortable with an existing approach and unwilling to learn and apply one that is better suited.
+[smell-aka]
+[smell-ref]Brown
+[smell-end]
+
+[smell]
+[smell-id]SC
+[smell-category]DESIGN
+[smell-name]Spaghetti Code
+[smell-description]This smell refers to an unmaintainable, incomprehensible code without any structure. Spaghetti Code does not exploit and prevents the use of object-orientation mechanisms and concepts.
+[smell-aka]
+[smell-ref]Brown
+[smell-end]
+
+[smell]
+[smell-id]CPP
+[smell-category]DESIGN
+[smell-name]Cut and Paste Programming
+[smell-description]This smell is identified by the presence of several similar segments of code interspersed throughout the software project.
+[smell-aka]DC2
+[smell-aka]DA
+[smell-aka]UH2
+[smell-ref]Brown
+[smell-end]
+
+[smell]
+[smell-id]AS
+[smell-category]ARCH
+[smell-name]Autogenerated Stovepipe
+[smell-description]This smell arises when existing software system is converted to a distributed infrastructure without considering a change in the design and architecture of the system.
+[smell-ref]Brown
+[smell-end]
+
+[smell]
+[smell-id]SE
+[smell-category]ARCH
+[smell-name]Stovepipe Enterprise
+[smell-description]This smell is characterized by a lack of a software structure that inhibits change. The smell shows lack of coordination and planning across a set of systems.
+[smell-aka]SS1
+[smell-ref]Brown
+[smell-end]
+
+
+[smell]
+[smell-id]JU
+[smell-category]ARCH
+[smell-name]Jumble
+[smell-description]This smell arises when horizontal and vertical design elements are intermixed leading to an unstable architecture. The intermingling of design elements limits the reusability and robustness of the architecture.
+[smell-ref]Brown
+[smell-end]
+
+
+[smell]
+[smell-id]SS1
+[smell-category]ARCH
+[smell-name]Stovepipe System
+[smell-description]This smell arises when subsystems are integrated in an ad hoc manner using multiple integration strategies and mechanisms. 
+[smell-aka]SE
+[smell-ref]Brown
+[smell-end]
+
+[smell]
+[smell-id]CYA
+[smell-category]ARCH
+[smell-name]Cover Your Assets
+[smell-description]This smell arises when a development team adopt document-driven software processes where authors of the documents take a safer course to avoid making a mistake. Such processes often produce less-than-useful requirements and specifications because the authors evade making important decisions.
+[smell-ref]Brown
+[smell-end]
+
+[smell]
+[smell-id]VLI
+[smell-category]ARCH
+[smell-name]Vendor Lock−In
+[smell-description]This smell occurs in systems that are highly dependent upon proprietary architectures.
+[smell-ref]Brown
+[smell-end]
+
+[smell]
+[smell-id]WT
+[smell-category]ARCH
+[smell-name]Wolf Ticket
+[smell-description]This smell occurs when conformance to standards are not enforced despite claiming openness and conformance to standards. This leads to proprietary interfaces that may vary significantly from the published standard.
+[smell-ref]Brown
+[smell-end]
+
+[smell]
+[smell-id]AI
+[smell-category]ARCH
+[smell-name]Architecture by Implication
+[smell-description]This smell occurs when risk management of a new software system development is overlooked due to overconfidence and recent successes.
+[smell-ref]Brown
+[smell-end]
+
+[smell]
+[smell-id]WB
+[smell-category]ARCH
+[smell-name]Warm Bodies
+[smell-description]Skilled programmers are essential to the success of a software project. This smell occurs when people with varying skills and productivity levels are assigned to a project merely to meet staff size objectives.
+[smell-ref]Brown
+[smell-end]
+
+
+[smell]
+[smell-id]DBC
+[smell-category]ARCH
+[smell-name]Design by Committee
+[smell-description]This smell arises when a dedicated committee is formed to design and architecture the system. Design by Committee creates overly complex architectures that lack coherence.
+[smell-ref]Brown
+[smell-end]
+
+[smell]
+[smell-id]SAK
+[smell-category]DESIGN
+[smell-name]Swiss Army Knife
+[smell-description]This smell arises when the designer attempts to provide all possible uses of the class and ends up in an excessively complex class interface.
+[smell-ref]Brown
+[smell-aka]MA2
+[smell-aka]IM
+[smell-end]
+
+[smell]
+[smell-id]RW
+[smell-category]ARCH
+[smell-name]Reinvent the Wheel
+[smell-description]The pervasive lack of technology transfer between software projects leads to substantial reinvention. Design knowledge buried in legacy assets can be leveraged to reduce time−to−market, cost, and risk.
+[smell-ref]Brown
+[smell-end]
+
+[smell]
+[smell-id]GODY
+[smell-category]ARCH
+[smell-name]The Grand Old Duke of York
+[smell-description]This smell occurs when developers (or implementationists) couldn't identify the significance of good abstractions and ignore them even after suggested by some team members (referred as abstractionist).
+[smell-aka]MA
+[smell-ref]Brown
+[smell-end]
+
+[smell]
+[smell-id]OC
+[smell-category]DESIGN
+[smell-name]Obsolete Classes
+[smell-description]This smell occurs when certain classes are no longer used in a software system. Classes that are no longer in use will burden the system with obviously obsolete functionality. A specific case of this smell occurs when a class implements more than a single responsibility and one of the responsibilities becomes unused in the meantime. Unused classes mainly emerge for two reasons - a developer speculates that the class might eventually be used and a formerly required class becomes obsolete due to refactorings.
+[smell-aka]UA2
+[smell-aka]UP
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]TDG
+[smell-category]DESIGN
+[smell-name]Tree-like Dependency Graph
+[smell-description]This smell occurs when each class of the tree is used by exactly one other class. Tree-like dependency graphs indicate a functional decomposition of the system.
+[smell-aka]FD
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]SCDG
+[smell-category]DESIGN
+[smell-name]Static Cycles in Dependency Graphs
+[smell-description]Two classes using each other constitute the simplest imaginable cycle in a dependency graph. The presence of many cycles in a system will lead to its lumping.
+[smell-aka]CM
+[smell-aka]DCP
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]VDG
+[smell-category]DESIGN
+[smell-name]Visibility of Dependency Graphs
+[smell-description]This smell occurs when the internal implementation of a class is not hidden behind an interface.
+[smell-aka]LE
+[smell-aka]SAB
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]TQ
+[smell-category]DESIGN
+[smell-name]Type Queries
+[smell-description]Type queries in the system (using instanceof, for instance) can be regarded as smells: the inheritance relation expresses itself not only in the classes of the inheritance hierarchy, but in the clients too. In regard to the design principles, type queries violate the Once and only once principle (or, DRY - Don't Repeat Yourself principle).
+[smell-aka]UE
+[smell-aka]SS2
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]LIH
+[smell-category]DESIGN
+[smell-name]List-like Inheritance Hierarchy
+[smell-description]In a list-like inheritance hierarchy each class possesses a maximum number of one subclass. Speculative generalization means that superclasses were implemented for a definitely required class in the hope that the created abstraction might come in handy later on.
+[smell-aka]SH
+[smell-aka]SG
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]SDRM
+[smell-category]DESIGN
+[smell-name]Subclasses Do Not Redefine Methods
+[smell-description]If subclasses do not redefine the methods of their superclass, this can indicate that no abstraction is expressed through inheritance – we are facing pure implementation inheritance. Often a uses relation between classes will turn out to be more effective.
+[smell-aka]BH
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]IHWPA
+[smell-category]DESIGN
+[smell-name]Inheritance Hierarchies Without Polymorphic Assignments
+[smell-description]Inheritance hierarchies without their respective polymorphic assignments point to the presence of unnecessary generalizations. If no polymorphic assignments exist, this flexibility will not be used, and inheritance can be replaced by uses relations.
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]TDIH
+[smell-category]DESIGN
+[smell-name]Too Deep Inheritance Hierarchy
+[smell-description]Deep inheritance hierarchies can result in extremely flexible systems. Unfortunately, at the same time the system’s understandability and the adaptability of its inheritance hierarchies suffers. If inheritance takes place across 10 levels, it is almost impossible to determine which implementation of a method is called by reading the code.
+[smell-aka]DH
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]UP
+[smell-category]ARCH
+[smell-name]Unused Packages
+[smell-description]Packages that are not in use burden the system with clearly obsolete functionality.
+[smell-aka]OC
+[smell-aka]UA2
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]DCP
+[smell-category]ARCH
+[smell-name]Dependency Cycles between Packages/Subsystems
+[smell-description]This smell occurs when two or more packages/subsystems depend on each other. Cycles between packages/subsystems can be created through use, inheritance, or through a combination of use and inheritance.
+[smell-aka]SCDG
+[smell-aka]CM
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]TSP
+[smell-category]ARCH
+[smell-name]Too Small Packages/Subsystems
+[smell-description]Packages/Subsystems with one or two classes are often not worth the effort of introducing them: the complexity created by the package/subsystem is not offset by its additional structuring.
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]TLP
+[smell-category]ARCH
+[smell-name]Too Large Packages/Subsystems
+[smell-description]Packages/Subsystems with a high number of classes/packages indicate that they serve more than one specific responsibility. Splitting them up will lead to a better separation of concerns and especially to better understandability.
+[smell-aka]IM
+[smell-aka]GC
+[smell-aka]LC
+[smell-aka]BL
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]PHU
+[smell-category]ARCH
+[smell-name]Package Hierarchies Unbalanced
+[smell-description]This smell arises when package structure of a software system is unbalanced. If the package structure is unbalanced, understandability is impaired. 
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]PNCN
+[smell-category]ARCH
+[smell-name]Packages Not Clearly Named
+[smell-description]Especially packages containing classes that are not domain-oriented are often named ambiguously, and assigning of identical names occurs. If various packages with names like util, base, framework and toolkit can be found side by side in the same system and on the same level, it will be hard for developers to find the package containing the desired class right away.
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]NS
+[smell-category]ARCH
+[smell-name]No Subsystems
+[smell-description]From a certain size on, a system’s structure – if it is defined exclusively on the package level – will become increasingly incomprehensible. If the system consists of more than 100 packages, for example, it is extremely difficult to recognize and define the structure between the packages and to maintain it consistently.
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]TMS
+[smell-category]ARCH
+[smell-name]Too Many Subsystems
+[smell-description]If a system consists of many more than 30 subsystems without further grouping, the understandability of the system will be seriously impaired. This many subsystems and their interrelations can no longer be handled.
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]SAB
+[smell-category]ARCH
+[smell-name]Subsystem-API Bypassed
+[smell-description]Bypassing the subsystem-API and directly accessing the internal implementation of the component is a practice that is not only common, but also potentially fatal. The clients actually unauthorizedly expand the subsystem-API. 
+[smell-aka]LE
+[smell-aka]VDG
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]SATL
+[smell-category]ARCH
+[smell-name]Subsystem-API Too Large
+[smell-description]When the API of a subsystem becomes too large in relation to the implementation, the main purpose of the subsystem is not served. A major part of the system will be visible to all other subsystems. Therefore, no significant complexity reduction has been achieved.
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]OG
+[smell-category]ARCH
+[smell-name]Overgeneralization
+[smell-description]In order to assure that subsystems provide the greatest extent of reusability, they must be flexibly applicable. This generalization can be overdone though, which will result in the subsystem’s overgeneralization.
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]NL
+[smell-category]ARCH
+[smell-name]No Layers
+[smell-description]Often layers are formed based on the large areas in which modification requirements emerge. If no layers exist, this kind of orientation aid is missing.
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]URL
+[smell-category]ARCH
+[smell-name]Upward References between Layers
+[smell-description]If a layer uses a higher located layer, the basic principle of layering has been ignored. Modifications of one layer cannot only have consequences for the higher layers, but also for those that are located further below.
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]SLV
+[smell-category]ARCH
+[smell-name]Strict Layers Violated
+[smell-description]It can always happen that a layer skips the one directly beneath it and accesses a layer further below instead, be it accidentally or on purpose. If layers that are basically strict are violated, their alterability is affected. The number of a layer’s potential clients will increase, and the dependency between layers will grow.
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]IPOL
+[smell-category]ARCH
+[smell-name]Inheritance between Protocol-Oriented Layers
+[smell-description]Inheritance between protocol-oriented layers is not allowed. Other-wise a stricter than desirable coupling would occur. In particular it would become impossible to reimplement the layer that inherited in a non-object-oriented programming language later on.
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]TML
+[smell-category]ARCH
+[smell-name]Too Many Layers
+[smell-description]Too many layers in a system often cause too many indirections. One indication of unnecessary indirections are dumb delegations: one method simply invokes another method without implementing any functionality of its own. 
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]RVSL
+[smell-category]ARCH
+[smell-name]References between Vertically Separated Layers
+[smell-description]References (regardless of which kind) between vertically separated layers create dependencies between layers. Thus the purpose of product lines can no longer be served.
+[smell-ref]Lippert
+[smell-end]
+
+[smell]
+[smell-id]CIM
+[smell-category]CONFIG_D
+[smell-name]Insufficient Modularization
+[smell-description]An abstraction suffers from this smell when it is large or complex and thus can be modularized further. This smell arises in following forms: 1) if a file contains a declaration of more than one class or 'define', or 2) if the size of a class declaration is large crossing a certain threshold, or 3) the complexity of a class or 'define' is high.
+[smell-aka]IM
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]MDC
+[smell-category]CONFIG_I
+[smell-name]Missing Default Case
+[smell-description]A default case is missing in a 'case' or 'selector' statement.
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]INC
+[smell-category]CONFIG_I
+[smell-name]Inconsistent Naming Convention
+[smell-description]The used naming convention deviates from the recommended naming convention.
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]CE
+[smell-category]CONFIG_I
+[smell-name]Complex Expression
+[smell-description]A program contains a difficult to understand complex expression.
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]DE2
+[smell-category]CONFIG_I
+[smell-name]Duplicate Entity
+[smell-description]Duplicate hash keys or duplicate parameters present in the configuration code.
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]MPA
+[smell-category]CONFIG_I
+[smell-name]Misplaced Attribute
+[smell-description]Attribute placement within a resource or a class has not followed a recommended order (for example, mandatory attributes should be specified before the optional attributes).
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]IPA
+[smell-category]CONFIG_I
+[smell-name]Improper Alignment
+[smell-description]The code is not properly aligned (such as all the arrows in a resource declaration) or tabulation characters are used.
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]IPV
+[smell-category]CONFIG_I
+[smell-name]Invalid Property Value
+[smell-description]An invalid value of a property or attribute is used (such as a file mode specified using 3-digit octal value rather than 4-digit).
+[smell-ref]Tushar
+[smell-end]
+
+
+[smell]
+[smell-id]IT
+[smell-category]CONFIG_I
+[smell-name]Incomplete Tasks
+[smell-description]The code has 'fixme' and 'todo' tags indicating incomplete tasks.
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]DSU
+[smell-category]CONFIG_I
+[smell-name]Deprecated Statement Usage
+[smell-description]The configuration code uses one of the deprecated statements (such as 'import').
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]IQU
+[smell-category]CONFIG_I
+[smell-name]Improper Quote Usage
+[smell-description]Single and double quotes are not used properly. For example, boolean values should not be quoted and variable names should not be used in single quoted strings.
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]LS
+[smell-category]CONFIG_I
+[smell-name]Long Statement
+[smell-description]The code contains long statements (that typically do not fit in a screen).
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]IC
+[smell-category]CONFIG_I
+[smell-name]Incomplete Conditional
+[smell-description]An 'if..elsif' construct used without a terminating 'else' clause.
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]UV
+[smell-category]CONFIG_I
+[smell-name]Unguarded Variable
+[smell-description]A variable is not enclosed in braces when being interpolated in a string.
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]MAC
+[smell-category]CONFIG_D
+[smell-name]Multifaceted Abstraction
+[smell-description]Each abstraction (e.g. a resource, class, 'define', or module) should be designed to specify the properties of a single piece of software. In other words, each abstraction should follow single responsibility principle. An abstraction suffers from multifaceted abstraction when the elements of the abstraction are not cohesive. The smell may occur in the following two forms: 1) a resource (file, package, or service) declaration specifies attributes of more than one physical resources, or 2) all the language elements declared in a class, 'define', or a module are not cohesive.
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]UAC
+[smell-category]CONFIG_D
+[smell-name]Unnecessary Abstraction
+[smell-description]A class, 'define', or module must contain declarations or statements specifying the properties of a desired system. An empty class, 'define', or module shows the presence of unnecessary abstraction smell and thus must be removed.
+[smell-ref]Tushar
+[smell-end]
+
+
+[smell]
+[smell-id]IAC
+[smell-category]CONFIG_D
+[smell-name]Imperative Abstraction
+[smell-description]Puppet is declarative in nature. The presence of imperative statements (such as 'exec') defies the purpose of the language. An abstraction containing numerous imperative statements suffers from imperative abstraction smell.
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]MAC2
+[smell-category]CONFIG_D
+[smell-name]Missing Abstraction
+[smell-description]Resource declarations and statements are easy to use and reuse when they are encapsulated in an abstraction such as a class or 'define'. A module suffers from the missing abstraction smell when resources and language elements are declared and used without encapsulating them in an abstraction.
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]DB
+[smell-category]CONFIG_D
+[smell-name]Duplicate Block
+[smell-description]A duplicate block of statements more than a threshold indicates that probably a suitable abstraction definition is missing. Thus a module containing such a duplicate block suffers from duplicate block smell.
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]CBH
+[smell-category]CONFIG_D
+[smell-name]Broken Hierarchy
+[smell-description]The use of inheritance must be limited to the same module. The smell occurs when, the inheritance is used across namespaces where inheritance is not natural ('is-a' relationship is not followed).
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]UM
+[smell-category]CONFIG_D
+[smell-name]Unstructured Module
+[smell-description]Each module in a configuration repository must have a well-defined and consistent module structure.  An ad-hoc structure of a repository suffers from \textit{unstructured module} smell that impacts understandability and predictability of the repository.
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]DS
+[smell-category]CONFIG_D
+[smell-name]Dense Structure
+[smell-description]This smell arises when a configuration code repository has excessive and dense dependencies without any particular structure.
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]CDE
+[smell-category]CONFIG_D
+[smell-name]Deficient Encapsulation
+[smell-description]This smell arises when a node definition or ENC (External Node Classifier) declares a set of global variables to be picked up by the included classes in the definition.
+[smell-ref]Tushar
+[smell-end]
+
+[smell]
+[smell-id]CWM
+[smell-category]CONFIG_D
+[smell-name]Weakened Modularity
+[smell-description]Each module must strive for high cohesion and low coupling. This smell arises when a module exhibits high coupling and low cohesion.
+[smell-ref]Tushar
 [smell-end]
 
 [smell]
@@ -255,16 +1068,249 @@
 [smell-category]TEST
 [smell-name]General Fixture
 [smell-description]The general fixture smell occurs if test classes contain broad functionality in the implicit setup, and different tests only access part of the fixture. Problems caused by a general fixture are two-fold: firstly, the cause-effect relationship between fixture and the expected outcome is less visible, and tests are harder to read and understand. This can cause tests to be fragile: a change that should be unrelated affects tests because too much functionality is covered in the fixture. Secondly, the test execution performance can deteriorate, and test execution times may eventually lead to developers avoiding to execute tests.
-[smell-ref]Michaela
-[smell-aka]
+[smell-ref]Arie
 [smell-end]
 
 [smell]
-[smell-id]CIM
-[smell-category]CONFIG
-[smell-name]Insufficient Modularization (Configuration)
-[smell-description]An abstraction suffers from this smell when it is large or complex and thus can be modularized further.
-[smell-aka]
-[smell-ref]Tushar
+[smell-id]TM
+[smell-category]TEST
+[smell-name]Test Maverick
+[smell-description]A test method is a maverick when the class comprising the test method contains an implicit setup, but the test method is completely independent from the implicit setup procedure. The setup procedure will be executed before the test method is executed, but it is not needed.
+[smell-ref]Michaela
 [smell-end]
 
+
+[smell]
+[smell-id]DF
+[smell-category]TEST
+[smell-name]Dead Fields
+[smell-description]The dead field smell occurs when a class or its super classes have fields that are never used by any test method. Often dead fields are inherited. This can indicate a non-optimal inheritance structure, or that the super class conflicts with the single responsibility principle. Also, dead fields within the test class itself can indicate incomplete or deprecated development activities.
+[smell-ref]Michaela
+[smell-end]
+
+[smell]
+[smell-id]LCTM
+[smell-category]TEST
+[smell-name]Lack of Cohesion of Test Methods
+[smell-description]The smell Lack of Cohesion of test methods occurs if test methods are grouped together in one test class, but they are not cohesive. 
+[smell-ref]Michaela
+[smell-end]
+
+[smell]
+[smell-id]OILS
+[smell-category]TEST
+[smell-name]Obscure In-Line Setup
+[smell-description]An in-line setup should consist of only the steps and values essential to understanding the test. Essential but irrelevant steps should be encapsulated into helper methods. An obscure in-line setup covers too much setup functionality within the test method. This can hinder developers in seeing the relevant verification steps of the test.
+[smell-ref]Michaela
+[smell-end]
+
+[smell]
+[smell-id]VHS
+[smell-category]TEST
+[smell-name]Vague Header Setup
+[smell-description]A vague header setup smell occurs when fields are initialized in the header of a class, but not in implicit setup. It is a smell as the behavior of the code is not explicitly defined, and depends on the field modifier (static or member), as well as on the implementation of the test framework. Further, field declarations are not restricted to the header of a class, but can occur anywhere within the class. Vague header setups hamper code comprehension and maintainability.
+[smell-ref]Michaela
+[smell-end]
+
+[smell]
+[smell-id]MG
+[smell-category]TEST
+[smell-name]Mystery Guest
+[smell-description]When a test uses external resources, such as a file containing test data, the test is no longer self contained. Consequently, there is not enough information to understand the tested functionality, making it hard to use that test as documentation
+[smell-ref]Arie
+[smell-end]
+
+[smell]
+[smell-id]RO
+[smell-category]TEST
+[smell-name]Resource Optimism
+[smell-description]Test code that makes optimistic assumptions about the existence (or absence) and state of external resources (such as particular directories or database tables) can cause non-deterministic behavior in test outcomes.
+[smell-ref]Arie
+[smell-end]
+
+[smell]
+[smell-id]TRW
+[smell-category]TEST
+[smell-name]Test Run War
+[smell-description]Such wars arise when the tests run fine as long as you are the only one testing but fail when more programmers run them. This is most likely caused by resource interference: some tests in your suite allocate resources such as temporary files that are also used by others.
+[smell-ref]Arie
+[smell-end]
+
+[smell]
+[smell-id]ET
+[smell-category]TEST
+[smell-name]Eager Test
+[smell-description]When a test method checks several methods of the object to be tested, it is hard to read and understand, and therefore more difficult to use as documentation. Moreover, it makes tests more dependent on each other and harder to maintain.
+[smell-ref]Arie
+[smell-end]
+
+[smell]
+[smell-id]LT
+[smell-category]TEST
+[smell-name]Lazy Test
+[smell-description]This occurs when several test methods check the same method using the same fixture (but for example check the values of different instance variables). 
+[smell-ref]Arie
+[smell-end]
+
+[smell]
+[smell-id]AR
+[smell-category]TEST
+[smell-name]Assertion Roulette
+[smell-description]"Guess what’s wrong?" This smell comes from having a number of assertions in a test method that have no explanation. If one of the assertions fails, you do not know which one it is.
+[smell-ref]Arie
+[smell-end]
+
+[smell]
+[smell-id]TIT
+[smell-category]TEST
+[smell-name]Indirect Testing
+[smell-description]A test class is supposed to test its counterpart in the production code. It starts to smell when a test class contains methods that actually perform tests on other objects (for example because there are references to them in the class-to-be-tested).
+[smell-ref]Arie
+[smell-end]
+
+[smell]
+[smell-id]FTO
+[smell-category]TEST
+[smell-name]For Testers Only
+[smell-description]When a production class contains methods that are only used by test methods, these methods either (1) are not needed and can be removed, or (2) are only needed to set up a fixture for testing.
+[smell-ref]Arie
+[smell-end]
+
+[smell]
+[smell-id]TCD
+[smell-category]TEST
+[smell-name]Test Code Duplication
+[smell-description]Test code may contain undesirable duplication. In particular the parts that set up test fixtures are susceptible to this problem.
+[smell-ref]Arie
+[smell-end]
+
+[smell]
+[smell-id]ACE
+[smell-category]ARCH
+[smell-name]Connector Envy
+[smell-description]Connectors provide communication, coordination, conversion, and facilitation. This smell occurs when components encompass extensive interaction-related functionality that should be delegated to a connector.
+[smell-ref]Joshua
+[smell-end]
+
+[smell]
+[smell-id]SPF
+[smell-category]ARCH
+[smell-name]Scattered Parasitic Functionality
+[smell-description]Scattered Parasitic Functionality describes a system where multiple components are responsible for realizing the same high-level concern and, additionally, some of those components are responsible for orthogonal concerns. This smell violates the principle of separation of concerns.
+[smell-ref]Joshua
+[smell-end]
+
+[smell]
+[smell-id]AAI
+[smell-category]ARCH
+[smell-name]Ambiguous Interfaces
+[smell-description]Ambiguous Interfaces are interfaces that offer only a single, general entry-point into a component. This smell appears especially in event-based publish-subscribe systems, where interactions are not explicitly modeled and multiple components exchange event messages via a shared event bus.
+[smell-ref]Joshua
+[smell-end]
+
+[smell]
+[smell-id]EAC
+[smell-category]ARCH
+[smell-name]Extraneous Adjacent Connector
+[smell-description]The Extraneous Adjacent Connector smell occurs when two connectors of different types are used to link a pair of components.
+[smell-ref]Joshua
+[smell-end]
+
+[smell]
+[smell-id]AFC
+[smell-category]ARCH
+[smell-name]Feature Concentration
+[smell-description]A component suffers from the feature concentration architecture smell when one architectural component realizes more than one architecture concern.
+[smell-ref]Hugo
+[smell-end]
+
+[smell]
+[smell-id]AUD
+[smell-category]ARCH
+[smell-name]Unstable Dependency
+[smell-description]Stable Abstractions principle states that components that are maximally stable should be maximally abstract and unstable components must be concrete. Unstable dependency architecture smell arises in a component when the component depends on a less stable component.
+[smell-ref]Fontana
+[smell-end]
+
+
+[smell]
+[smell-id]DCA
+[smell-category]DBase
+[smell-name]Compound Attribute
+[smell-description]This smell arises when a column is used to store a non-atomic attribute. For instance, storing comma-separated lists for an attribute to avoid creating an intersection table for a many-to-many relationship.
+[smell-ref]Karwin
+[smell-end]
+
+[smell]
+[smell-id]DAL
+[smell-category]DBase
+[smell-name]Adjacency List
+[smell-description]The smell occurs when an attribute in a table refers another row in the same table i.e., a table has a recursive relationship to model hierarchical structure.
+[smell-ref]Karwin
+[smell-end]
+
+[smell]
+[smell-id]DSK
+[smell-category]DBase
+[smell-name]Superfluous Key
+[smell-description]This smell arises when an unnecessary superfluous pseudo key is defined in a table where other attribute(s) in the table may serve as a primary key.
+[smell-ref]Karwin
+[smell-end]
+
+[smell]
+[smell-id]DMC
+[smell-category]DBase
+[smell-name]Missing Constraint
+[smell-description]This smell arises when constraints for a foreign key are missing from a schema definition.
+[smell-ref]Karwin
+[smell-end]
+
+[smell]
+[smell-id]DMD
+[smell-category]DBase
+[smell-name]Metadata as Data
+[smell-description]This smell occurs when metadata is stored as data in the form of EAV (Entity-Attribute-Value) pattern.
+[smell-ref]Karwin
+[smell-end]
+
+[smell]
+[smell-id]DPA
+[smell-category]DBase
+[smell-name]Polymorphic Association
+[smell-description]This smell occurs when a table uses a multi-purpose foreign key.
+[smell-ref]Karwin
+[smell-end]
+
+[smell]
+[smell-id]DMA
+[smell-category]DBase
+[smell-name]Multicolumn Attribute
+[smell-description]This smell arises when multiple serial columns are created for an attribute.
+[smell-ref]Karwin
+[smell-end]
+
+
+[smell]
+[smell-id]DCT
+[smell-category]DBase
+[smell-name]Clone Tables
+[smell-description]This smell occurs when a table is split horizontally in multiple tables using some criterion (for example, year) to achieve scalability.
+[smell-ref]Karwin
+[smell-end]
+
+[smell]
+[smell-id]DVAD
+[smell-category]DBase
+[smell-name]Values in Attribute Definition
+[smell-description]This smell arises when specific values are defined in an attribute definition to restrict possible values of the attribute.
+[smell-ref]Karwin
+[smell-end]
+
+
+[smell]
+[smell-id]DIA
+[smell-category]DBase
+[smell-name]Index Abuse
+[smell-description]This smell arises when the indexes are used poorly. This smell has the following variants: 1) Missing indexes, 2) Insufficient indexes, and 3) Unused indexes.
+[smell-ref]Karwin
+[smell-end]

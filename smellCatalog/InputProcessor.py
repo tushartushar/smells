@@ -60,7 +60,7 @@ class InputProcessor(object):
                 elif (re.search(des_pattern, line) != None):
                     cur_smell_obj.description = re.split(SMELL_DES, line)[1].strip()
                 elif (re.search(aka_pattern, line) != None):
-                    cur_smell_obj.aka = re.split(SMELL_AKA, line)[1].strip()
+                    cur_smell_obj.aka.append(re.split(SMELL_AKA, line)[1].strip())
                 elif (re.search(cat_pattern, line) != None):
                     cur_smell_obj.category = re.split(SMELL_CATEGORY, line)[1].strip()
                 elif (re.search(sub_pattern, line) != None):
@@ -134,3 +134,19 @@ class InputProcessor(object):
                 elif (re.search(ref_image_pattern, line) != None):
                     cur_ref_obj.image = re.split(REF_IMAGE, line)[1].strip()
         return ref_list
+
+    def populate_aka_obj(self, smell_list):
+        for smell in smell_list:
+            for aka in smell.aka:
+                smell_obj = self.find_smell_obj(aka, smell_list)
+                if smell_obj == None:
+                    print("Related smell not found: " + aka)
+                else:
+                    smell.aka_obj_list.append(smell_obj)
+
+    def find_smell_obj(self, aka, smell_list):
+        for smell in smell_list:
+            if (smell.id == aka):
+                return smell
+        return None
+

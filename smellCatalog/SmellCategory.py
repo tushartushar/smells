@@ -4,3 +4,4 @@ class SmellCategory(object):
         self.name = ""
         self.parent = ""
         self.parent_obj = None
+

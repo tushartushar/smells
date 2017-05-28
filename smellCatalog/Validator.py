@@ -6,6 +6,9 @@ def validate_id(smell_list):
         if (smell.id in list):
             print ("Every smell must have a unique id. Duplicate " + smell.id)
             exit(1)
+        elif smell.id == "":
+            print ("Empty smell id for " + smell.name)
+            exit(3)
         else:
             list.add(smell.id)
 

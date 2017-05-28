@@ -6,7 +6,8 @@ INPUT_FULE_PATH = "/Users/Tushar/Documents/Research/smells/smells.txt"
 OUTPUT_PATH = "/Users/Tushar/Documents/Research/smells/smellCatalogHtml/"
 SMELL_CATEGORY_FILE_PATH = "/Users/Tushar/Documents/Research/smells/smell-category.txt"
 REF_FILE_PATH = "/Users/Tushar/Documents/Research/smells/references.txt"
-
+#TAXONOMY_INDEX_URL = "http://www.tusharma.in/smells-taxonomy/"
+#TAXONOMY_BASE_URL = "http://www.tusharma.in/research/smelltaxonomy/"
 
 def print_smell_list(smell_list):
     for smell in smell_list:
@@ -20,6 +21,7 @@ input_processor = InputProcessor(INPUT_FULE_PATH)
 smell_list = input_processor.process()
 #print_smell_list(smell_list)
 Validator.validate_id(smell_list)
+input_processor.populate_aka_obj(smell_list)
 
 category_list = input_processor.get_category_list(SMELL_CATEGORY_FILE_PATH)
 Validator.validate_category(category_list, smell_list)
@@ -27,5 +29,8 @@ Validator.validate_category(category_list, smell_list)
 ref_list = input_processor.get_ref_list(REF_FILE_PATH)
 Validator.validate_references(ref_list, smell_list)
 
-html_generator = HtmlGenerator(OUTPUT_PATH, smell_list, category_list)
+sorted_smell_list = sorted(smell_list, key=lambda smell: smell.name)
+
+#html_generator = HtmlGenerator(OUTPUT_PATH, sorted_smell_list, category_list, TAXONOMY_INDEX_URL, TAXONOMY_BASE_URL)
+html_generator = HtmlGenerator(OUTPUT_PATH, sorted_smell_list, category_list)
 html_generator.generate()
