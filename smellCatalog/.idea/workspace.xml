@@ -24,8 +24,8 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34237996">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.31106472">
+              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -57,11 +57,10 @@
         <entry file="file://$PROJECT_DIR$/HtmlGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="201" column="43" selection-start-line="201" selection-start-column="43" selection-end-line="201" selection-end-column="43" />
+              <caret line="194" column="20" selection-start-line="194" selection-start-column="20" selection-end-line="194" selection-end-column="20" />
               <folding>
-                <element signature="e#0#22#0" expanded="true" />
-                <element signature="e#7751#7824#0" expanded="false" />
-                <element signature="e#7876#7949#0" expanded="false" />
+                <element signature="e#7962#8035#0" expanded="false" />
+                <element signature="e#8087#8160#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -434,9 +433,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#7751#7824#0" expanded="false" />
-            <element signature="e#7876#7949#0" expanded="false" />
+            <element signature="e#7962#8035#0" expanded="false" />
+            <element signature="e#8087#8160#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -498,9 +496,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#7751#7824#0" expanded="false" />
-            <element signature="e#7876#7949#0" expanded="false" />
+            <element signature="e#7962#8035#0" expanded="false" />
+            <element signature="e#8087#8160#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -562,9 +559,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="94" column="45" selection-start-line="94" selection-start-column="45" selection-end-line="94" selection-end-column="45" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#7751#7824#0" expanded="false" />
-            <element signature="e#7876#7949#0" expanded="false" />
+            <element signature="e#7962#8035#0" expanded="false" />
+            <element signature="e#8087#8160#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -626,9 +622,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="94" column="45" selection-start-line="94" selection-start-column="45" selection-end-line="94" selection-end-column="45" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#7751#7824#0" expanded="false" />
-            <element signature="e#7876#7949#0" expanded="false" />
+            <element signature="e#7962#8035#0" expanded="false" />
+            <element signature="e#8087#8160#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -690,9 +685,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#7751#7824#0" expanded="false" />
-            <element signature="e#7876#7949#0" expanded="false" />
+            <element signature="e#7962#8035#0" expanded="false" />
+            <element signature="e#8087#8160#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -754,9 +748,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#7751#7824#0" expanded="false" />
-            <element signature="e#7876#7949#0" expanded="false" />
+            <element signature="e#7962#8035#0" expanded="false" />
+            <element signature="e#8087#8160#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -832,19 +825,18 @@
     <entry file="file://$PROJECT_DIR$/HtmlGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="201" column="43" selection-start-line="201" selection-start-column="43" selection-end-line="201" selection-end-column="43" />
+          <caret line="194" column="20" selection-start-line="194" selection-start-column="20" selection-end-line="194" selection-end-column="20" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#7751#7824#0" expanded="false" />
-            <element signature="e#7876#7949#0" expanded="false" />
+            <element signature="e#7962#8035#0" expanded="false" />
+            <element signature="e#8087#8160#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34237996">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.31106472">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

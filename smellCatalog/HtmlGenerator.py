@@ -1,7 +1,9 @@
-from yattag import Doc
 import os
 
 TOP_TEXT = "<html><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">" +\
+    "<meta name=\"description\" content=\"An attempt to present a taxonomy of software smells by cataloging, classifying, and " +\
+                    "inter-relating smell definitions present in existing literature.\">" +\
+    "<meta name=\"keywords\" content=\"Code smells, architecture smells, database smells, configuration smells, test smells, catalog, taxonomy, classification\">" +\
 "<link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">" +\
 "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Poppins\">"\
 "<style>body,h1,h2,h3,h4,h5 {font-family: \"Poppins\", sans-serif}" +\
@@ -44,13 +46,10 @@ TRACKING_TEXT = "<script>" +\
 "</script>"
 
 class HtmlGenerator(object):
-    #def __init__(self, output_path, smell_list, category_list, index_url, base_url):
     def __init__(self, output_path, smell_list, category_list):
         self.smell_list = smell_list
         self.out_path = output_path
         self.category_list = category_list
-        #self.index_url = index_url
-        #self.base_url = base_url
 
     def generate(self):
         self.generate_index()
@@ -194,9 +193,3 @@ class HtmlGenerator(object):
             if smell.category_obj == cat:
                 count += 1
         return count
-
-    #def getURL(self, name):
-    #    temp = str.replace(str.lower(name)," ", "-")
-    #    temp2 = str.replace(temp, "(", "")
-    #    temp3 = str.replace(temp2, ")", "")
-    #    return self.base_url + temp3 + "/"
