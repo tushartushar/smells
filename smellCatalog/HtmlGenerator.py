@@ -45,6 +45,7 @@ TRACKING_TEXT = "<script>" +\
   "ga('send', 'pageview');"+\
 "</script>"
 
+
 class HtmlGenerator(object):
     def __init__(self, output_path, smell_list, category_list):
         self.smell_list = smell_list
@@ -127,9 +128,19 @@ class HtmlGenerator(object):
         self.appendFile(path, "<ul>")
         for cat in cat_list:
             if (cat.parent_obj == None):
-                count = self.get_smell_count_in_category(cat)
-                text = "<li><h4><a href=\"" + cat.id + ".html\">" + cat.name + " (" + str(count) + ")</a></h4></li>"
+                if(self.total_sub_categories(cat) > 0 ):
+                    text = "<li><h4><a href=\"" + cat.id + ".html\">" + cat.name + "</a></h4></li>"
+                else:
+                    count = self.get_smell_count_in_category(cat)
+                    text = "<li><h4><a href=\"" + cat.id + ".html\">" + cat.name + " (" + str(count) + ")</a></h4></li>"
                 self.appendFile(path, text)
+                self.appendFile(path, "<ul>")
+                for subCat in cat_list:
+                    if self.is_sub_category(subCat, cat):
+                        count = self.get_smell_count_in_category(subCat)
+                        sub_text = "<li><h5><a href=\"" + subCat.id + ".html\">" + subCat.name + " (" + str(count) + ")</a></h5></li>"
+                        self.appendFile(path, sub_text)
+                self.appendFile(path, "</ul>")
         self.appendFile(path, "</ul>")
         total_text = "<p><b>Total documented smells: " + str(len(self.smell_list)) + "</b></p>"
         self.appendFile(path, total_text)
@@ -142,6 +153,8 @@ class HtmlGenerator(object):
                           "performance smells, and energy smells). If you would like to point me to a (missing) smell "+\
                           "or reference, or would like to suggest something, feel free to email to me at tusharsharma@ieee.org.</p>"
         self.appendFile(path, additional_text)
+        ack_text = "<p><h5>Acknowledgement:</h5> I would like to thank Prof. Diomidis Spinellis for suggesting me many improvements.</p>"
+        self.appendFile(path, ack_text)
         self.appendFile(path, "</div>")
         self.appendFile(path, ATTRIBUTION_TEXT)
         self.appendFile(path, TRACKING_TEXT)
@@ -196,5 +209,17 @@ class HtmlGenerator(object):
         count = 0
         for smell in self.smell_list:
             if smell.category_obj == cat:
+                count += 1
+        return count
+
+    def is_sub_category(self, subCat, cat):
+        if subCat.parent_obj == cat:
+            return True
+        return False
+
+    def total_sub_categories(self, cat):
+        count = 0
+        for category in self.category_list:
+            if category.parent_obj == cat:
                 count += 1
         return count
