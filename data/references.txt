@@ -251,3 +251,38 @@
 [ref-url]http://amzn.to/2qrk7JE
 [ref-end]
 
+[reference]
+[ref-id]Felienne2012
+[ref-text]Hermans, F., Pinzger, M., & Van Deursen, A. (2012). Detecting code smells in spreadsheet formulas (pp. 409–418). Presented at the 2012 IEEE International Conference on Software Maintenance (ICSM), IEEE. 
+[ref-image]
+[ref-url]http://doi.org/10.1109/ICSM.2012.6405300
+[ref-end]
+
+[reference]
+[ref-id]Felienne2012b
+[ref-text]Hermans, F., Pinzger, M., & van Deursen, A. (2012). Detecting and visualizing inter-worksheet smells in spreadsheets (pp. 441–451). Presented at the ICSE '12: Proceedings of the 34th International Conference on Software Engineering, IEEE Press. 
+[ref-image]
+[ref-url]http://doi.org/10.1109/ICSE.2012.6227171
+[ref-end]
+
+[reference]
+[ref-id]TusharPPT
+[ref-text]Tushar Sharma. 2016. Presentation smells: How not to prepare your conference presentation.
+[ref-image]
+[ref-url]http://www.tusharma.in/smells/presentation-smells/
+[ref-end]
+
+[reference]
+[ref-id]Antonio
+[ref-text]Vetro, Antonio, Luca Ardito, Giuseppe Procaccianti, and Maurizio Morisio. "Definition, implementation and validation of energy code smells: an exploratory study on an embedded system." (2013): 34-39.
+[ref-image]
+[ref-url]http://porto.polito.it/2506419/1/paper_camera_ready.pdf
+[ref-end]
+
+[reference]
+[ref-id]Smith
+[ref-text]Connie U. Smith and Lloyd G. Williams. 2000. Software performance antipatterns. In Proceedings of the 2nd international workshop on Software and performance (WOSP '00). ACM, New York, NY, USA, 127-136.
+[ref-image]
+[ref-url]http://dx.doi.org/10.1145/350391.350420
+[ref-end]
+

@@ -1314,3 +1314,278 @@ usage, and is largely not utilized.
 [smell-description]This smell arises when the indexes are used poorly. This smell has the following variants: 1) Missing indexes, 2) Insufficient indexes, and 3) Unused indexes.
 [smell-ref]Karwin
 [smell-end]
+
+[smell]
+[smell-id]SMO
+[smell-category]SPREADSHEET
+[smell-name]Multiple Operations
+[smell-description]Analogous to a long method, a formula with many different operations will likely be harder to understand than a shorter one. Especially since in most spreadsheet programs, there is limited space to view a formula, causing long formulas to be cut off.
+[smell-aka]LM
+[smell-ref]Felienne2012
+[smell-end]
+
+[smell]
+[smell-id]SMR
+[smell-category]SPREADSHEET
+[smell-name]Multiple References
+[smell-description]The formula equivalent of this smell occurs when a formula references many different other cells. Locating the different cells that are contained in a formula can be challenging.
+[smell-ref]Felienne2012
+[smell-aka]LPL
+[smell-end]
+
+[smell]
+[smell-id]SCC
+[smell-category]SPREADSHEET
+[smell-name]Conditional Complexity
+[smell-description]A formula with many conditional operations is considered smelly. Many conditional branches make a formula hard to read and understand.
+[smell-ref]Felienne2012
+[smell-end]
+
+[smell]
+[smell-id]SLCC
+[smell-category]SPREADSHEET
+[smell-name]Long Calculation Chain
+[smell-description]Spreadsheet formulas can refer to each other, hence creating chains of calculation. To understand the meaning of such a formula, a spreadsheet user has to trace along multiple steps to find the origin of the data. To lower the number of steps of a calculation chain, steps of the chain could be merged into one cell.
+[smell-ref]Felienne2012
+[smell-end]
+
+[smell]
+[smell-id]SDF
+[smell-category]SPREADSHEET
+[smell-name]Duplicated Formulas
+[smell-description]This smell occurs where some formulas are partly the same as others. Consider, for example, a worksheet that contains a cell with formula SUM(A1:A6)+10% and a second formula SUM(A1:A6)+20%. This formula exhibits duplication; the part SUM(A1:A6) is contained in more than one formula. Such a duplication impacts maintainainability and readability. 
+[smell-ref]Felienne2012
+[smell-end]
+
+[smell]
+[smell-id]SII
+[smell-category]SPREADSHEET
+[smell-name]Inappropriate Intimacy
+[smell-description]This smell occurs when a worksheet overly related to another worksheet. This is possibly unhealthy for several reasons. First, adapting one sheet likely requires inspecting the other worksheet, requiring the spreadsheet user to switch back and forth between the two worksheets, increasing the chance that errors are made. Secondly, since there is a strong semantic connection between the two worksheets, the fact that they are split could influence understandability.
+[smell-aka]II
+[smell-ref]Felienne2012b
+[smell-end]
+
+
+[smell]
+[smell-id]SFE
+[smell-category]SPREADSHEET
+[smell-name]Feature Envy
+[smell-description]This smell occurs when there is a formula that is more interested in cells from another worksheet. In such a case, it would be better to move the formula to that worksheet. This will likely improve understandability, since the formula is then closer to the cells it is referring to.
+[smell-aka]FE
+[smell-ref]Felienne2012b
+[smell-end]
+
+[smell]
+[smell-id]SMM
+[smell-category]SPREADSHEET
+[smell-name]Middle Man
+[smell-description]This smell arises in worksheets where 'middle man' formulas occur, that contains only a reference to another cell and calculations, like the formula '=Sheet1!A2.' A worksheet suffering from the Middle Man smell could complicate the structure of a spreadsheet, and therefore reduces spreadsheet quality.
+[smell-aka]MM
+[smell-ref]Felienne2012b
+[smell-end]
+
+[smell]
+[smell-id]SSS
+[smell-category]SPREADSHEET
+[smell-name]Shotgun Surgery
+[smell-description]This smell occurs due to a formula F that is referred to by many different formulas in different worksheets. The chances are high that many of the formulas that refer to F will have to be changed if F is changed. Shotgun Surgery could have an impact on the maintainability of a spreadsheet, since it requires the user to make a number of changes when F is changed.
+[smell-aka]SS
+[smell-ref]Felienne2012b
+[smell-end]
+
+[smell]
+[smell-id]PTH
+[smell-category]PRESENTATION
+[smell-name]Text Hell
+[smell-description]A presentation is not a document nor a teleprompter; hence, don’t try to stuff all the information in words. If a slide contains a lot of text, your audience will try to read the text and will not bother what you are speaking. Slides are for defining the flow and providing visual information such as images and videos; thus, use it in the spirit and not otherwise.
+[smell-ref]TusharPPT
+[smell-end]
+
+[smell]
+[smell-id]PCM
+[smell-category]PRESENTATION
+[smell-name]Color-mania
+[smell-description]Slide design is not a competition where slides with maximum colors used will win. A human mind takes some time to identify and process the colors; therefore, simplify your slides and avoid multicolor text so that the audience pay attention to content and not to the colors. Use preferably one (or maximum two) colors for the text in a slide and use them consistently throughout your presentation. Also, pay attention to the background color and contrast; avoid multicolor background and make sure that foreground color of your slides is contrasting with slide’s background color.
+[smell-ref]TusharPPT
+[smell-end]
+
+[smell]
+[smell-id]PBB
+[smell-category]PRESENTATION
+[smell-name]Brother of the Bride
+[smell-description]In many cultures, brother of the bride has many responsibilities at the time of his sister’s marriage. Don’t make your slides look like such a brother. In other words, follow single responsibility principle and put one concept, idea, or thought in a slide.
+[smell-ref]TusharPPT
+[smell-end]
+
+[smell]
+[smell-id]PBYOB
+[smell-category]PRESENTATION
+[smell-name]BYOB (Bring Your Own Binocular)
+[smell-description]The text (or image) that you put on your slides must be readable from the back of the room where you are going to present. The audience does not carry binoculars; thus, you must not pretend the same.
+[smell-ref]TusharPPT
+[smell-end]
+
+
+[smell]
+[smell-id]PHIPU
+[smell-category]PRESENTATION
+[smell-name]HiPU (Highly Paid but Useless) Headers
+[smell-description]Headers get the highest attention because of their size. In many situations, slide headers are verbose and do not convey additional useful information. Avoid headers in such cases, or reduce their size.
+[smell-ref]TusharPPT
+[smell-end]
+
+[smell]
+[smell-id]PSP
+[smell-category]PRESENTATION
+[smell-name]Secretary of HiPU
+[smell-description]A line under the slide headers is analogous to a secretary of HiPU. Do not underline the slide header. It populates the slide with unnecessary noise. In fact, underlines must be avoided not only in headers but also in the body text.
+[smell-ref]TusharPPT
+[smell-end]
+
+[smell]
+[smell-id]PDYK
+[smell-category]PRESENTATION
+[smell-name]Do You Know Who I Am
+[smell-description]The title slide may contain affiliation about the contributors and presenter; however, repeating this information (in the form of university/company name or logo) at the bottom (or top) of every slide is unnecessary and annoying.
+[smell-ref]TusharPPT
+[smell-end]
+
+[smell]
+[smell-id]PBBB
+[smell-category]PRESENTATION
+[smell-name]Bullet, [sub-]bullet, [sub-sub-]bullet
+[smell-description]One level of bullets in a slide is preferred. Use the second level of bullets only when it is really necessary. Third-level bullets must be avoided.
+[smell-ref]TusharPPT
+[smell-end]
+
+[smell]
+[smell-id]PLV
+[smell-category]PRESENTATION
+[smell-name]It’s Las Vegas
+[smell-description]Animations must be used only where they make sense. Over usage of animations with a lot of moving objects distract the audience and thus, must be avoided.
+[smell-ref]TusharPPT
+[smell-end]
+
+[smell]
+[smell-id]PCS
+[smell-category]PRESENTATION
+[smell-name]Chaotic Stylist
+[smell-description]All the slides in a presentation must follow a single style consistently. The style includes text size and color for both body text and headers, color, width, and drawing pattern of shapes, and border style and shadow of image objects. Inconsistency shows recklessness of the presenter and thus, must be avoided.
+[smell-ref]TusharPPT
+[smell-end]
+
+[smell]
+[smell-id]PSS
+[smell-category]PRESENTATION
+[smell-name]Stung by Spell-bee
+[smell-description]Making a spelling mistake is analogous to committing a crime. Spell-checkers are available on each presentation preparing software, so there is no excuse for making spelling mistakes. Each presentation must go through a spell-checker to avoid unnecessary embarrassment.
+[smell-ref]TusharPPT
+[smell-end]
+
+
+[smell]
+[smell-id]PDD
+[smell-category]PRESENTATION
+[smell-name]The Devil of Details
+[smell-description]Do not try to explain the nitty-gritty of your method or idea in a short presentation. Often, the short time is not enough to allow the presenter to go in the details. An attempt to quickly cover the details will result in the losing attention of the audience. Abstract the idea, simply complex figures, and use metaphors to communicate your ideas effectively.
+[smell-ref]TusharPPT
+[smell-end]
+
+[smell]
+[smell-id]EPV
+[smell-category]ENERGY
+[smell-name]Parameter By Value
+[smell-description]This smell occurs when a parameter is passed by value to a function. Passed by value parameters consume more memory and wastes CPU-time by copying the value of the data structure at its original location to the new location.
+[smell-ref]Antonio
+[smell-end]
+
+[smell]
+[smell-id]ESA
+[smell-category]ENERGY
+[smell-name]Self Assignment
+[smell-description]This smell occurs when a variable is assigned to itself (e.g., x=x).
+[smell-ref]Antonio
+[smell-end]
+
+[smell]
+[smell-id]EME
+[smell-category]ENERGY
+[smell-name]Mutual Exclusion OR
+[smell-description]This smell occurs when an OR operator is used between two mutually exclusive conditions (thus always evaluating to true).
+[smell-ref]Antonio
+[smell-end]
+
+[smell]
+[smell-id]EDLS
+[smell-category]ENERGY
+[smell-name]Dead Local Store
+[smell-description]This smell occurs when a statement assigns a value to a local variable which is not used in any subsequent instruction. A variant of the smell occurs when a return statement assigns a value to a local variable which is not used in any subsequent instruction. (i.e. return(x=1); )
+[smell-ref]Antonio
+[smell-end]
+
+[smell]
+[smell-id]ESRA
+[smell-category]ENERGY
+[smell-name]Switch Redundant Assignment
+[smell-description]This smell occurs when a redundant assignment is made in a switch statement: for example, assigning a value to a variable in a case block without a following break instruction, then re-assigning another value to the same variable in the subsequent case block.
+[smell-ref]Antonio
+[smell-end]
+
+[smell]
+[smell-id]ERC
+[smell-category]ENERGY
+[smell-name]Repeated Conditionals
+[smell-description]This smell occurs when a condition is evaluated twice (e.g., x==0 -- x==0).
+[smell-ref]Antonio
+[smell-end]
+
+[smell]
+[smell-id]ENSC
+[smell-category]ENERGY
+[smell-name]Non Short Circuit Operators
+[smell-description]Code using non-short-circuit logic boolean operators (e.g., & or ∥) rather than short-circuit logic ones (&& or ∥∥). Non-short-circuit logic causes both sides of the expression to be evaluated even when the result can be inferred from knowing the left-hand side. 
+[smell-ref]Antonio
+[smell-end]
+
+[smell]
+[smell-id]EUCF
+[smell-category]ENERGY
+[smell-name]Useless Control Flow
+[smell-description]Control flow constructs which do not modify the flow of the program, regardless of whether or not the branch is taken (e.g., an if statement with an empty body).
+[smell-ref]Antonio
+[smell-end]
+
+[smell]
+[smell-id]PGC
+[smell-category]PERFORMANCE
+[smell-name]God Class
+[smell-description]From a performance perspective, a “god” class creates problems by causing excessive message traffic. In the behavioral form of the problem, the excessive traffic occurs as the “god” class requests and updates the data it needs to control the system from subordinate classes. In the data form, the problem is reversed as subordinates request and update data in the “god” class. In both cases, the number of messages required to perform a function is larger than it would be in a design that assigned related data and behavior to the same class.
+[smell-ref]Smith
+[smell-aka]GC
+[smell-end]
+
+
+[smell]
+[smell-id]PEDA
+[smell-category]PERFORMANCE
+[smell-name]Excessive Dynamic Allocation
+[smell-description]Dynamic allocation is expensive. When an object is created, the memory to contain it (and any objects that it contains) must be allocated from the heap and any initialization code for the object and the contained objects must be executed. When the object is no longer needed, necessary clean-up must be performed and the reclaimed memory must be returned to the heap to avoid “memory leaks.” While the overhead for creating and destroying a single object may be small, when a large number of objects are frequently created and then destroyed, the performance impact may be significant.
+[smell-ref]Smith
+[smell-end]
+
+[smell]
+[smell-id]PCTH
+[smell-category]PERFORMANCE
+[smell-name]Circuitous Treasure Hunt
+[smell-description]Software retrieves data from a first table, uses those results to search a second table, retrieves data from that table, and so on until the “ultimate results” are obtained. The impact on performance is the large amount of database processing required each time the “ultimate results” are needed. It is especially problematic when the data is on a remote server and each access requires transmitting all the intermediate queries and their results via a network and perhaps through other servers in a multi-tier environment.
+[smell-ref]Smith
+[smell-end]
+
+[smell]
+[smell-id]POLB
+[smell-category]PERFORMANCE
+[smell-name]The One Lane Bridge
+[smell-description]One Lane Bridge is a point in the execution where one, or only a few, processes may continue to execute concurrently. All other processes must wait. It frequently occurs in applications that access a database. Here, a lock ensures that only one process may update the associated portion of the database at a time. It may also occur when a set of processes make a synchronous call to another process that is not multi-threaded; all of the processes making synchronous calls must take turns “crossing the bridge.”
+[smell-ref]Smith
+[smell-end]

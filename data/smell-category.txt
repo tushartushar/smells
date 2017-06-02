@@ -51,3 +51,27 @@
 [smell-category-name]Database Smells
 [smell-category-parent]
 [define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]SPREADSHEET
+[smell-category-name]Spreadsheet Smells
+[smell-category-parent]
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]PRESENTATION
+[smell-category-name]Presentation Smells
+[smell-category-parent]
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]ENERGY
+[smell-category-name]Energy Smells
+[smell-category-parent]CODE
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]PERFORMANCE
+[smell-category-name]Performance Smells
+[smell-category-parent]CODE
+[define-smell-category-end]
