@@ -9,13 +9,13 @@ You can make following two types of contributions:
 - Add more information related to smells (using the pre-defined templates; see below)
 - Modify the python program that generates Html pages
 
-##Compilation and execution
+## Compilation and execution
 Specify the path variables in the Main.py, and execute it using python3. I used PyCharm CE for developing and executing the program.
 
 ## Templates
 You may add new smells, categories, and references to the collection. The new items must follow the template specified below.
 
-###Smell template
+### Smell template
 ```
 [smell]
 [smell-id]XX (must be unique)
@@ -27,7 +27,7 @@ You may add new smells, categories, and references to the collection. The new it
 [smell-end]
 ```
 
-###Category template
+### Category template
 ```
 [define-smell-category]
 [smell-category-id] must be unique
@@ -36,7 +36,7 @@ You may add new smells, categories, and references to the collection. The new it
 [define-smell-category-end]
 ```
 
-###Reference template
+### Reference template
 ```
 [reference]
 [ref-id]must be unique
