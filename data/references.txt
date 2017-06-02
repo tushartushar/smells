@@ -63,56 +63,56 @@
 [ref-text]Gil JY, Maman I. Micro patterns in Java code. SIGPLAN Notes October 2005;40:97–116.
 [ref-image]
 [ref-url]
-[ref-end] 
+[ref-end]
 
 [reference]
 [ref-id]Ratzinger
 [ref-text]Ratzinger J, Fischer M, Gall H. Improving evolvability through refactoring. In: Proceed- ings of the 2005 international workshop on mining software repositories, MSR ‘05, New York, NY, USA; 2005. p. 1–5.
 [ref-image]
 [ref-url]
-[ref-end] 
+[ref-end]
 
  [reference]
  [ref-id]Demeyer
  [ref-text]Demeyer S, Ducasse S, Nierstrasz O. Object-oriented reengineering patterns. Morgan Kaufmann; 2002.
  [ref-image]
  [ref-url]
- [ref-end] 
+ [ref-end]
 
 [reference]
 [ref-id]Page-Jones
 [ref-text]Page-Jones M. The practical guide to structured systems design. 2nd ed. Prentice Hall; 1988.
 [ref-image]
 [ref-url]
-[ref-end] 
+[ref-end]
 
 [reference]
 [ref-id]Marquardt
 [ref-text]Marquardt K. Dependency structures–architectural diagnoses and therapies. In: Proc. of EuroPLoP; 2001.
 [ref-image]
 [ref-url]
-[ref-end] 
+[ref-end]
 
 [reference]
 [ref-id]Miller
 [ref-text]Miller BK. Object-oriented architecture measures. In: Proceedings of the thirty-second annual Hawaii international conference on system sciences, vol. 8. HICSS ‘99; 1999. p. 8069.
 [ref-image]
 [ref-url]
-[ref-end] 
+[ref-end]
 
 [reference]
 [ref-id]Beyer
 [ref-text]Beyer D, Lewerentz C. Crocopat: efficient pattern analysis in object-oriented programs. In: Proceedings of the 11th IEEE international workshop on program comprehension, IWPC’03, Washington, DC, USA; 2003. p. 294.
 [ref-image]
 [ref-url]
-[ref-end] 
+[ref-end]
 
 [reference]
 [ref-id]MartinRC
 [ref-text]Martin RC. Agile software development, principles, patterns, and practices. Addison-Wesley; 2003.
 [ref-image]
 [ref-url]http://amzn.to/2p7QazO
-[ref-end]  
+[ref-end]
 
 
 [reference]
@@ -120,21 +120,21 @@
 [ref-text]Bloch J. Effective Java. 2nd ed. Addison-Wesley; 2008.
 [ref-image]
 [ref-url]http://amzn.to/2pDfi2T
-[ref-end]  
+[ref-end]
 
 [reference]
 [ref-id]TrifuA
 [ref-text]Trifu A. Towards automated restructuring of object oriented systems [Ph.D. thesis]. Universitét Karlsruhe (TH), Fakultét fér Informatik; 2008.
 [ref-image]
 [ref-url]
-[ref-end]  
+[ref-end]
 
 [reference]
 [ref-id]MeyerB
 [ref-text]Meyer B. The many faces of inheritance: a taxonomy of taxonomy. Computer May 1996;29(5):105–8.
 [ref-image]
 [ref-url]
-[ref-end]   
+[ref-end]
 
 [reference]
 [ref-id]Arévalo
@@ -253,14 +253,14 @@
 
 [reference]
 [ref-id]Felienne2012
-[ref-text]Hermans, F., Pinzger, M., & Van Deursen, A. (2012). Detecting code smells in spreadsheet formulas (pp. 409–418). Presented at the 2012 IEEE International Conference on Software Maintenance (ICSM), IEEE. 
+[ref-text]Hermans, F., Pinzger, M., & Van Deursen, A. (2012). Detecting code smells in spreadsheet formulas (pp. 409–418). Presented at the 2012 IEEE International Conference on Software Maintenance (ICSM), IEEE.
 [ref-image]
 [ref-url]http://doi.org/10.1109/ICSM.2012.6405300
 [ref-end]
 
 [reference]
 [ref-id]Felienne2012b
-[ref-text]Hermans, F., Pinzger, M., & van Deursen, A. (2012). Detecting and visualizing inter-worksheet smells in spreadsheets (pp. 441–451). Presented at the ICSE '12: Proceedings of the 34th International Conference on Software Engineering, IEEE Press. 
+[ref-text]Hermans, F., Pinzger, M., & van Deursen, A. (2012). Detecting and visualizing inter-worksheet smells in spreadsheets (pp. 441–451). Presented at the ICSE '12: Proceedings of the 34th International Conference on Software Engineering, IEEE Press.
 [ref-image]
 [ref-url]http://doi.org/10.1109/ICSE.2012.6227171
 [ref-end]
@@ -286,3 +286,9 @@
 [ref-url]http://dx.doi.org/10.1145/350391.350420
 [ref-end]
 
+[reference]
+[ref-id]Mo
+[ref-text]R. Mo, Y. Cai, R. Kazman, and L. Xiao. Hotspot patterns: The formal definition and automatic detection of recurring high-maintenance architecture issues. In Proceedings of the IEEE/IFIP Working Conference on Software Architecture, 2015.
+[ref-image]
+[ref-url]https://www.cs.drexel.edu/~yfcai/papers/2015/wicsa2015.pdf
+[ref-end]
