@@ -15,6 +15,7 @@
 [smell-description]This smell arises when an operation is turned into a class. 
 [smell-ref]Girish
 [smell-aka]POL
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -34,6 +35,7 @@
 [smell-ref]Girish
 [smell-aka]DC3
 [smell-aka]SAK
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -44,6 +46,7 @@
 [smell-ref]Girish
 [smell-aka]LC2
 [smell-aka]POL
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -55,6 +58,7 @@
 [smell-aka]SG
 [smell-aka]OC
 [smell-aka]UP
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -67,6 +71,7 @@
 [smell-aka]CPP
 [smell-aka]DC2
 [smell-aka]UH2
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -75,6 +80,7 @@
 [smell-name]Deficient Encapsulation
 [smell-description]This smell occurs when the declared accessibility of one or more members of an abstraction is more permissive than actually required.
 [smell-ref]Girish
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -103,6 +109,7 @@
 [smell-ref]Girish
 [smell-aka]SS2
 [smell-aka]TQ
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -112,6 +119,7 @@
 [smell-description]This smell arises when data and/or methods that ideally should have been localized into a single abstraction are separated and spread across multiple abstractions. 
 [smell-aka]DC4
 [smell-ref]Girish
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -125,6 +133,7 @@
 [smell-aka]SAK
 [smell-aka]TLP
 [smell-ref]Girish
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -135,6 +144,7 @@
 [smell-aka]SCDG
 [smell-aka]DCP
 [smell-ref]Girish
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -143,6 +153,7 @@
 [smell-name]Hub-like Modularization
 [smell-description]This smell arises when an abstraction has dependencies (both incoming and outgoing) with a large number of other abstractions. 
 [smell-ref]Girish
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -152,6 +163,7 @@
 [smell-description]This smell arises when a DESIGN segment uses conditional logic to explicitly manage variation in behavior where a hierarchy could have been created and used to encapsulate those variations. 
 [smell-aka]SS2
 [smell-ref]Girish
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -171,6 +183,7 @@
 [smell-aka]DA
 [smell-aka]DC2
 [smell-ref]Girish
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -179,6 +192,7 @@
 [smell-name]Wide Hierarchy
 [smell-description]This smell arises when an inheritance hierarchy is "too" wide indicating that intermediate types may be missing.
 [smell-ref]Girish
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -197,6 +211,7 @@
 [smell-description]This smell arises when an inheritance hierarchy is "excessively" deep.
 [smell-aka]TDIH
 [smell-ref]Girish
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -206,6 +221,7 @@
 [smell-description]This smell arises when a subtype rejects the methods provided by its supertype(s). 
 [smell-aka]RB
 [smell-ref]Girish
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -215,6 +231,7 @@
 [smell-description]This smell arises when a supertype and its subtype conceptually do not share an "IS-A" relationship resulting in broken substitutability. 
 [smell-aka]SDRM
 [smell-ref]Girish
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -223,6 +240,7 @@
 [smell-name]Multipath Hierarchy
 [smell-description]This smell arises when a subtype inherits both directly as well as indirectly from a supertype leading to unnecessary inheritance paths in the hierarchy. 
 [smell-ref]Girish
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -231,6 +249,7 @@
 [smell-name]Cyclic Hierarchy
 [smell-description]This smell arises when a supertype in a hierarchy depends on any of its subtypes. 
 [smell-ref]Girish
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -251,6 +270,7 @@
 [smell-description]This smell occurs when a method is too long to understand. As Fowler says "...the longer a procedure (method) is, the more difficult it is to understand."
 [smell-aka]
 [smell-ref]Fowler
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -272,6 +292,7 @@
 [smell-description]This smell occurs when a method accepts a long list of parameters. According to Fowler "...long parameter lists are hard to understand, because they become inconsistent and difficult to use, and because you are forever changing them as you need more data."
 [smell-aka]
 [smell-ref]Fowler
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -739,7 +760,9 @@ usage, and is largely not utilized.
 [smell-description]This smell occurs when two or more packages/subsystems depend on each other. Cycles between packages/subsystems can be created through use, inheritance, or through a combination of use and inheritance.
 [smell-aka]SCDG
 [smell-aka]CM
+[smell-aka]CMC
 [smell-ref]Lippert
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -760,6 +783,7 @@ usage, and is largely not utilized.
 [smell-aka]LC
 [smell-aka]BL
 [smell-ref]Lippert
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -875,6 +899,7 @@ usage, and is largely not utilized.
 [smell-description]An abstraction suffers from this smell when it is large or complex and thus can be modularized further. This smell arises in following forms: 1) if a file contains a declaration of more than one class or 'define', or 2) if the size of a class declaration is large crossing a certain threshold, or 3) the complexity of a class or 'define' is high.
 [smell-aka]IM
 [smell-ref]Tushar
+[smell-tool]PUPPETEER
 [smell-end]
 
 [smell]
@@ -988,6 +1013,7 @@ usage, and is largely not utilized.
 [smell-name]Multifaceted Abstraction
 [smell-description]Each abstraction (e.g. a resource, class, 'define', or module) should be designed to specify the properties of a single piece of software. In other words, each abstraction should follow single responsibility principle. An abstraction suffers from multifaceted abstraction when the elements of the abstraction are not cohesive. The smell may occur in the following two forms: 1) a resource (file, package, or service) declaration specifies attributes of more than one physical resources, or 2) all the language elements declared in a class, 'define', or a module are not cohesive.
 [smell-ref]Tushar
+[smell-tool]PUPPETEER
 [smell-end]
 
 [smell]
@@ -996,6 +1022,7 @@ usage, and is largely not utilized.
 [smell-name]Unnecessary Abstraction
 [smell-description]A class, 'define', or module must contain declarations or statements specifying the properties of a desired system. An empty class, 'define', or module shows the presence of unnecessary abstraction smell and thus must be removed.
 [smell-ref]Tushar
+[smell-tool]PUPPETEER
 [smell-end]
 
 
@@ -1005,6 +1032,7 @@ usage, and is largely not utilized.
 [smell-name]Imperative Abstraction
 [smell-description]Puppet is declarative in nature. The presence of imperative statements (such as 'exec') defies the purpose of the language. An abstraction containing numerous imperative statements suffers from imperative abstraction smell.
 [smell-ref]Tushar
+[smell-tool]PUPPETEER
 [smell-end]
 
 [smell]
@@ -1013,6 +1041,7 @@ usage, and is largely not utilized.
 [smell-name]Missing Abstraction
 [smell-description]Resource declarations and statements are easy to use and reuse when they are encapsulated in an abstraction such as a class or 'define'. A module suffers from the missing abstraction smell when resources and language elements are declared and used without encapsulating them in an abstraction.
 [smell-ref]Tushar
+[smell-tool]PUPPETEER
 [smell-end]
 
 [smell]
@@ -1021,6 +1050,7 @@ usage, and is largely not utilized.
 [smell-name]Duplicate Block
 [smell-description]A duplicate block of statements more than a threshold indicates that probably a suitable abstraction definition is missing. Thus a module containing such a duplicate block suffers from duplicate block smell.
 [smell-ref]Tushar
+[smell-tool]PUPPETEER
 [smell-end]
 
 [smell]
@@ -1029,6 +1059,7 @@ usage, and is largely not utilized.
 [smell-name]Broken Hierarchy
 [smell-description]The use of inheritance must be limited to the same module. The smell occurs when, the inheritance is used across namespaces where inheritance is not natural ('is-a' relationship is not followed).
 [smell-ref]Tushar
+[smell-tool]PUPPETEER
 [smell-end]
 
 [smell]
@@ -1037,6 +1068,7 @@ usage, and is largely not utilized.
 [smell-name]Unstructured Module
 [smell-description]Each module in a configuration repository must have a well-defined and consistent module structure.  An ad-hoc structure of a repository suffers from \textit{unstructured module} smell that impacts understandability and predictability of the repository.
 [smell-ref]Tushar
+[smell-tool]PUPPETEER
 [smell-end]
 
 [smell]
@@ -1045,6 +1077,7 @@ usage, and is largely not utilized.
 [smell-name]Dense Structure
 [smell-description]This smell arises when a configuration code repository has excessive and dense dependencies without any particular structure.
 [smell-ref]Tushar
+[smell-tool]PUPPETEER
 [smell-end]
 
 [smell]
@@ -1053,6 +1086,7 @@ usage, and is largely not utilized.
 [smell-name]Deficient Encapsulation
 [smell-description]This smell arises when a node definition or ENC (External Node Classifier) declares a set of global variables to be picked up by the included classes in the definition.
 [smell-ref]Tushar
+[smell-tool]PUPPETEER
 [smell-end]
 
 [smell]
@@ -1061,6 +1095,7 @@ usage, and is largely not utilized.
 [smell-name]Weakened Modularity
 [smell-description]Each module must strive for high cohesion and low coupling. This smell arises when a module exhibits high coupling and low cohesion.
 [smell-ref]Tushar
+[smell-tool]PUPPETEER
 [smell-end]
 
 [smell]
@@ -1198,6 +1233,7 @@ usage, and is largely not utilized.
 [smell-name]Scattered Parasitic Functionality
 [smell-description]Scattered Parasitic Functionality describes a system where multiple components are responsible for realizing the same high-level concern and, additionally, some of those components are responsible for orthogonal concerns. This smell violates the principle of separation of concerns.
 [smell-ref]Joshua
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -1206,6 +1242,7 @@ usage, and is largely not utilized.
 [smell-name]Ambiguous Interfaces
 [smell-description]Ambiguous Interfaces are interfaces that offer only a single, general entry-point into a component. This smell appears especially in event-based publish-subscribe systems, where interactions are not explicitly modeled and multiple components exchange event messages via a shared event bus.
 [smell-ref]Joshua
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -1222,6 +1259,7 @@ usage, and is largely not utilized.
 [smell-name]Feature Concentration
 [smell-description]A component suffers from the feature concentration architecture smell when one architectural component realizes more than one architecture concern.
 [smell-ref]Hugo
+[smell-tool]DESIGNITE
 [smell-end]
 
 [smell]
@@ -1230,6 +1268,7 @@ usage, and is largely not utilized.
 [smell-name]Unstable Dependency
 [smell-description]Stable Abstractions principle states that components that are maximally stable should be maximally abstract and unstable components must be concrete. Unstable dependency architecture smell arises in a component when the component depends on a less stable component.
 [smell-ref]Fontana
+[smell-tool]DESIGNITE
 [smell-end]
 
 
@@ -1400,6 +1439,7 @@ usage, and is largely not utilized.
 [smell-name]Text Hell
 [smell-description]A presentation is not a document nor a teleprompter; hence, don’t try to stuff all the information in words. If a slide contains a lot of text, your audience will try to read the text and will not bother what you are speaking. Slides are for defining the flow and providing visual information such as images and videos; thus, use it in the spirit and not otherwise.
 [smell-ref]TusharPPT
+[smell-tool]SLIDEQ
 [smell-end]
 
 [smell]
@@ -1408,6 +1448,7 @@ usage, and is largely not utilized.
 [smell-name]Color-mania
 [smell-description]Slide design is not a competition where slides with maximum colors used will win. A human mind takes some time to identify and process the colors; therefore, simplify your slides and avoid multicolor text so that the audience pay attention to content and not to the colors. Use preferably one (or maximum two) colors for the text in a slide and use them consistently throughout your presentation. Also, pay attention to the background color and contrast; avoid multicolor background and make sure that foreground color of your slides is contrasting with slide’s background color.
 [smell-ref]TusharPPT
+[smell-tool]SLIDEQ
 [smell-end]
 
 [smell]
@@ -1424,6 +1465,7 @@ usage, and is largely not utilized.
 [smell-name]BYOB (Bring Your Own Binocular)
 [smell-description]The text (or image) that you put on your slides must be readable from the back of the room where you are going to present. The audience does not carry binoculars; thus, you must not pretend the same.
 [smell-ref]TusharPPT
+[smell-tool]SLIDEQ
 [smell-end]
 
 
@@ -1441,6 +1483,7 @@ usage, and is largely not utilized.
 [smell-name]Secretary of HiPU
 [smell-description]A line under the slide headers is analogous to a secretary of HiPU. Do not underline the slide header. It populates the slide with unnecessary noise. In fact, underlines must be avoided not only in headers but also in the body text.
 [smell-ref]TusharPPT
+[smell-tool]SLIDEQ
 [smell-end]
 
 [smell]
@@ -1457,6 +1500,7 @@ usage, and is largely not utilized.
 [smell-name]Bullet, [sub-]bullet, [sub-sub-]bullet
 [smell-description]One level of bullets in a slide is preferred. Use the second level of bullets only when it is really necessary. Third-level bullets must be avoided.
 [smell-ref]TusharPPT
+[smell-tool]SLIDEQ
 [smell-end]
 
 [smell]
@@ -1465,6 +1509,7 @@ usage, and is largely not utilized.
 [smell-name]It’s Las Vegas
 [smell-description]Animations must be used only where they make sense. Over usage of animations with a lot of moving objects distract the audience and thus, must be avoided.
 [smell-ref]TusharPPT
+[smell-tool]SLIDEQ
 [smell-end]
 
 [smell]
@@ -1473,6 +1518,7 @@ usage, and is largely not utilized.
 [smell-name]Chaotic Stylist
 [smell-description]All the slides in a presentation must follow a single style consistently. The style includes text size and color for both body text and headers, color, width, and drawing pattern of shapes, and border style and shadow of image objects. Inconsistency shows recklessness of the presenter and thus, must be avoided.
 [smell-ref]TusharPPT
+[smell-tool]SLIDEQ
 [smell-end]
 
 [smell]
@@ -1481,6 +1527,7 @@ usage, and is largely not utilized.
 [smell-name]Stung by Spell-bee
 [smell-description]Making a spelling mistake is analogous to committing a crime. Spell-checkers are available on each presentation preparing software, so there is no excuse for making spelling mistakes. Each presentation must go through a spell-checker to avoid unnecessary embarrassment.
 [smell-ref]TusharPPT
+[smell-tool]SLIDEQ
 [smell-end]
 
 
@@ -1608,7 +1655,7 @@ usage, and is largely not utilized.
 
 [smell]
 [smell-id]UNINHERIT
-[smell-category]ARCH
+[smell-category]DESIGN
 [smell-name]Unhealthy Inheritance Hierarchy
 [smell-description]A parent class that depends on its children, or a client class depending on both parent and child.
 [smell-ref]Mo
@@ -1619,5 +1666,7 @@ usage, and is largely not utilized.
 [smell-category]ARCH
 [smell-name]Cross-module Cycle
 [smell-description]A dependency cycle that crosses module boundaries.
+[smell-aka]DCP
 [smell-ref]Mo
+[smell-tool]DESIGNITE
 [smell-end]

@@ -1,0 +1,25 @@
+#Add a new tool only if the tool is available to download for all.
+
+[tool]
+[tool-id]DESIGNITE
+[tool-name]Designite
+[tool-description]Designite is a software design quality assessment tool. It supports detection of many architecture, design, and implementation smells. The tool also computes various OO design metrics, detect code clones, prepares DSM (Dependency Structure Matrix), shows distribution of smells, and performs trend analysis to help you manage technical debt and achieve structural agility of your C# code. Apart from these features, the tool also offers a console application to perform highly customizable source code analysis. The tool offers free fully-functional academic licenses for all academic purposes.
+[tool-url]http://www.designite-tools.com
+[tool-supported-languages]C#
+[tool-end]
+
+[tool]
+[tool-id]PUPPETEER
+[tool-name]Puppeteer
+[tool-description]Puppeteer is a design configuration smell detection tool for Puppet code.
+[tool-url]https://github.com/tushartushar/puppeteer
+[tool-supported-languages]Puppet
+[tool-end]
+
+[tool]
+[tool-id]SLIDEQ
+[tool-name]SlideQ
+[tool-description]SlideQ detects smells in presentations. It is realized as a plug-in for Microsoft Powerpoint.
+[tool-url]https://github.com/tushartushar/slideQ
+[tool-supported-languages]MS Powerpoint Presentation
+[tool-end]

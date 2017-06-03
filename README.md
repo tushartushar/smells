@@ -24,6 +24,7 @@ You may add new smells, categories, and references to the collection. The new it
 [smell-description]description of the smell (one line; could be multiple statements)
 [smell-aka]also known as (one line; a smell may have multiple [smell-aka] statements)
 [smell-ref]main reference in which it was defined
+[smell-tool]id of the tool that supports detection of this smell; one smell definition may have multiple [smell-tool] statements
 [smell-end]
 ```
 
@@ -44,4 +45,16 @@ You may add new smells, categories, and references to the collection. The new it
 [ref-image]it is not used currently
 [ref-url]url of the resource
 [ref-end]
+```
+
+### Tool template
+```
+[tool]
+[tool-id]must be unique
+[tool-name]
+[tool-description]a single line description; may have multiple statements
+[tool-url]it is mandatory
+[tool-supported-smell]id(s) of smells supported by tool. a tool may have multiple [tool-supported-smell] statements
+[tool-supported-languages]a single line.
+[tool-end]
 ```

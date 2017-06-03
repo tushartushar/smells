@@ -2,6 +2,7 @@ import re
 from Smell import Smell
 from SmellCategory import SmellCategory
 from Reference import Reference
+from Tool import Tool
 
 SMELL = "\[smell\]"
 SMELL_ID = "\[smell-id\]"
@@ -12,6 +13,7 @@ SMELL_AKA = "\[smell-aka\]"
 SMELL_CATEGORY = "\[smell-category\]"
 SMELL_SUBCATEGORY = "\[smell-subcategory\]"
 SMELL_REF = "\[smell-ref\]"
+SMELL_TOOL = "\[smell-tool\]"
 
 SCAT = "\[define-smell-category\]"
 SCAT_ID = "\[smell-category-id\]"
@@ -26,13 +28,21 @@ REF_IMAGE = "\[ref-image\]"
 REF_URL = "\[ref-url\]"
 REF_END = "\[ref-end\]"
 
+TOOL = "\[tool\]"
+TOOL_ID = "\[tool-id\]"
+TOOL_NAME = "\[tool-name\]"
+TOOL_DESCR = "\[tool-description\]"
+TOOL_URL = "\[tool-url\]"
+TOOL_SUPP_SMELL = "\[tool-supported-smell\]"
+TOOL_SUPP_LANGS = "\[tool-supported-languages\]"
+TOOL_END = "\[tool-end\]"
 
 class InputProcessor(object):
     def __init__(self, path):
         self.input_file_path = path
         self.smell_list = []
 
-    def process(self):
+    def get_smell_list(self):
         cur_smell_obj = None
         with open(self.input_file_path, "r", errors='ignore') as reader:
             for line in reader:
@@ -48,6 +58,7 @@ class InputProcessor(object):
                 cat_pattern = re.compile(SMELL_CATEGORY)
                 sub_pattern = re.compile(SMELL_SUBCATEGORY)
                 ref_pattern = re.compile(SMELL_REF)
+                tool_pattern = re.compile(SMELL_TOOL)
 
                 if(re.search(smell_pattern, line) != None):
                     cur_smell_obj = Smell()
@@ -67,6 +78,8 @@ class InputProcessor(object):
                     cur_smell_obj.sub_category = re.split(SMELL_SUBCATEGORY, line)[1].strip()
                 elif (re.search(ref_pattern, line) != None):
                     cur_smell_obj.reference = re.split(SMELL_REF, line)[1].strip()
+                elif (re.search(tool_pattern, line) != None):
+                    cur_smell_obj.tool_list.append(re.split(SMELL_TOOL, line)[1].strip())
 
         return self.smell_list
 
@@ -151,3 +164,36 @@ class InputProcessor(object):
                 return smell
         return None
 
+    def get_tools_list(self, TOOL_FILE_PATH):
+        tool_list = []
+        cur_tool_obj = None
+        with open(TOOL_FILE_PATH, "r", errors='ignore') as reader:
+            for line in reader:
+                line = line.strip()
+                if (line == ""):
+                    continue
+                tool_pattern = re.compile(TOOL)
+                tool_id_pattern = re.compile(TOOL_ID)
+                tool_name_pattern = re.compile(TOOL_NAME)
+                tool_description_pattern = re.compile(TOOL_DESCR)
+                tool_url_pattern = re.compile(TOOL_URL)
+                tool_supp_smells_pattern = re.compile(TOOL_SUPP_SMELL)
+                tool_supp_langs_pattern = re.compile(TOOL_SUPP_LANGS)
+                tool_end_pattern = re.compile(TOOL_END)
+                if(re.search(tool_pattern, line) != None):
+                    cur_tool_obj = Tool()
+                elif (re.search(tool_end_pattern, line) != None):
+                    tool_list.append(cur_tool_obj)
+                elif (re.search(tool_id_pattern, line ) != None):
+                    cur_tool_obj.id = re.split(TOOL_ID, line)[1].strip()
+                elif (re.search(tool_name_pattern, line ) != None):
+                    cur_tool_obj.name = re.split(TOOL_NAME, line)[1].strip()
+                elif (re.search(tool_description_pattern, line ) != None):
+                    cur_tool_obj.description = re.split(TOOL_DESCR, line)[1].strip()
+                elif (re.search(tool_url_pattern, line ) != None):
+                    cur_tool_obj.url = re.split(TOOL_URL, line)[1].strip()
+                elif (re.search(tool_supp_smells_pattern, line ) != None):
+                    cur_tool_obj.supported_smells.append(re.split(TOOL_SUPP_SMELL, line)[1].strip())
+                elif (re.search(tool_supp_langs_pattern, line ) != None):
+                    cur_tool_obj.supported_langs = re.split(TOOL_SUPP_LANGS, line)[1].strip()
+        return  tool_list
