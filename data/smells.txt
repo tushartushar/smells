@@ -1353,7 +1353,7 @@ usage, and is largely not utilized.
 [smell-id]SDF
 [smell-category]SPREADSHEET
 [smell-name]Duplicated Formulas
-[smell-description]This smell occurs where some formulas are partly the same as others. Consider, for example, a worksheet that contains a cell with formula SUM(A1:A6)+10% and a second formula SUM(A1:A6)+20%. This formula exhibits duplication; the part SUM(A1:A6) is contained in more than one formula. Such a duplication impacts maintainainability and readability. 
+[smell-description]This smell occurs where some formulas are partly the same as others. Consider, for example, a worksheet that contains a cell with formula SUM(A1:A6)+10% and a second formula SUM(A1:A6)+20%. This formula exhibits duplication; the part SUM(A1:A6) is contained in more than one formula. Such a duplication impacts maintainainability and readability.
 [smell-ref]Felienne2012
 [smell-end]
 
@@ -1544,7 +1544,7 @@ usage, and is largely not utilized.
 [smell-id]ENSC
 [smell-category]ENERGY
 [smell-name]Non Short Circuit Operators
-[smell-description]Code using non-short-circuit logic boolean operators (e.g., & or ∥) rather than short-circuit logic ones (&& or ∥∥). Non-short-circuit logic causes both sides of the expression to be evaluated even when the result can be inferred from knowing the left-hand side. 
+[smell-description]Code using non-short-circuit logic boolean operators (e.g., & or ∥) rather than short-circuit logic ones (&& or ∥∥). Non-short-circuit logic causes both sides of the expression to be evaluated even when the result can be inferred from knowing the left-hand side.
 [smell-ref]Antonio
 [smell-end]
 
@@ -1588,4 +1588,36 @@ usage, and is largely not utilized.
 [smell-name]The One Lane Bridge
 [smell-description]One Lane Bridge is a point in the execution where one, or only a few, processes may continue to execute concurrently. All other processes must wait. It frequently occurs in applications that access a database. Here, a lock ensures that only one process may update the associated portion of the database at a time. It may also occur when a set of processes make a synchronous call to another process that is not multi-threaded; all of the processes making synchronous calls must take turns “crossing the bridge.”
 [smell-ref]Smith
+[smell-end]
+
+[smell]
+[smell-id]UINT
+[smell-category]ARCH
+[smell-name]Unstable Interface
+[smell-description]A file with many incoming dependencies (the interface) that changes frequently with other files.
+[smell-ref]Mo
+[smell-end]
+
+[smell]
+[smell-id]CROSSM
+[smell-category]ARCH
+[smell-name]Implicit Cross-Module Dependency
+[smell-description]Two structurally independent modules nonetheless have co-change relationships in the revision log.
+[smell-ref]Mo
+[smell-end]
+
+[smell]
+[smell-id]UNINHERIT
+[smell-category]ARCH
+[smell-name]Unhealthy Inheritance Hierarchy
+[smell-description]A parent class that depends on its children, or a client class depending on both parent and child.
+[smell-ref]Mo
+[smell-end]
+
+[smell]
+[smell-id]CMC
+[smell-category]ARCH
+[smell-name]Cross-module Cycle
+[smell-description]A dependency cycle that crosses module boundaries.
+[smell-ref]Mo
 [smell-end]

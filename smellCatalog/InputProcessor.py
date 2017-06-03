@@ -138,11 +138,12 @@ class InputProcessor(object):
     def populate_aka_obj(self, smell_list):
         for smell in smell_list:
             for aka in smell.aka:
-                smell_obj = self.find_smell_obj(aka, smell_list)
-                if smell_obj == None:
-                    print("Related smell not found: " + aka)
-                else:
-                    smell.aka_obj_list.append(smell_obj)
+                if (aka != ''): # NErnst prevents empty AKA matches
+                    smell_obj = self.find_smell_obj(aka, smell_list)
+                    if smell_obj == None:
+                        print("Related smell not found: " + aka)
+                    else:
+                        smell.aka_obj_list.append(smell_obj)
 
     def find_smell_obj(self, aka, smell_list):
         for smell in smell_list:
