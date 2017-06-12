@@ -502,8 +502,7 @@
 [smell-id]LF
 [smell-category]DESIGN
 [smell-name]Lava Flow
-[smell-description]This smell is characterized by a piece of code that nobody remember the purpose and
-usage, and is largely not utilized.
+[smell-description]This smell is characterized by a piece of code that nobody remember the purpose and usage, and is largely not utilized.
 [smell-aka]
 [smell-ref]Brown
 [smell-end]
@@ -653,7 +652,7 @@ usage, and is largely not utilized.
 [smell-id]GODY
 [smell-category]ARCH
 [smell-name]The Grand Old Duke of York
-[smell-description]This smell occurs when developers (or implementationists) couldn't identify the significance of good abstractions and ignore them even after suggested by some team members (referred as abstractionist).
+[smell-description]This smell occurs when developers (or implementers) couldn't identify the significance of good abstractions and ignore them even after suggested by some team members (referred as abstractionist).
 [smell-aka]MA
 [smell-ref]Brown
 [smell-end]
@@ -701,7 +700,7 @@ usage, and is largely not utilized.
 [smell-id]TQ
 [smell-category]DESIGN
 [smell-name]Type Queries
-[smell-description]Type queries in the system (using instanceof, for instance) can be regarded as smells: the inheritance relation expresses itself not only in the classes of the inheritance hierarchy, but in the clients too. In regard to the design principles, type queries violate the Once and only once principle (or, DRY - Don't Repeat Yourself principle).
+[smell-description]Type queries in the system (e.g., using instanceof) can be regarded as smells: the inheritance relation expresses itself not only in the classes of the inheritance hierarchy, but in the clients too. In regard to the design principles, type queries violate the Once and only once principle (or, DRY - Don't Repeat Yourself principle).
 [smell-aka]UE
 [smell-aka]SS2
 [smell-ref]Lippert
@@ -864,7 +863,7 @@ usage, and is largely not utilized.
 [smell-id]SLV
 [smell-category]ARCH
 [smell-name]Strict Layers Violated
-[smell-description]It can always happen that a layer skips the one directly beneath it and accesses a layer further below instead, be it accidentally or on purpose. If layers that are basically strict are violated, their alterability is affected. The number of a layer’s potential clients will increase, and the dependency between layers will grow.
+[smell-description]It can always happen that a layer skips the one directly beneath it and accesses a layer further below instead, be it accidentally or on purpose. If layers that are basically strict are violated, their modifiability is affected. The number of a layer’s potential clients will increase, and the dependency between layers will grow.
 [smell-ref]Lippert
 [smell-end]
 
@@ -872,7 +871,7 @@ usage, and is largely not utilized.
 [smell-id]IPOL
 [smell-category]ARCH
 [smell-name]Inheritance between Protocol-Oriented Layers
-[smell-description]Inheritance between protocol-oriented layers is not allowed. Other-wise a stricter than desirable coupling would occur. In particular it would become impossible to reimplement the layer that inherited in a non-object-oriented programming language later on.
+[smell-description]Inheritance between protocol-oriented layers is not allowed. Otherwise a stricter than desirable coupling would occur. In particular it would become impossible to reimplement the layer that inherited in a non-object-oriented programming language later on.
 [smell-ref]Lippert
 [smell-end]
 
@@ -1066,7 +1065,7 @@ usage, and is largely not utilized.
 [smell-id]UM
 [smell-category]CONFIG_D
 [smell-name]Unstructured Module
-[smell-description]Each module in a configuration repository must have a well-defined and consistent module structure.  An ad-hoc structure of a repository suffers from \textit{unstructured module} smell that impacts understandability and predictability of the repository.
+[smell-description]Each module in a configuration repository must have a well-defined and consistent module structure.  An ad-hoc structure of a repository suffers from unstructured module smell that impacts understandability and predictability of the repository.
 [smell-ref]Tushar
 [smell-tool]PUPPETEER
 [smell-end]
