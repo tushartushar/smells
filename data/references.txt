@@ -1,13 +1,13 @@
 [reference]
 [ref-id]Fowler
-[ref-text]Fowler M. Refactoring: improving the design of existing code. Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.; 1999.
+[ref-text]M. Fowler, “Refactoring: Improving the Design of Existing Code”. Addison-Wesley, 1999.
 [ref-image]
 [ref-url]http://amzn.to/2rblDm3
 [ref-end]
 
 [reference]
 [ref-id]Page
-[ref-text]Page-Jones M. Fundamentals of object-oriented design in UML. Addison-Wesley Professional; 1999.
+[ref-text]M. Page-Jones, “Fundamentals of Object-Oriented Design in UML”. Addison-Wesley, 1999.
 [ref-image]
 [ref-url]
 [ref-end]
@@ -15,7 +15,7 @@
 
 [reference]
 [ref-id]Rumbaugh
-[ref-text]Rumbaugh J, Blaha M, Premerlani W, Eddy F, Lorensen W. Object-oriented modeling and design. Upper Saddle River, NJ, USA: Prentice-Hall, Inc.; 1991.
+[ref-text]J. Rumbaugh, M. Blaha, W. Premerlani, F. Eddy, W. Lorensen, “Object-Oriented Modeling and Design”. Prentice-Hall, 1991.
 [ref-image]
 [ref-url]
 [ref-end]
@@ -23,7 +23,7 @@
 
 [reference]
 [ref-id]Lippert
-[ref-text]Lippert M, Roock S. Refactoring in large software projects: performing complex restructurings successfully. John Wiley and Sons; 2006.
+[ref-text]M. Lippert, S. Roock, “Refactoring in Large Software Projects: Performing Complex Restructurings Successfully”. John Wiley and Sons, 2006.
 [ref-image]
 [ref-url]http://amzn.to/2rSdj7X
 [ref-end]
@@ -31,85 +31,85 @@
 
 [reference]
 [ref-id]BlochJ
-[ref-text]Bloch J. How to design a good API and why it matters. In: Companion to the 21st ACM SIGPLAN symposium on object-oriented programming systems, languages, and applications (OOPSLA ‘06); 2006.
+[ref-text]J. Bloch, “How to Design a Good API and Why It Matters”. OOPSLA Companion, 2006.
 [ref-image]
 [ref-url]
 [ref-end]
 
 [reference]
 [ref-id]Schader
-[ref-text]Schader M, Korthaus A. The unified modeling language: technical aspects and applications. Physica; 1998.
+[ref-text]M. Schader, A. Korthaus, “The Unified Modeling Language: Technical Aspects and Applications”. Physica, 1998.
 [ref-image]
 [ref-url]
 [ref-end]
 
 [reference]
 [ref-id]Shalloway
-[ref-text]Shalloway A, Trott JR. Design patterns explained: a new perspective on object-oriented design. Addison-Wesley; 2004.
+[ref-text]A. Shalloway, J. R. Trott, “Design Patterns Explained: A New Perspective on Object-Oriented Design”. Addison-Wesley, 2004.
 [ref-image]
 [ref-url]
 [ref-end]
 
 [reference]
 [ref-id]Van
-[ref-text]Van Emden E, Moonen L. Java quality assurance by detecting code smells. In: Proceedings of the ninth working conference on reverse engineering (WCRE’02), Washington, DC, USA; 2002. p. 97.
+[ref-text]E. van Emden, Moonen, “Java Quality Assurance by Detecting Code Smells”. WCRE 2002, pp. 97–108.
 [ref-image]
-[ref-url]
+[ref-url]http://bibtex.github.io/WCRE-2002-EmdenM.html
 [ref-end]
 
 
 [reference]
 [ref-id]Gil
-[ref-text]Gil JY, Maman I. Micro patterns in Java code. SIGPLAN Notes October 2005;40:97–116.
+[ref-text]J. Y. Gil, I. Maman, “Micro Patterns in Java Code”. OOPSLA 2005, pp. 97–116.
 [ref-image]
-[ref-url]
+[ref-url]http://bibtex.github.io/OOPSLA-2005-GilM.html
 [ref-end]
 
 [reference]
 [ref-id]Ratzinger
-[ref-text]Ratzinger J, Fischer M, Gall H. Improving evolvability through refactoring. In: Proceed- ings of the 2005 international workshop on mining software repositories, MSR ‘05, New York, NY, USA; 2005. p. 1–5.
+[ref-text]J. Ratzinger, M. Fischer, H. Gall, “Improving Evolvability through Refactoring”. MSR 2005. pp. 96–100.
 [ref-image]
-[ref-url]
+[ref-url]http://bibtex.github.io/MSR-2005-RatzingerFG.html
 [ref-end]
 
  [reference]
  [ref-id]Demeyer
- [ref-text]Demeyer S, Ducasse S, Nierstrasz O. Object-oriented reengineering patterns. Morgan Kaufmann; 2002.
+ [ref-text]S. Demeyer, S. Ducasse, O. Nierstrasz, “Object-Oriented Reengineering Patterns”. Morgan Kaufmann, 2002.
  [ref-image]
  [ref-url]
  [ref-end]
 
 [reference]
 [ref-id]Page-Jones
-[ref-text]Page-Jones M. The practical guide to structured systems design. 2nd ed. Prentice Hall; 1988.
+[ref-text]M. Page-Jones, “The Practical Guide to Structured Systems Design”. Prentice Hall, 1988. Second Edition.
 [ref-image]
 [ref-url]
 [ref-end]
 
 [reference]
 [ref-id]Marquardt
-[ref-text]Marquardt K. Dependency structures–architectural diagnoses and therapies. In: Proc. of EuroPLoP; 2001.
+[ref-text]K. Marquardt, “Dependency Structures: Architectural Diagnoses and Therapies”. EuroPLoP 2001.
 [ref-image]
 [ref-url]
 [ref-end]
 
 [reference]
 [ref-id]Miller
-[ref-text]Miller BK. Object-oriented architecture measures. In: Proceedings of the thirty-second annual Hawaii international conference on system sciences, vol. 8. HICSS ‘99; 1999. p. 8069.
+[ref-text]B. K. Miller, “Object-Oriented Architecture Measures”. HICSS 1999, vol. 8, p. 8069.
 [ref-image]
 [ref-url]
 [ref-end]
 
 [reference]
 [ref-id]Beyer
-[ref-text]Beyer D, Lewerentz C. Crocopat: efficient pattern analysis in object-oriented programs. In: Proceedings of the 11th IEEE international workshop on program comprehension, IWPC’03, Washington, DC, USA; 2003. p. 294.
+[ref-text]D. Beyer, C. Lewerentz, “CrocoPat: Efficient Pattern Analysis in Object-Oriented Programs”. IWPC 2003, pp. 294–295.
 [ref-image]
-[ref-url]
+[ref-url]http://bibtex.github.io/IWPC-2003-BeyerL.html
 [ref-end]
 
 [reference]
 [ref-id]MartinRC
-[ref-text]Martin RC. Agile software development, principles, patterns, and practices. Addison-Wesley; 2003.
+[ref-text]R. C. Martin, “Agile Software Development: Principles, Patterns, and Practices”. Addison-Wesley, 2003.
 [ref-image]
 [ref-url]http://amzn.to/2p7QazO
 [ref-end]
@@ -117,91 +117,91 @@
 
 [reference]
 [ref-id]Bloch
-[ref-text]Bloch J. Effective Java. 2nd ed. Addison-Wesley; 2008.
+[ref-text]J. Bloch, “Effective Java”. Addison-Wesley, 2008. Second Edition.
 [ref-image]
 [ref-url]http://amzn.to/2pDfi2T
 [ref-end]
 
 [reference]
 [ref-id]TrifuA
-[ref-text]Trifu A. Towards automated restructuring of object oriented systems [Ph.D. thesis]. Universitét Karlsruhe (TH), Fakultét fér Informatik; 2008.
+[ref-text]A. Trifu, “Towards Automated Restructuring of Object-Oriented Systems”. PhD thesis, Universitét Karlsruhe, Fakultét fér Informatik, 2008.
 [ref-image]
 [ref-url]
 [ref-end]
 
 [reference]
 [ref-id]MeyerB
-[ref-text]Meyer B. The many faces of inheritance: a taxonomy of taxonomy. Computer May 1996;29(5):105–8.
+[ref-text]B. Meyer, “The Many Faces of Inheritance: A Taxonomy of Taxonomy”. Computer 29(5):105–8, 1996.
 [ref-image]
 [ref-url]
 [ref-end]
 
 [reference]
 [ref-id]Arévalo
-[ref-text]Arévalo G. High-level views in object-oriented systems using formal concept analysis [Ph.D. thesis]. The University of Bern; 2004.
+[ref-text]G. Arévalo, “High-Level Views in Object-Oriented Systems Using Formal Concept Analysis”. PhD thesis, The University of Bern, 2004.
 [ref-image]
 [ref-url]
 [ref-end]
 
 [reference]
 [ref-id]Wake
-[ref-text]Wake WC. Refactoring workbook. Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.; 2003.
+[ref-text]W. C. Wake, “Refactoring Workbook”. Addison-Wesley, 2003.
 [ref-image]
 [ref-url]http://amzn.to/2qjtWZx
 [ref-end]
 
 [reference]
 [ref-id]Binder
-[ref-text]Binder RV. Testing object-oriented systems: models, patterns, and tools. Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.; 1999.
+[ref-text]R. V. Binder, “Testing Object-Oriented Systems: Models, Patterns, and Tools”. Addison-Wesley, 1999.
 [ref-image]
 [ref-url]http://amzn.to/2p7WjMu
 [ref-end]
 
 [reference]
 [ref-id]MeyerB2
-[ref-text]Meyer B. Touch of class: learning to program well with objects and contracts. Springer; 2009.
+[ref-text]B. Meyer, “Touch of Class: Learning to Program Well with Objects and Contracts”. Springer, 2009.
 [ref-image]
 [ref-url]
 [ref-end]
 
 [reference]
 [ref-id]Arie
-[ref-text]Arie Deursen, Leon M.F. Moonen, A. Bergh, and Gerard Kok, “Refactoring Test Code”, Technical Report, CWI, Amsterdam, The Netherlands, 2001
+[ref-text]A. van Deursen, L. Moonen, A. Bergh, G. Kok, “Refactoring Test Code”, Technical Report, CWI, 2001.
 [ref-image]
 [ref-url]
 [ref-end]
 
 [reference]
 [ref-id]Gerard
-[ref-text]Gerard Meszaros, “xUnit Test Patterns: Refactoring Test Code”, Addison-Wesley, 2007
+[ref-text]G. Meszaros, “xUnit Test Patterns: Refactoring Test Code”, Addison-Wesley, 2007.
 [ref-image]
 [ref-url]http://amzn.to/2p7SA1v
 [ref-end]
 
 [reference]
 [ref-id]VanR
-[ref-text]Van Rompaey, Bart, et al., "On the Detection of Test Smells: A Metrics-based Approach for General Fixture and Eager Test" IEEE Transactions Software Engineering, 2007
+[ref-text]B. Van Rompaey, B. Du Bois, S. Demeyer, M. Rieger, “On the Detection of Test Smells: A Metrics-Based Approach for General Fixture and Eager Test”. IEEE TSE 33(12):800–817, 2007.
 [ref-image]
 [ref-url]
 [ref-end]
 
 [reference]
 [ref-id]Michaela
-[ref-text]Michaela Greiler, Arie van Deursen, Margaret-Anne Storey. Automated Detection of Test Fixture Strategies and Smells. Accepted for publication in the Proceedings of the Sixth International Conference on Software Testing, Verification and Validation, IEEE Computer Society.
+[ref-text]M. Greiler, A. van Deursen, M.-A. D. Storey, “Automated Detection of Test Fixture Strategies and Smells”. ICST 2013, pp. 322–331.
 [ref-image]
-[ref-url]
+[ref-url]http://bibtex.github.io/ICST-2013-GreilerDS.html
 [ref-end]
 
 [reference]
 [ref-id]Girish
-[ref-text]Girish Suryanarayana, Ganesh Samarthyam, and Tushar Sharma, Refactoring for Software Design Smells: Managing Technical Debt, 1st ed. Morgan Kaufmann, 2014.
+[ref-text]G. Suryanarayana, G. Samarthyam, T. Sharma, “Refactoring for Software Design Smells: Managing Technical Debt”. Morgan Kaufmann, 2014.
 [ref-image]
 [ref-url]http://bit.ly/DesignSmells
 [ref-end]
 
 [reference]
 [ref-id]Tushar
-[ref-text]Tushar Sharma, Marios Fragkoulis, and Diomidis Spinellis, “Does your configuration code smell?” in Proceedings of the 13th International Workshop on Mining Software Repositories, ser. MSR’16, 2016, pp. 189–200.
+[ref-text]T. Sharma, M. Fragkoulis, D. Spinellis, “Does Your Configuration Code Smell?”. MSR 2016, pp. 189–200.
 [ref-image]
 [ref-url]
 [ref-end]
@@ -209,7 +209,7 @@
 
 [reference]
 [ref-id]Riel
-[ref-text]A. J. Riel, Object-Oriented Design Heuristics. Addison-Wesley, 1996.
+[ref-text]A. J. Riel, “Object-Oriented Design Heuristics”. Addison-Wesley, 1996.
 [ref-image]
 [ref-url]http://amzn.to/2qyVfz3
 [ref-end]
@@ -217,7 +217,7 @@
 
 [reference]
 [ref-id]Brown
-[ref-text]W. Brown, R. Malveau, H. McCormick, and T. Mowbray, AntiPatterns: Refactoring software, architectures, and projects in crisis. John Wiley & Sons, 1998.
+[ref-text]W. Brown, R. Malveau, H. McCormick, T. Mowbray, “AntiPatterns: Refactoring Software, Architectures, and Projects in Crisis”. John Wiley & Sons, 1998.
 [ref-image]<a href="https://www.amazon.com/AntiPatterns-Refactoring-Software-Architectures-Projects/dp/0471197130/ref=as_li_ss_il?s=books&ie=UTF8&qid=1493715891&sr=1-1&keywords=AntiPatterns:+Refactoring+software,+architectures,+and+projects+in+crisis&linkCode=li2&tag=croc03-20&linkId=7d20532574f897cfa0557bfd7a6bbd7c" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0471197130&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=croc03-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=croc03-20&l=li2&o=1&a=0471197130" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 [ref-url]http://amzn.to/2pCSNuh
 [ref-end]
@@ -225,70 +225,70 @@
 
 [reference]
 [ref-id]Joshua
-[ref-text]Joshua Garcia, Daniel Popescu, George Edwards, and Nenad Medvidovic. 2009. Toward a Catalogue of Architectural Bad Smells. In Proceedings of the 5th International Conference on the Quality of Software Architectures: Architectures for Adaptive Software Systems (QoSA '09), Raffaela Mirandola, Ian Gorton, and Christine Hofmeister (Eds.). Springer-Verlag, Berlin, Heidelberg, 146-162. DOI=http://dx.doi.org/10.1007/978-3-642-02351-4_10
+[ref-text]J. Garcia, D. Popescu, G. Edwards, N. Medvidovic, “Toward a Catalogue of Architectural Bad Smells”. QoSA 2009, pp. 146-162.
 [ref-image]
-[ref-url]
+[ref-url]http://bibtex.github.io/QoSA-2009-GarciaPEM.html
 [ref-end]
 
 [reference]
 [ref-id]Hugo
-[ref-text]Hugo Sica de Andrade, Eduardo Almeida, and Ivica Crnkovic. 2014. Architectural bad smells in software product lines: an exploratory study. In Proceedings of the WICSA 2014 Companion Volume (WICSA '14 Companion). ACM, New York, NY, USA, , Article 12 , 6 pages. DOI=http://dx.doi.org/10.1145/2578128.2578237
+[ref-text]H. Sica de Andrade, E. Almeida, I. Crnkovic. 2014. “Architectural Bad Smells In Software Product Lines: An Exploratory Study”. WICSA 2014 Companion, Article 12.
 [ref-image]
 [ref-url]
 [ref-end]
 
 [reference]
 [ref-id]Fontana
-[ref-text]F. A. Fontana, I. Pigazzini, R. Roveda and M. Zanoni, "Automatic Detection of Instability Architectural Smells," 2016 IEEE International Conference on Software Maintenance and Evolution (ICSME), Raleigh, NC, 2016, pp. 433-437. doi: 10.1109/ICSME.2016.33
+[ref-text]F. A. Fontana, I. Pigazzini, R. Roveda, M. Zanoni, “Automatic Detection of Instability Architectural Smells”. ICSME 2016, pp. 433-437.
 [ref-image]
 [ref-url]
 [ref-end]
 
 [reference]
 [ref-id]Karwin
-[ref-text]B. Karwin, SQL Antipatterns: Avoiding the Pitfalls of Database Programming, 1st ed. Pragmatic Bookshelf, 2010.
+[ref-text]B. Karwin, “SQL Antipatterns: Avoiding the Pitfalls of Database Programming”. Pragmatic Bookshelf, 2010.
 [ref-image]
 [ref-url]http://amzn.to/2qrk7JE
 [ref-end]
 
 [reference]
 [ref-id]Felienne2012
-[ref-text]Hermans, F., Pinzger, M., & Van Deursen, A. (2012). Detecting code smells in spreadsheet formulas (pp. 409–418). Presented at the 2012 IEEE International Conference on Software Maintenance (ICSM), IEEE.
+[ref-text]F. Hermans, M. Pinzger, A. van Deursen. “Detecting Code Smells in Spreadsheet Formulas”. ICSM 2012, pp. 409–418.
 [ref-image]
-[ref-url]http://doi.org/10.1109/ICSM.2012.6405300
+[ref-url]http://bibtex.github.io/ICSM-2012-HermansPD.html
 [ref-end]
 
 [reference]
 [ref-id]Felienne2012b
-[ref-text]Hermans, F., Pinzger, M., & van Deursen, A. (2012). Detecting and visualizing inter-worksheet smells in spreadsheets (pp. 441–451). Presented at the ICSE '12: Proceedings of the 34th International Conference on Software Engineering, IEEE Press.
+[ref-text]F. Hermans, M. Pinzger, A. van Deursen, “Detecting and Visualizing Inter-Worksheet Smells in Spreadsheets”. ICSE 2012, pp. 441–451.
 [ref-image]
-[ref-url]http://doi.org/10.1109/ICSE.2012.6227171
+[ref-url]http://bibtex.github.io/ICSE-2012-HermansPD.html
 [ref-end]
 
 [reference]
 [ref-id]TusharPPT
-[ref-text]Tushar Sharma. 2016. Presentation smells: How not to prepare your conference presentation.
+[ref-text]T. Sharma, “Presentation Smells: How Not to Prepare Your Conference Presentation”. 2016.
 [ref-image]
 [ref-url]http://www.tusharma.in/smells/presentation-smells/
 [ref-end]
 
 [reference]
 [ref-id]Antonio
-[ref-text]Vetro, Antonio, Luca Ardito, Giuseppe Procaccianti, and Maurizio Morisio. "Definition, implementation and validation of energy code smells: an exploratory study on an embedded system." (2013): 34-39.
+[ref-text]A. Vetro, L. Ardito, G. Procaccianti, M. Morisio, “Definition, Implementation and Validation of Energy Code Smells: An Exploratory Study on an Embedded System”. ENERGY 2013, pp. 34-39.
 [ref-image]
 [ref-url]http://porto.polito.it/2506419/1/paper_camera_ready.pdf
 [ref-end]
 
 [reference]
 [ref-id]Smith
-[ref-text]Connie U. Smith and Lloyd G. Williams. 2000. Software performance antipatterns. In Proceedings of the 2nd international workshop on Software and performance (WOSP '00). ACM, New York, NY, USA, 127-136.
+[ref-text]C. U. Smith, L. G. Williams. “Software performance antipatterns”. WOSP 2000, pp. 127-136.
 [ref-image]
 [ref-url]http://dx.doi.org/10.1145/350391.350420
 [ref-end]
 
 [reference]
 [ref-id]Mo
-[ref-text]R. Mo, Y. Cai, R. Kazman, and L. Xiao. Hotspot patterns: The formal definition and automatic detection of recurring high-maintenance architecture issues. In Proceedings of the IEEE/IFIP Working Conference on Software Architecture, 2015.
+[ref-text]R. Mo, Y. Cai, R. Kazman, L. Xiao. “Hotspot Patterns: The Formal Definition and Automatic Detection of Architecture Smells”. WICSA 2015, pp. 51–60.
 [ref-image]
-[ref-url]https://www.cs.drexel.edu/~yfcai/papers/2015/wicsa2015.pdf
+[ref-url]http://bibtex.github.io/WICSA-2015-MoCKX.html
 [ref-end]
