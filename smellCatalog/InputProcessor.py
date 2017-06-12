@@ -44,7 +44,7 @@ class InputProcessor(object):
 
     def get_smell_list(self):
         cur_smell_obj = None
-        with open(self.input_file_path, "r", errors='ignore') as reader:
+        with open(self.input_file_path, "r", errors='ignore', encoding='utf-8') as reader:
             for line in reader:
                 line = line.strip()
                 if (line == ""):
@@ -96,7 +96,7 @@ class InputProcessor(object):
     def get_category_list(self, SMELL_CATEGORY_FILE_PATH):
         category_list = []
         cur_category_obj = None
-        with open(SMELL_CATEGORY_FILE_PATH, "r", errors='ignore') as reader:
+        with open(SMELL_CATEGORY_FILE_PATH, "r", errors='ignore', encoding='utf-8') as reader:
             for line in reader:
                 line = line.strip()
                 if (line == ""):
@@ -123,7 +123,7 @@ class InputProcessor(object):
     def get_ref_list(self, REF_FILE_PATH):
         cur_ref_obj = None
         ref_list = []
-        with open(REF_FILE_PATH, "r", errors='ignore') as reader:
+        with open(REF_FILE_PATH, "r", errors='ignore', encoding='utf-8') as reader:
             for line in reader:
                 line = line.strip()
                 if (line == ""):
@@ -167,7 +167,7 @@ class InputProcessor(object):
     def get_tools_list(self, TOOL_FILE_PATH):
         tool_list = []
         cur_tool_obj = None
-        with open(TOOL_FILE_PATH, "r", errors='ignore') as reader:
+        with open(TOOL_FILE_PATH, "r", errors='ignore', encoding='utf-8') as reader:
             for line in reader:
                 line = line.strip()
                 if (line == ""):
