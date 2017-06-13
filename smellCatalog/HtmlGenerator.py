@@ -103,12 +103,12 @@ class HtmlGenerator(object):
 
     def writeFile(self, fileName, text):
         file = os.path.abspath(fileName)
-        with open(file, "w", errors='ignore') as f:
+        with open(file, "w", errors='ignore', encoding='utf-8') as f:
             f.write(text)
 
     def appendFile(self, fileName, text):
         file = os.path.abspath(fileName)
-        with open(file, "a", errors='ignore') as f:
+        with open(file, "a", errors='ignore', encoding='utf-8') as f:
             f.write(text)
 
     def generate_smell_html(self, smell):
