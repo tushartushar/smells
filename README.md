@@ -21,7 +21,8 @@ You may add new smells, categories, and references to the collection. The new it
 [smell-id]XX (must be unique)
 [smell-category]category-id such as DESIGN
 [smell-name]smell name
-[smell-description]description of the smell (one line; could be multiple statements)
+[smell-description]description of the smell (one line; could be multiple statements. Use '\n' for creating new paragraph)
+[smell-example]example of the smell (one line. Use '\n' for introducing line break)
 [smell-aka]also known as (one line; a smell may have multiple [smell-aka] statements)
 [smell-ref]main reference in which it was defined
 [smell-tool]id of the tool that supports detection of this smell; one smell definition may have multiple [smell-tool] statements
