@@ -118,13 +118,17 @@ class HtmlGenerator(object):
         self.write_html_top_stuff(path)
         smell_name = "<h3>" + smell.name + "</h3>"
         self.appendFile(path, smell_name)
-        if smell.name == "Poltergeist":
-            print("test")
         descriptions = smell.description.split("\\n")
         smell_description = ""
         for des in descriptions:
             smell_description += "<p>" + des + "</p>"
         self.appendFile(path, smell_description)
+        if len(smell.example) > 0:
+            example_lines = smell.example.split("\\n")
+            example_text = "<h4>Example</h4><p>"
+            for ex in example_lines:
+                example_text += ex + "<br />"
+            self.appendFile(path, example_text)
         if(len(smell.aka_obj_list)>0):
             aka_text = "<p>Related smells: "
             for aka in smell.aka_obj_list:

@@ -14,6 +14,7 @@ SMELL_CATEGORY = "\[smell-category\]"
 SMELL_SUBCATEGORY = "\[smell-subcategory\]"
 SMELL_REF = "\[smell-ref\]"
 SMELL_TOOL = "\[smell-tool\]"
+SMELL_EX = "\[smell-example\]"
 
 SCAT = "\[define-smell-category\]"
 SCAT_ID = "\[smell-category-id\]"
@@ -59,6 +60,7 @@ class InputProcessor(object):
                 sub_pattern = re.compile(SMELL_SUBCATEGORY)
                 ref_pattern = re.compile(SMELL_REF)
                 tool_pattern = re.compile(SMELL_TOOL)
+                example_pattern = re.compile(SMELL_EX)
 
                 if(re.search(smell_pattern, line) != None):
                     cur_smell_obj = Smell()
@@ -80,6 +82,8 @@ class InputProcessor(object):
                     cur_smell_obj.reference = re.split(SMELL_REF, line)[1].strip()
                 elif (re.search(tool_pattern, line) != None):
                     cur_smell_obj.tool_list.append(re.split(SMELL_TOOL, line)[1].strip())
+                elif (re.search(example_pattern, line) != None):
+                    cur_smell_obj.example = re.split(SMELL_EX, line)[1].strip()
 
         return self.smell_list
 

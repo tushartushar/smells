@@ -292,3 +292,10 @@
 [ref-image]
 [ref-url]http://bibtex.github.io/WICSA-2015-MoCKX.html
 [ref-end]
+
+[reference]
+[ref-id]Redgate
+[ref-text]Redgate, “119 SQL Code Smells,” 2017.
+[ref-image]
+[ref-url]http://assets.red-gate.com/community/books/sql-code-smells.pdf
+[ref-end]
