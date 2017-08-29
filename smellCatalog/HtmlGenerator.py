@@ -2,6 +2,8 @@ import os
 import datetime
 import FixedText
 
+
+
 class HtmlGenerator(object):
     def __init__(self, output_path, smell_list, category_list, tool_list):
         self.smell_list = smell_list
@@ -116,7 +118,12 @@ class HtmlGenerator(object):
         self.write_html_top_stuff(path)
         smell_name = "<h3>" + smell.name + "</h3>"
         self.appendFile(path, smell_name)
-        smell_description = "<p>" + smell.description + "</p>"
+        if smell.name == "Poltergeist":
+            print("test")
+        descriptions = smell.description.split("\\n")
+        smell_description = ""
+        for des in descriptions:
+            smell_description += "<p>" + des + "</p>"
         self.appendFile(path, smell_description)
         if(len(smell.aka_obj_list)>0):
             aka_text = "<p>Related smells: "
@@ -210,4 +217,6 @@ class HtmlGenerator(object):
         self.appendFile(path, "<a href=\"index.html\"><h3>Home</h3></a>")
         self.appendFile(path, "</div>")
         self.write_html_bottom_stuff(path)
+
+
 
