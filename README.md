@@ -59,3 +59,12 @@ You may add new smells, categories, and references to the collection. The new it
 [tool-supported-languages]a single line.
 [tool-end]
 ```
+
+### Smell definition template
+```
+[smell-definition]
+[sd-id]must be unique smell definition
+[definition]
+[ref]single line reference
+[smell-definition-end]
+```

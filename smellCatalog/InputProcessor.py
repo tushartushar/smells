@@ -2,6 +2,7 @@ import re
 from Smell import Smell
 from SmellCategory import SmellCategory
 from Reference import Reference
+from SmellDefinition import SmellDefinition
 from Tool import Tool
 
 SMELL = "\[smell\]"
@@ -37,6 +38,13 @@ TOOL_URL = "\[tool-url\]"
 TOOL_SUPP_SMELL = "\[tool-supported-smell\]"
 TOOL_SUPP_LANGS = "\[tool-supported-languages\]"
 TOOL_END = "\[tool-end\]"
+
+SMELL_DEF = "\[smell-definition\]"
+SMELL_DEF_ID = "\[sd-id\]"
+SMELL_DEF_DEF = "\[definition\]"
+SMELL_DEF_REF = "\[ref\]"
+SMELL_DEF_END = "\[smell-definition-end\]"
+
 
 class InputProcessor(object):
     def __init__(self, path):
@@ -201,3 +209,29 @@ class InputProcessor(object):
                 elif (re.search(tool_supp_langs_pattern, line ) != None):
                     cur_tool_obj.supported_langs = re.split(TOOL_SUPP_LANGS, line)[1].strip()
         return  tool_list
+
+    def get_smell_definition_list(self, SMELL_DEF_FILE_PATH):
+        sd_list = []
+        cur_sd_obj = None
+        with open(SMELL_DEF_FILE_PATH, "r", errors='ignore', encoding='utf-8') as reader:
+            for line in reader:
+                line = line.strip()
+                if (line == ""):
+                    continue
+                sd_pattern = re.compile(SMELL_DEF)
+                sd_id_pattern = re.compile(SMELL_DEF_ID)
+                sd_definition_pattern = re.compile(SMELL_DEF_DEF)
+                sd_ref_pattern = re.compile(SMELL_DEF_REF)
+                sd_end_pattern = re.compile(SMELL_DEF_END)
+                if (re.search(sd_pattern, line) != None):
+                    cur_sd_obj = SmellDefinition()
+                elif (re.search(sd_end_pattern, line) != None):
+                    sd_list.append(cur_sd_obj)
+                elif (re.search(sd_id_pattern, line) != None):
+                    cur_sd_obj.id = re.split(SMELL_DEF_ID, line)[1].strip()
+                elif (re.search(sd_definition_pattern, line) != None):
+                    cur_sd_obj.definition = re.split(SMELL_DEF_DEF, line)[1].strip()
+                elif (re.search(sd_ref_pattern, line) != None):
+                    cur_sd_obj.ref = (re.split(SMELL_DEF_REF, line)[1].strip())
+
+        return sd_list

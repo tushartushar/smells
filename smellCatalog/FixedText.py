@@ -21,9 +21,11 @@ BODY_INDEX = "<a href=\"index.html\" class=\"w3-bar-item w3-button w3-hover-whit
 
 BODY_LOW_PART = "</div>" +\
         "<hr>" +\
-        "<div class=\"w3-bar-block\"><a href=\"TOOLS.html\" class=\"w3-bar-item w3-button w3-hover-white\">Tools to detect smells</a></div>" +\
-        "<hr>" +\
-        "<div class=\"w3-bar-block\"><a href=\"http://www.tusharma.in\" class=\"w3-bar-item w3-button w3-hover-white\">Tushar's Blog</a></div>" +\
+        "<div class=\"w3-bar-block\"><a href=\"smellDefs.html\" class=\"w3-bar-item w3-button w3-hover-white\">Definitions of a smell</a></div>" +\
+        "<hr>" + \
+                "<div class=\"w3-bar-block\"><a href=\"TOOLS.html\" class=\"w3-bar-item w3-button w3-hover-white\">Tools to detect smells</a></div>" + \
+                "<hr>" + \
+                "<div class=\"w3-bar-block\"><a href=\"http://www.tusharma.in\" class=\"w3-bar-item w3-button w3-hover-white\">Tushar's Blog</a></div>" +\
         "<hr>" +\
         "<div class=\"w3-bar-block\"><a href=\"http://bit.ly/DesignSmells\"><img src=\"book_cover.png\" style=\"width:220px;\"></a></div>" +\
         "<hr>" +\
@@ -67,4 +69,5 @@ INTRO_TEXT = "<h1>A Taxonomy of Software Smells</h1>" +\
                     "that suggest (sometimes they scream for) the possibility of refactoring. " +\
                     "Since then, various smells have been reported that impair software quality in one or more ways. " +\
                     "I attempt to prepare and present a taxonomy of software smells by cataloging, classifying, and " +\
-                    "inter-relating smell definitions present in existing literature with their references.</p>"
+                    "inter-relating smell definitions present in existing literature with their references.</p>" +\
+    "<p>Let's list various <a href=\"smellDefs.html\"><b>definitions of a smell</b></a> first.</p>"

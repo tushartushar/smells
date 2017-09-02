@@ -117,8 +117,34 @@ def validate_tool_info(tools_list):
             print ("Error: Tool URL cannot be empty.")
             exit(5)
 
+def validate_smell_defs (smell_definition_list, ref_list):
+    for smell_def in smell_definition_list:
+        if smell_def.id == "":
+            print("Error: Smell definition id cannot be empty.")
+            exit(6)
+        if smell_def.ref == "":
+            print("Error: Smell definition ref cannot be empty " + smell_def.id)
+            exit(6)
+        if smell_def.definition == "":
+            print("Error: Smell definition cannot be empty " + smell_def.id)
+            exit(6)
 
-def validateAll(tools_list, smell_list, category_list, ref_list):
+    list = set()
+    for smell in smell_definition_list:
+        if (smell.id in list):
+            print("Every smell definition must have a unique id. Duplicate " + smell.id)
+            exit(6)
+        else:
+            list.add(smell.id)
+
+    for smell_def in smell_definition_list:
+        ref_obj = find_ref_object(smell_def.ref, ref_list)
+        if ref_obj == None:
+            print("Reference cannot find for smell definition: " + smell_def.id)
+            exit(6)
+        smell_def.ref_obj = ref_obj
+
+def validateAll(tools_list, smell_list, category_list, ref_list, smell_definition_list):
     validate_tools_id(tools_list)
     validate_tool_info(tools_list)
     validate_id(smell_list)
@@ -126,3 +152,4 @@ def validateAll(tools_list, smell_list, category_list, ref_list):
     #validate_smell_id_in_smells(tools_list, smell_list)
     validate_category(category_list, smell_list)
     validate_references(ref_list, smell_list)
+    validate_smell_defs (smell_definition_list, ref_list)

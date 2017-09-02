@@ -5,16 +5,18 @@ import FixedText
 
 
 class HtmlGenerator(object):
-    def __init__(self, output_path, smell_list, category_list, tool_list):
+    def __init__(self, output_path, smell_list, category_list, tool_list, smell_definition_list):
         self.smell_list = smell_list
         self.out_path = output_path
         self.category_list = category_list
         self.tool_list = tool_list
+        self.smell_definition_list = smell_definition_list
 
     def generate(self):
         self.generate_index()
         self.generate_categories_html()
         self.generate_tools_html()
+        self.generate_smell_defs_html()
         for smell in self.smell_list:
             self.generate_smell_html(smell)
 
@@ -218,6 +220,41 @@ class HtmlGenerator(object):
         self.appendFile(path, smell_text)
 
         self.appendFile(path, "<hr>")
+        self.appendFile(path, "<a href=\"index.html\"><h3>Home</h3></a>")
+        self.appendFile(path, "</div>")
+        self.write_html_bottom_stuff(path)
+
+    def generate_smell_defs_html(self):
+        path = os.path.join(self.out_path, "smellDefs.html")
+        self.write_html_top_stuff(path)
+        self.appendFile(path, "<h2>Definitions of a Smell</h2>")
+        self.appendFile(path, "<p>Many authors have defined smells from their perspective. This page attempts to provide a consolidated list of such definitions.</p>")
+
+        ref_list = list()
+        self.appendFile(path, "<ul>")
+        for sd in self.smell_definition_list:
+            index = -1
+            if ref_list.__contains__(sd.ref_obj):
+                index = ref_list.index(sd.ref_obj)
+            else:
+                ref_list.append(sd.ref_obj)
+                index = ref_list.index(sd.ref_obj)
+            if index == -1:
+                print ("Error: Could not find reference object.")
+                exit(7)
+            sub_text = "<li><em>" + sd.definition + "</em> ["+ str(index+1) +"]</li>"
+            self.appendFile(path, sub_text)
+        self.appendFile(path, "</ul>")
+        self.appendFile(path, "<hr>")
+        #print now all the references
+        self.appendFile(path, "<h4>References</h4>")
+        self.appendFile(path, "<ol>")
+        for ref in ref_list:
+            if ref.url == "":
+                self.appendFile(path, "<li>" + ref.text + "</li>")
+            else:
+                self.appendFile(path, "<li><a href=\"" + ref.url + "\">" + ref.text + "</a></li>")
+        self.appendFile(path, "</ol>")
         self.appendFile(path, "<a href=\"index.html\"><h3>Home</h3></a>")
         self.appendFile(path, "</div>")
         self.write_html_bottom_stuff(path)
