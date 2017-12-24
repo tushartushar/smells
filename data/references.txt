@@ -317,7 +317,7 @@
 
 [reference]
 [ref-id]Aiko2014
-[ref-text]Yamashita, A. (2014). Assessing the capability of code smells to explain maintenance problems: an empirical study combining quantitative and qualitative data. Empirical Software Engineering, 19(4), 1111–1143. 
+[ref-text]Yamashita, A. (2014). Assessing the capability of code smells to explain maintenance problems: an empirical study combining quantitative and qualitative data. Empirical Software Engineering, 19(4), 1111–1143.
 [ref-image]
 [ref-url]http://doi.org/10.1007/s10664-013-9250-3
 [ref-end]
@@ -331,32 +331,32 @@
 
 [reference]
 [ref-id]Yasser2016
-[ref-text]Khan, Y. A., & El-Attar, M. (2016). Using model transformation to refactor use case models based on antipatterns. Information Systems Frontiers, 18(1), 171–204. 
+[ref-text]Khan, Y. A., & El-Attar, M. (2016). Using model transformation to refactor use case models based on antipatterns. Information Systems Frontiers, 18(1), 171–204.
 [ref-image]
 [ref-url]http://doi.org/10.1007/s10796-014-9528-z
 [ref-end]
 
 [reference]
 [ref-id]Naouel2010
-[ref-text]Moha, N., Guéhéneuc, Y.-G., Duchien, L., & Le Meur, A.-F. (2010). DECOR: A Method for the Specification and Detection of Code and Design Smells. IEEE Transactions of Software Eng., 36(1), 20–36. 
+[ref-text]Moha, N., Guéhéneuc, Y.-G., Duchien, L., & Le Meur, A.-F. (2010). DECOR: A Method for the Specification and Detection of Code and Design Smells. IEEE Transactions of Software Eng., 36(1), 20–36.
 [ref-image]
 [ref-url]http://doi.org/10.1109/TSE.2009.50
 [ref-end]
 
 [reference]
 [ref-id]Ralph2012
-[ref-text]Peters, R., & Zaidman, A. (2012). Evaluating the Lifespan of Code Smells using Software Repository Mining (pp. 411–416). Presented at the 2012 16th European Conference on Software Maintenance and Reengineering (CSMR), IEEE.  
+[ref-text]Peters, R., & Zaidman, A. (2012). Evaluating the Lifespan of Code Smells using Software Repository Mining (pp. 411–416). Presented at the 2012 16th European Conference on Software Maintenance and Reengineering (CSMR), IEEE.
 [ref-image]
 [ref-url]http://doi.org/10.1109/CSMR.2012.79
 [ref-end]
 
 [reference]
 [ref-id]Rahma2011
-[ref-text]Fourati, R., Bouassida, N., & Abdallah, H. B. (2011). A Metric-Based Approach for Anti-pattern Detection in UML Designs. In Computer and Information Science 2011 (Vol. 364, pp. 17–33). Berlin, Heidelberg: Springer Berlin Heidelberg. 
+[ref-text]Fourati, R., Bouassida, N., & Abdallah, H. B. (2011). A Metric-Based Approach for Anti-pattern Detection in UML Designs. In Computer and Information Science 2011 (Vol. 364, pp. 17–33). Berlin, Heidelberg: Springer Berlin Heidelberg.
 [ref-image]
 [ref-url]http://doi.org/10.1007/978-3-642-21378-6_2
 [ref-end]
- 
+
 [reference]
 [ref-id]Venera2013
 [ref-text]Arnaoudova, V., Di Penta, M., Antoniol, G., & Guéhéneuc, Y.-G. (2013). A New Family of Software Anti-patterns: Linguistic Anti-patterns (pp. 187–196). Presented at the CSMR '13: Proceedings of the 2013 17th European Conference on Software Maintenance and Reengineering, IEEE Computer Society.
@@ -373,7 +373,7 @@
 
 [reference]
 [ref-id]Javier2009
-[ref-text]Pérez, J., & Crespo, Y. (2009). Perspectives on automated correction of bad smells (pp. 99–108). Presented at the the joint international and annual ERCIM workshops, New York, New York, USA: ACM Press. 
+[ref-text]Pérez, J., & Crespo, Y. (2009). Perspectives on automated correction of bad smells (pp. 99–108). Presented at the the joint international and annual ERCIM workshops, New York, New York, USA: ACM Press.
 [ref-image]
 [ref-url]http://doi.org/10.1145/1595808.1595827
 [ref-end]
@@ -394,14 +394,14 @@
 
 [reference]
 [ref-id]Vittorio2014
-[ref-text]Cortellessa, V., Di Marco, A., & Trubiani, C. (2014). An approach for modeling and detecting software performance antipatterns based on first-order logics. Software and Systems Modeling (SoSyM), 13(1), 391–432. 
+[ref-text]Cortellessa, V., Di Marco, A., & Trubiani, C. (2014). An approach for modeling and detecting software performance antipatterns based on first-order logics. Software and Systems Modeling (SoSyM), 13(1), 391–432.
 [ref-image]
 [ref-url]http://doi.org/10.1007/s10270-012-0246-z
 [ref-end]
 
 [reference]
 [ref-id]Abdou2012
-[ref-text]Maiga, A., Ali, N., Bhattacharya, N., Sabané, A., Guéhéneuc, Y.-G., Antoniol, G., & Aïmeur, E. (2012). Support vector machines for anti-pattern detection (pp. 278–281). Presented at the ASE 2012: Proceedings of the 27th IEEE/ACM International Conference on Automated Software Engineering, New York, New York, USA: ACM. 
+[ref-text]Maiga, A., Ali, N., Bhattacharya, N., Sabané, A., Guéhéneuc, Y.-G., Antoniol, G., & Aïmeur, E. (2012). Support vector machines for anti-pattern detection (pp. 278–281). Presented at the ASE 2012: Proceedings of the 27th IEEE/ACM International Conference on Automated Software Engineering, New York, New York, USA: ACM.
 [ref-image]
 [ref-url]http://doi.org/10.1145/2351676.2351723
 [ref-end]
@@ -413,3 +413,16 @@
 [ref-url]http://doi.org/10.1109/SCC.2014.103
 [ref-end]
 
+[reference]
+[ref-id]Smith03
+[ref-text]Smith, C. U., & Williams, L. G. (2003). More new software performance antipatterns: Even more ways to shoot yourself in the foot. Computer Measurement Group Conference.
+[ref-image]
+[ref-url]
+[ref-end]
+
+[reference]
+[ref-id]Mats2017
+[ref-text]Mats Stijlaart and Vadim Zaytsev. 2017. Towards a taxonomy of grammar smells. In Proceedings of the 10th ACM SIGPLAN International Conference on Software Language Engineering (SLE 2017). ACM, New York, NY, USA, 43-54.
+[ref-image]
+[ref-url]https://doi.org/10.1145/3136014.3136035
+[ref-end]

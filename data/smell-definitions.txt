@@ -1,0 +1,123 @@
+[smell-definition]
+[sd-id]sd-20
+[definition]Smells are certain structures in the code that suggest (sometimes they scream for) the possibility of refactoring.
+[ref]Fowler
+[smell-definition-end] 
+
+[smell-definition]
+[sd-id]sd-10
+[definition]Code smells are a metaphor to describe patterns that are generally associated with bad design and bad programming practices.
+[ref]Emden2002
+[smell-definition-end]
+
+[smell-definition]
+[sd-id]sd-2
+[definition]Code smells are indicators or symptoms of the possible presence of design smells.
+[ref]Naouel2007
+[smell-definition-end]
+
+[smell-definition]
+[sd-id]sd-11
+[definition]Code smells are implementation structures that negatively affect system lifecycle properties, such as understandability, testability, extensibility, and reusability; that is, code smells ultimately result in maintainability problems.
+[ref]Joshua
+[smell-definition-end]
+
+[smell-definition]
+[sd-id]sd-12
+[definition]A "bad smell" describes a situation where there are hints that suggest there can be a design problem.
+[ref]Javier2009
+[smell-definition-end]
+
+[smell-definition]
+[sd-id]sd-6
+[definition]We define design defects as solutions to recurring problems that generate negative consequences on the quality of object-oriented systems.
+[ref]Naouel2010
+[smell-definition-end]
+
+[smell-definition]
+[sd-id]sd-4
+[definition]Antipatterns are "poor" solutions to recurring implementation and design problems that impede the maintenance and evolution of programs.
+[ref]Foutse2011
+[smell-definition-end]
+
+[smell-definition]
+[sd-id]sd-8
+[definition]Anti-patterns are bad solutions to recurring design problems.
+[ref]Rahma2011
+[smell-definition-end]
+
+[smell-definition]
+[sd-id]sd-7
+[definition]An anti-pattern is a commonly occurring solution to a recurring problem that will typically negatively impact code quality. Code smells are considered to be symptoms of anti-patterns and occur at source code level.
+[ref]Ralph2012
+[smell-definition-end]
+
+[smell-definition]
+[sd-id]sd-13
+[definition]Antipatterns are defined as patterns that appear obvious but are ineffective or far from optimal in practice, representing worst practices about how to structure and design an ontology.
+[ref]Catherine2012
+[smell-definition-end]
+
+[smell-definition]
+[sd-id]sd-16
+[definition]Anti-patterns are “poor” solutions to recurring design and implementation problems.
+[ref]Abdou2012
+[smell-definition-end]
+
+[smell-definition]
+[sd-id]sd-1
+[definition]Developers often introduce bad solutions, anti-patterns, to recurring design problems in their systems and these anti-patterns lead to negative effects on code quality.
+[ref]Jaafar2013
+[smell-definition-end]
+
+[smell-definition]
+[sd-id]sd-9
+[definition]Linguistic Antipatterns (LAs) in software systems are recurring poor practices in the naming, documentation, and choice of identifiers in the implementation of an entity, thus possibly impairing program understanding.
+[ref]Venera2013
+[smell-definition-end]
+
+[smell-definition]
+[sd-id]sd-19
+[definition]Design smells are structures in the design that indicate violation of fundamental design principles and negatively impact design quality.
+[ref]Girish
+[smell-definition-end] 
+
+[smell-definition]
+[sd-id]sd-3
+[definition]Code smells are indicators of deeper design problems that may cause difficulties in the evolution of a software system.
+[ref]Aiko2014
+[smell-definition-end]
+
+[smell-definition]
+[sd-id]sd-15
+[definition]Performance Antipatterns define bad practices that induce performance problems, and their solutions.
+[ref]Vittorio2014
+[smell-definition-end]
+
+[smell-definition]
+[sd-id]sd-17
+[definition]Similarly, Antipatterns are typically a commonly used set of design and coding constructs which might appear intuitive initially, but eventually may be detrimental to one or more aspects of the system.
+[ref]Vibhu2014
+[smell-definition-end]
+
+[smell-definition]
+[sd-id]sd-5
+[definition]Bad design practices at the code level are known as bad smells in the literature.
+[ref]Yasser2016
+[smell-definition-end]
+
+[smell-definition]
+[sd-id]sd-14
+[definition]Code smells - microstructures in the program - have been used to reveal surface indications of a design problem.
+[ref]Leonardo2016
+[smell-definition-end]
+
+[smell-definition]
+[sd-id]sd-18
+[definition]Configuration smells are the characteristics of a configuration program or script that violate the recommended best practices and potentially affect the program’s quality in a negative way.
+[ref]Tushar
+[smell-definition-end]
+
+
+
+

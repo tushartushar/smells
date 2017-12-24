@@ -2,7 +2,7 @@
 [smell-id]MA
 [smell-category]DESIGN
 [smell-name]Missing Abstraction
-[smell-description]This smell arises when clumps of data or encoded strings are used instead of creating a class or an interface. 
+[smell-description]This smell arises when clumps of data or encoded strings are used instead of creating a class or an interface.
 [smell-ref]Girish
 [smell-aka]PO
 [smell-aka]DC
@@ -12,7 +12,7 @@
 [smell-id]IA
 [smell-category]DESIGN
 [smell-name]Imperative Abstraction
-[smell-description]This smell arises when an operation is turned into a class. 
+[smell-description]This smell arises when an operation is turned into a class.
 [smell-ref]Girish
 [smell-aka]POL
 [smell-tool]DESIGNITE
@@ -22,7 +22,7 @@
 [smell-id]IA2
 [smell-category]DESIGN
 [smell-name]Incomplete Abstraction
-[smell-description]This smell arises when an abstraction does not support complementary or interrelated methods completely. 
+[smell-description]This smell arises when an abstraction does not support complementary or interrelated methods completely.
 [smell-ref]Girish
 [smell-aka]ILC
 [smell-end]
@@ -31,7 +31,7 @@
 [smell-id]MA2
 [smell-category]DESIGN
 [smell-name]Multifaceted Abstraction
-[smell-description]This smell arises when an abstraction has more than one responsibility assigned to it. 
+[smell-description]This smell arises when an abstraction has more than one responsibility assigned to it.
 [smell-ref]Girish
 [smell-aka]DC3
 [smell-aka]SAK
@@ -42,7 +42,7 @@
 [smell-id]UA
 [smell-category]DESIGN
 [smell-name]Unnecessary Abstraction
-[smell-description]This smell occurs when an abstraction that is actually not needed (and thus could have been avoided) gets introduced in a software design. 
+[smell-description]This smell occurs when an abstraction that is actually not needed (and thus could have been avoided) gets introduced in a software design.
 [smell-ref]Girish
 [smell-aka]LC2
 [smell-aka]POL
@@ -65,7 +65,7 @@
 [smell-id]DA
 [smell-category]DESIGN
 [smell-name]Duplicate Abstraction
-[smell-description]This smell arises when two or more abstractions have identical names or identical implementation or both. 
+[smell-description]This smell arises when two or more abstractions have identical names or identical implementation or both.
 [smell-ref]Girish
 [smell-aka]ACDI
 [smell-aka]CPP
@@ -97,7 +97,7 @@
 [smell-id]ME
 [smell-category]DESIGN
 [smell-name]Missing Encapsulation
-[smell-description]This smell occurs when implementation variations are not encapsulated within an abstraction or hierarchy. 
+[smell-description]This smell occurs when implementation variations are not encapsulated within an abstraction or hierarchy.
 [smell-ref]Girish
 [smell-end]
 
@@ -105,7 +105,7 @@
 [smell-id]UE
 [smell-category]DESIGN
 [smell-name]Unexploited Encapsulation
-[smell-description]This smell arises when client class uses explicit type checks (using chained if-else or switch statements that check for the type of the object) instead of exploiting the variation in types already encapsulated within a hierarchy. 
+[smell-description]This smell arises when client class uses explicit type checks (using chained if-else or switch statements that check for the type of the object) instead of exploiting the variation in types already encapsulated within a hierarchy.
 [smell-ref]Girish
 [smell-aka]SS2
 [smell-aka]TQ
@@ -116,7 +116,7 @@
 [smell-id]BM
 [smell-category]DESIGN
 [smell-name]Broken Modularization
-[smell-description]This smell arises when data and/or methods that ideally should have been localized into a single abstraction are separated and spread across multiple abstractions. 
+[smell-description]This smell arises when data and/or methods that ideally should have been localized into a single abstraction are separated and spread across multiple abstractions.
 [smell-aka]DC4
 [smell-ref]Girish
 [smell-tool]DESIGNITE
@@ -126,7 +126,7 @@
 [smell-id]IM
 [smell-category]DESIGN
 [smell-name]Insufficient Modularization
-[smell-description]This smell arises when an abstraction exists that has not been completely decomposed, and a further decomposition could reduce its size, implementation complexity, or both. 
+[smell-description]This smell arises when an abstraction exists that has not been completely decomposed, and a further decomposition could reduce its size, implementation complexity, or both.
 [smell-aka]LC
 [smell-aka]GC
 [smell-aka]BL
@@ -140,7 +140,7 @@
 [smell-id]CM
 [smell-category]DESIGN
 [smell-name]Cyclically-dependent Modularization
-[smell-description]This smell arises when two or more abstractions depend on each other directly or indirectly. 
+[smell-description]This smell arises when two or more abstractions depend on each other directly or indirectly.
 [smell-aka]SCDG
 [smell-aka]DCP
 [smell-ref]Girish
@@ -151,7 +151,7 @@
 [smell-id]HM
 [smell-category]DESIGN
 [smell-name]Hub-like Modularization
-[smell-description]This smell arises when an abstraction has dependencies (both incoming and outgoing) with a large number of other abstractions. 
+[smell-description]This smell arises when an abstraction has dependencies (both incoming and outgoing) with a large number of other abstractions.
 [smell-ref]Girish
 [smell-tool]DESIGNITE
 [smell-end]
@@ -160,7 +160,7 @@
 [smell-id]MH
 [smell-category]DESIGN
 [smell-name]Missing Hierarchy
-[smell-description]This smell arises when a DESIGN segment uses conditional logic to explicitly manage variation in behavior where a hierarchy could have been created and used to encapsulate those variations. 
+[smell-description]This smell arises when a DESIGN segment uses conditional logic to explicitly manage variation in behavior where a hierarchy could have been created and used to encapsulate those variations.
 [smell-aka]SS2
 [smell-ref]Girish
 [smell-tool]DESIGNITE
@@ -170,7 +170,7 @@
 [smell-id]UH
 [smell-category]DESIGN
 [smell-name]Unnecessary Hierarchy
-[smell-description]This smell arises when the whole inheritance hierarchy is unnecessary, indicating that inheritance has been applied needlessly for the particular design context. 
+[smell-description]This smell arises when the whole inheritance hierarchy is unnecessary, indicating that inheritance has been applied needlessly for the particular design context.
 [smell-ref]Girish
 [smell-end]
 
@@ -178,7 +178,7 @@
 [smell-id]UH2
 [smell-category]DESIGN
 [smell-name]Unfactored Hierarchy
-[smell-description]This smell arises when there is unnecessary duplication among types in a hierarchy. 
+[smell-description]This smell arises when there is unnecessary duplication among types in a hierarchy.
 [smell-aka]CPP
 [smell-aka]DA
 [smell-aka]DC2
@@ -218,7 +218,7 @@
 [smell-id]RH
 [smell-category]DESIGN
 [smell-name]Rebellious Hierarchy
-[smell-description]This smell arises when a subtype rejects the methods provided by its supertype(s). 
+[smell-description]This smell arises when a subtype rejects the methods provided by its supertype(s).
 [smell-aka]RB
 [smell-ref]Girish
 [smell-tool]DESIGNITE
@@ -228,7 +228,7 @@
 [smell-id]BH
 [smell-category]DESIGN
 [smell-name]Broken Hierarchy
-[smell-description]This smell arises when a supertype and its subtype conceptually do not share an "IS-A" relationship resulting in broken substitutability. 
+[smell-description]This smell arises when a supertype and its subtype conceptually do not share an "IS-A" relationship resulting in broken substitutability.
 [smell-aka]SDRM
 [smell-ref]Girish
 [smell-tool]DESIGNITE
@@ -238,7 +238,7 @@
 [smell-id]MH2
 [smell-category]DESIGN
 [smell-name]Multipath Hierarchy
-[smell-description]This smell arises when a subtype inherits both directly as well as indirectly from a supertype leading to unnecessary inheritance paths in the hierarchy. 
+[smell-description]This smell arises when a subtype inherits both directly as well as indirectly from a supertype leading to unnecessary inheritance paths in the hierarchy.
 [smell-ref]Girish
 [smell-tool]DESIGNITE
 [smell-end]
@@ -247,7 +247,7 @@
 [smell-id]CH
 [smell-category]DESIGN
 [smell-name]Cyclic Hierarchy
-[smell-description]This smell arises when a supertype in a hierarchy depends on any of its subtypes. 
+[smell-description]This smell arises when a supertype in a hierarchy depends on any of its subtypes.
 [smell-ref]Girish
 [smell-tool]DESIGNITE
 [smell-end]
@@ -299,7 +299,7 @@
 [smell-id]DC3
 [smell-category]DESIGN
 [smell-name]Divergent Change
-[smell-description]Divergent change occurs when one class is commonly changed in different ways for different reasons. 
+[smell-description]Divergent change occurs when one class is commonly changed in different ways for different reasons.
 [smell-aka]MA2
 [smell-ref]Fowler
 [smell-end]
@@ -374,7 +374,7 @@
 [smell-id]SG
 [smell-category]DESIGN
 [smell-name]Speculative Generality
-[smell-description]This smell occurs where an abstraction is created based on speculated requirements. It is often unnecessary that makes things difficult to understand and maintain. 
+[smell-description]This smell occurs where an abstraction is created based on speculated requirements. It is often unnecessary that makes things difficult to understand and maintain.
 [smell-aka]UA2
 [smell-aka]SH
 [smell-ref]Fowler
@@ -384,7 +384,7 @@
 [smell-id]TF
 [smell-category]IMPL
 [smell-name]Temporary Field
-[smell-description]This smell occurs when an instance variable is set only in certain circumstances. It makes the code difficult to understand since the purpose of the variable is not clear enough. 
+[smell-description]This smell occurs when an instance variable is set only in certain circumstances. It makes the code difficult to understand since the purpose of the variable is not clear enough.
 [smell-aka]
 [smell-ref]Fowler
 [smell-end]
@@ -439,7 +439,7 @@
 [smell-id]DC4
 [smell-category]DESIGN
 [smell-name]Data Class
-[smell-description]This smell occurs when a class contains only fields and possibly getters/setters without any behavior (methods). 
+[smell-description]This smell occurs when a class contains only fields and possibly getters/setters without any behavior (methods).
 [smell-aka]BM
 [smell-ref]Fowler
 [smell-end]
@@ -458,7 +458,7 @@
 [smell-id]CO
 [smell-category]IMPL
 [smell-name]Comments
-[smell-description]This smell occurs when comments are used as deodorant to explain the bad code. 
+[smell-description]This smell occurs when comments are used as deodorant to explain the bad code.
 [smell-aka]
 [smell-ref]Fowler
 [smell-end]
@@ -478,7 +478,7 @@
 [smell-id]GC
 [smell-category]DESIGN
 [smell-name]God Class
-[smell-description]The God class smell occurs when a huge class which is surrounded by many data classes acts as a controller (i.e. takes most of the decisions and monopolises the functionality offered by the software). The class defines many data members and methods and exhibits low cohesion. 
+[smell-description]The God class smell occurs when a huge class which is surrounded by many data classes acts as a controller (i.e. takes most of the decisions and monopolises the functionality offered by the software). The class defines many data members and methods and exhibits low cohesion.
 [smell-aka]IM
 [smell-aka]BL
 [smell-aka]LC
@@ -576,7 +576,7 @@
 [smell-id]SS1
 [smell-category]ARCH
 [smell-name]Stovepipe System
-[smell-description]This smell arises when subsystems are integrated in an ad hoc manner using multiple integration strategies and mechanisms. 
+[smell-description]This smell arises when subsystems are integrated in an ad hoc manner using multiple integration strategies and mechanisms.
 [smell-aka]SE
 [smell-ref]Brown
 [smell-end]
@@ -789,7 +789,7 @@
 [smell-id]PHU
 [smell-category]ARCH
 [smell-name]Package Hierarchies Unbalanced
-[smell-description]This smell arises when package structure of a software system is unbalanced. If the package structure is unbalanced, understandability is impaired. 
+[smell-description]This smell arises when package structure of a software system is unbalanced. If the package structure is unbalanced, understandability is impaired.
 [smell-ref]Lippert
 [smell-end]
 
@@ -821,7 +821,7 @@
 [smell-id]SAB
 [smell-category]ARCH
 [smell-name]Subsystem-API Bypassed
-[smell-description]Bypassing the subsystem-API and directly accessing the internal implementation of the component is a practice that is not only common, but also potentially fatal. The clients actually unauthorizedly expand the subsystem-API. 
+[smell-description]Bypassing the subsystem-API and directly accessing the internal implementation of the component is a practice that is not only common, but also potentially fatal. The clients actually unauthorizedly expand the subsystem-API.
 [smell-aka]LE
 [smell-aka]VDG
 [smell-ref]Lippert
@@ -879,7 +879,7 @@
 [smell-id]TML
 [smell-category]ARCH
 [smell-name]Too Many Layers
-[smell-description]Too many layers in a system often cause too many indirections. One indication of unnecessary indirections are dumb delegations: one method simply invokes another method without implementing any functionality of its own. 
+[smell-description]Too many layers in a system often cause too many indirections. One indication of unnecessary indirections are dumb delegations: one method simply invokes another method without implementing any functionality of its own.
 [smell-ref]Lippert
 [smell-end]
 
@@ -1126,7 +1126,7 @@
 [smell-id]LCTM
 [smell-category]TEST
 [smell-name]Lack of Cohesion of Test Methods
-[smell-description]The smell Lack of Cohesion of test methods occurs if test methods are grouped together in one test class, but they are not cohesive. 
+[smell-description]The smell Lack of Cohesion of test methods occurs if test methods are grouped together in one test class, but they are not cohesive.
 [smell-ref]Michaela
 [smell-end]
 
@@ -1182,7 +1182,7 @@
 [smell-id]LT
 [smell-category]TEST
 [smell-name]Lazy Test
-[smell-description]This occurs when several test methods check the same method using the same fixture (but for example check the values of different instance variables). 
+[smell-description]This occurs when several test methods check the same method using the same fixture (but for example check the values of different instance variables).
 [smell-ref]Arie
 [smell-end]
 
@@ -1706,4 +1706,563 @@
 [smell-aka]DCP
 [smell-ref]Mo
 [smell-tool]DESIGNITE
+[smell-end]
+
+[smell]
+[smell-id]PFD
+[smell-category]PERFORMANCE
+[smell-name]Falling Dominoes
+[smell-description]This smell occurs when one failure causes performance failures in other components.\nSolution: Make sure that broken pieces are isolated until they are repaired.
+[smell-ref]Smith03
+[smell-end]
+
+[smell]
+[smell-id]PEST
+[smell-category]PERFORMANCE
+[smell-name]Empty Semi Trucks
+[smell-description]This smell occurs when an excessive number of requests is required to perform a task. It may be due to inefficient use of available bandwidth, an inefficient interface, or both.\nSolution: The Batching performance pattern combines items into messages to make better use of available bandwidth. The Coupling performance pattern, Session Facade design pattern, and Aggregate Entity design pattern provide more efficient interfaces.
+[smell-ref]Smith03
+[smell-aka]PRT
+[smell-end]
+
+[smell]
+[smell-id]PRT
+[smell-category]PERFORMANCE
+[smell-name]Roundtripping
+[smell-description]This smell is a special case of Empty Semi Trucks. It occurs when many fields in a user interface must be retrieved from a remote system.\nSolution: Buffer all the calls together and make them in one trip. The Facade design pattern and the distributed command bean accomplish this buffering.
+[smell-aka]PEST
+[smell-ref]Smith03
+[smell-end]
+
+[smell]
+[smell-id]PTB
+[smell-category]PERFORMANCE
+[smell-name]Tower of Babel
+[smell-description]This smell occurs when processes excessively convert, parse, and translate internal data into a common exchange format such as XML.\nSolution: he Fast Path performance pattern identifies paths that should be stream-lined. Minimize the conversion, parsing, and translation on those paths by using the Coupling performance pattern to match the data format to the usage patterns.
+[smell-ref]Smith03
+[smell-end]
+
+[smell]
+[smell-id]PUP
+[smell-category]PERFORMANCE
+[smell-name]Unbalanced Processing
+[smell-description]This smell occurs when processing cannot make use of available processors, the slowest filter in a “pipe and filter” architecture causes the system to have unacceptable throughput, or when extensive processing in general impedes overall response time.\nSolution: 1) Restructure software or change scheduling algorithms to enable concurrent execution. 2) Break large filters into more stages and combine very small ones to reduce overhead. 3) Move extensive processing so that it doesn’t impede high traffic or more important work.
+[smell-ref]Smith03
+[smell-end]
+
+[smell]
+[smell-id]PUNP
+[smell-category]PERFORMANCE
+[smell-name]Unnecessary Processing
+[smell-description]This smell occurs when processing is not needed or not needed at that time.\nSolution: Delete the extra processing steps, reorder steps to detect unnecessary steps earlier, or restructure to delegate those steps to a background task.
+[smell-ref]Smith03
+[smell-end]
+
+[smell]
+[smell-id]PTR
+[smell-category]PERFORMANCE
+[smell-name]The Ramp
+[smell-description]This smell occurs when processing time increases as the system is used.\nSolution: Select algorithms or data structures based on maximum size or use algorithms that adapt to the size.
+[smell-ref]Smith03
+[smell-aka]PSDR
+[smell-end]
+
+[smell]
+[smell-id]PSDR
+[smell-category]PERFORMANCE
+[smell-name]Sisyphus Database Retrieval
+[smell-description]It is a special case of The Ramp. This smell occurs when performing repeated queries that need only a subset of the results.\nSolution:Use advanced search techniques that only return the needed subset.
+[smell-aka]PTR
+[smell-ref]Smith03
+[smell-end]
+
+[smell]
+[smell-id]PML
+[smell-category]PERFORMANCE
+[smell-name]More is Less
+[smell-description]This smell occurs when a system spends more time “thrashing” than accomplishing real work because there are too many processes relative to available resources.\nSolution: Quantify the thresholds where thrashing occurs (using models or measurements) and determine if the architecture can meet its performance goals while staying below the threshholds.
+[smell-ref]Smith03
+[smell-end]
+
+[smell]
+[smell-id]PTJ
+[smell-category]PERFORMANCE
+[smell-name]Traffic Jam
+[smell-description]This smell occurs when one problem causes a backlog of jobs that produces wide variability in response time which persists long after the problem has disappeared.\nSolution: Begin by eliminating the original cause of the backlog. If this is not possible, provide sufficient processing power to handle the worst-case load.
+[smell-ref]Smith03
+[smell-end]
+
+[smell]
+[smell-id]GCM
+[smell-category]CONVENTION
+[smell-name]Misformat
+[smell-description]There are many formatting mistakes one can make when creating a grammar without proper tool support. Mostly they revolve around mistypings, misspellings, misalignments, etc, and result in actual incorrect constructs in extracted grammars.
+[smell-aka]GXTN
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GCMN
+[smell-category]CONVENTION
+[smell-name]Misnomer
+[smell-description]There are a lot of potential problems with names used within a grammar, mostly concerning nonterminal names and labels. One can blame names to be uncommunicative such as abc or pqr are much worse for the readability and maintainability of the grammar than if_statement, CompilationUnit or DIGIT, similarly to how this is a problem in programming in general. Also, names can be misleading and contain words that contradict the definition of the named entity.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GCS
+[smell-category]CONVENTION
+[smell-name]SayMyName
+[smell-description]In small grammars misspellings and misnamings are easy to overlook since humans are naturally capable of that. When the grammar size increases, primitive automation techniques are used like plain text search, and such a search query looking for all statements will not find the one labelled with “staetment”.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GCZ
+[smell-category]CONVENTION
+[smell-name]ZigZag
+[smell-description]ZigZag was a previously identified micropattern of a non- terminal de ned in a style that mixes horizontal production rules (the ones with a top-level choice) with vertical production rules (with several rules per nonterminal).
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GCSP
+[smell-category]CONVENTION
+[smell-name]Splat
+[smell-description]Since definitions of vertical nonterminals consist of several production rules, these rules can be distributed over the grammar and not focused in one place. This may be bad, especially if most of the rules are collected together, and only one or two are elsewhere.
+[smell-aka]GCZ
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GNU
+[smell-category]NOTATION
+[smell-name]Underuse
+[smell-description]The original BNF used for early ALGOL, did not yet borrow Kleene star (x* for zero or more xs) and Kleene cross (x+ for one or more) from regular expressions, and early parser specification notations were just as limited. Grammars written with those notations in mind (not necessarily for using them!), suffer from “yaccification”, when all repetitions are written out explicitly as additional left-recursive nonterminals. This pattern is well-known to be harmful since it reduces grammar’s both readability (being basically an encoding move, not a modelling one) and portability (a left-recursive grammar is often useless or suboptimal for top-down parsing).
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GNO
+[smell-category]NOTATION
+[smell-name]Overspec
+[smell-description]In many notations, there are various ways to achieve the same effect, and information in those should not be duplicated or contradictory, since it only confuses grammar engineers and leads to grammars with very subtle bugs.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GNP
+[smell-category]NOTATION
+[smell-name]Priorities
+[smell-description]A typical layered grammar treats highly recursive language constructs with sophisticated priorities by explicitly encoding them in a long streak of nonterminals. A cleaner way would have been to merge all definitions into one nonterminal (or a few conceptually grouped ones) and to define priorities between them.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GNS
+[smell-category]NOTATION
+[smell-name]Singleton
+[smell-description]The designers of grammar notations, as all DSL designers, try to make them  t the domain, but never achieve absolute perfection. In particular, multiary symbols with arity of 2 and up, are commonly expressed in such a way that allows their use on an empty or trivial list of arguments.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GNC
+[smell-category]NOTATION
+[smell-name]Combo
+[smell-description]Grammar combinators (metasymbols of arity 1 and up) such as the Kleene star and cross, or an optional, can be combined in an improper way. For example, a grammar engineer who defines A ::= B?; and B ::= C?;, may mean well, but creates a confusing contract if A is used to bind a textual structure with a tree structure: it is ambiguous what an empty string corresponds to—an empty node A or a node A containing an empty node B.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GNCH
+[smell-category]NOTATION
+[smell-name]Chant
+[smell-description]Nonterminals smell that were “defined” in natural language instead of the actual grammar notation: “defined similarly to...”, “all Unicode characters of class...”, “any of the following”, etc. These are drastic examples of this smell, since they make the grammar completely useless for automatic machine consumption, and require a human expert to either fix the grammar or devise a semiparsing workaround, and possibly an extra person to translate the description to a natural language understandable by the expert.
+[smell-aka]GSHDE
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GND
+[smell-category]NOTATION
+[smell-name]Deprecated
+[smell-description]Similarly to deprecated statements and methods in program- ming, grammar notations may have some functionality that is no longer considered viable and proper in the new version.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GNE
+[smell-category]NOTATION
+[smell-name]Exotic
+[smell-description]This smell is in contradiction with Underuse, and states that using notational features that are uncommon, obscure or overly exotic, should be limited. Excessive use of features idiosyncratic for one particular notation, will result in a vendor lock-in. For example, if a notation allows context handling (pushing the grammar outside the comfort zone of CFGs), using it is only fully justified when the result is too cumbersome otherwise.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GPF
+[smell-category]PARSING
+[smell-name]Factoring
+[smell-description]In classic by-the-book non-memoising parsing, if alternative production rules from the same nonterminal start from the same symbols, these would have to be reparsed in each of the branches. As a real example:\nopen_if_statement\n: IF boolean_expression THEN statement\n| IF boolean_expression THEN closed_statement\nELSE open_statement;\nInterestingly, this example is a false positive: factoring the first three symbols into a separate nonterminal will clutter the grammar without bringing any noticeable benefits (and will introduce the Weak smell).
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GPS
+[smell-category]PARSING
+[smell-name]1SidedRecursion
+[smell-description]It is well-known that left-recursive definitions are deadly for by-the-book top-down parsing technologies, since they create an infinite loop and cause the parser to crash from stack overflow.
+[smell-aka]GXTRE
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GPSU
+[smell-category]PARSING
+[smell-name]Superset
+[smell-description]Some grammars represent a superset of the intended language. This may become a problem if the parser based on the grammar is to be used as a correctness oracle, since in this role it is inadequate.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GPSH
+[smell-category]PARSING
+[smell-name]Shotgun
+[smell-description]Shotgun parsing is a term used in cybersecurity to represent an architecture where a proper parser is substituted with lightweight treatment (by regular expression matches and direct string manipulation). The name comes from the fact that in a pipeline of tools built with such defects, the problems quickly multiply with each step when the receiver is applying Postel’s Law in trying to be relaxed with its input, and is known to cause all kinds of subtle bugs in software language processing.\nWe define the Shotgun smell as a situation when the grammatical bind is too loose on one of its ends.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GPN
+[smell-category]PARSING
+[smell-name]NoDefault
+[smell-description]There are certain tricks experienced grammar engineers use to improve the error handling. For example, consider a DSL where each statement starts with a keyword and ends with a period. An obvious improvement to the naïve approach would be to, for instance, once a keyword MAP is recognised, have a panic mode setup or some other semiparsing machinery to fail locally and report on an “error in a map statement” rather than pointlessly try to backtrack and fail at the general statement level. To do this, one has to have a special default case among the rules for each particular statement kind. This recipe is more often observed in grammars written for frameworks where ordered choice is more natural (TXL, PEGs, etc), and could take the form of Stmt := "MAP" MapStmt "." / "IF" IfStmt "." /··· / Id (!".")* ".". The lack of the last alternative in this example would be an indication of a NoDefault smell.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GPA
+[smell-category]PARSING
+[smell-name]Action
+[smell-description]Many realistic language workbenches draw the line to prevent endless growing of their notations, and introduce a concept of a “semantic action”, which is written like an annotation in the grammar and acts as a doorway to the mainstream language typical for the target platform. Obviously, since this action consists of code, the code can su er from one of the numerous code smells.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GDE
+[smell-category]DUPLICATION
+[smell-name]Echo
+[smell-description]A nonterminal definition is echoed if it is included in the grammar several times, each of which is identical to any other. Echoes were found in the Java Language Specification as a result of manual (not tool supported) creation of both the grammar and language documentation.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GDC
+[smell-category]DUPLICATION
+[smell-name]Clone
+[smell-description]Nonterminals that have exactly the same definitions, are only cluttering the grammar, and can be painlessly united.
+[smell-aka]GDF
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GDF
+[smell-category]DUPLICATION
+[smell-name]Foldable
+[smell-description]This smell occurs when the clone is formed not between full definitions of two nonterminals, but when the right hand side of one nonterminal occurs as a subexpression in the right hand side of another nonterminal. Conceptually they are still clones and su er from all known consequences of coupled evolution.
+[smell-aka]GDC
+[smell-aka]GDCO
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GDCO
+[smell-category]DUPLICATION
+[smell-name]Common
+[smell-description]We may observe clones between two or more subexpressions found in different places in the grammar.
+[smell-aka]GDC
+[smell-aka]GDF
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GDL
+[smell-category]DUPLICATION
+[smell-name]Lookalike
+[smell-description]In mainstream clone detection research, people distinguish between clones of different types: “type 1”, "type 2", "type 3", and "type 4". For grammars, there is no developed theory of clone management, so the questions are open on what constitutes a proper clone, what classes of clones are there, which ones are useful to detect and which to refactor, etc. It makes sense to assume that clone detection in grammars will bear some similarity to contextual clones [35] that worked for another DSL with relatively few constructs, where clones were detected based on the context of clone candidate fragments, and not on their structure per se.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GDP
+[smell-category]DUPLICATION
+[smell-name]Permuted
+[smell-description]Clones modulo permutations (e.g., A | B vs B | A) are confusing: if the choice used in the notation is commutative, they are just Clones, otherwise if the choice is ordered, having both A / B and B / A within the same grammar is even more confusing for everyone.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GSU
+[smell-category]SPAGHETTI
+[smell-name]Uncluster
+[smell-description]Nonterminals that refer to one another, should be located close to one another. The longer the distance between the use of a nonterminal from its definition, the more the reader of the grammar will have to switch context. A lot of scrolling always means there is something smelly about how the gram- mar is set up. Moving the production rules that cause the scrolling closer to each other to form a cluster, will result in an easier grammar with more coherent structure.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GSUS
+[smell-category]SPAGHETTI
+[smell-name]Unsequence
+[smell-description]The order of the production rules in the grammar should be set up in a consistent manner, such that referred nonterminals in production rules refer either up or down in the grammar. If Uncluster and Splat are concerned with general placement of production rules, this smell is about how they need to be structured to keep the reading experience optimal.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GSS
+[smell-category]SPAGHETTI
+[smell-name]StartInTheMiddle
+[smell-description]To improve the readability and navigability of the grammar, its starting symbol should be on top or the bottom of the grammar, not lost somewhere in the middle.
+[smell-aka]GSHC
+[smell-ref]Mats2017
+[smell-end]
+
+
+[smell]
+[smell-id]GSHA
+[smell-category]SHORTAGE
+[smell-name]AlmostAlphabet
+[smell-description]The completeness of some character classes and terminal choices can be predicted, and compared to the actual value given by the grammar. For example, if a character class includes all Latin letters except one or all whitespace characters except \r, it may be an error.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GSHC
+[smell-category]SHORTAGE
+[smell-name]ConfusingEntry
+[smell-description]StartInTheMiddle addresses positioning of the starting symbol of the grammar, but there can be three more problems with it. (1) Some grammars do not have any start specified at all, having it to be inferred by heuristics (e.g., the only top nonterminal). (2) There can be multiple starts, especially for notations that exceed classic CFGs. This can indicate several independent grammars that got merged into one, or just several entry points into the grammar (which would allow, for example, to parse statements or expressions out of context—it is a not quite challenging exercise in theory, but extremely useful in practical grammarware engineering when integrating software languages with an IDE and a debugger). (3) The root symbol is properly marked as such, but is also referenced from other nonterminals in the grammar (so the starting symbol is not a top nonterminal).
+[smell-aka]GSS
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GSHD
+[smell-category]SHORTAGE
+[smell-name]Dead
+[smell-description]All top (unused) nonterminals identified as not being the starting symbol(s) of the grammar, represent unreachable fragments.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GSHB
+[smell-category]SHORTAGE
+[smell-name]Bottom
+[smell-description]The lack of definition for nonterminals that are used within the grammar, is an obvious mistake that must be reported one way or another, and also possibly as a smell.\nThere are three main reasons for undefined nonterminals: (1) they were forgotten by the grammar engineer; (2) they are defined in a different module; (3) they are defined on a separate conceptual layer.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GSHDE
+[smell-category]SHORTAGE
+[smell-name]Debt
+[smell-description]Similarly to Chant that covers up imperfect fragments with comments in natural language, there could be pieces missing entirely from the grammar and replaced with comments. If the comments admit clearly what is missing, use searchable tags like “TODO” or “FIXME” and are intended to use as a backlog.
+[smell-aka]GNCH
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GMB
+[smell-category]MIXTURE
+[smell-name]BadLayout
+[smell-description]Dealing with layout and whitespace can be very tricky, and, as any tricky process, there may be issues with it. Not specifying any layout may be harmful in some cases as well.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GMP
+[smell-category]MIXTURE
+[smell-name]Preprocessor
+[smell-description]A preprocessor is a curious thing: it is essentially, for all intents and purposes, a compiler that processes the input text, expands macros, connects additional textual sources, performs variant compilation and other similar activities. On the other hand, it is so common to use it before the “actual” compiler, that some study books regard it as a separate phase of compilation.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GPC
+[smell-category]PROXY
+[smell-name]Chain
+[smell-description]Chain rules are a well-known smell in grammar engineering: it happens when a nonterminal is defined with only one production rule which has exactly one nonterminal as its right hand side. The “inner” nonterminal acts like a middle man and does not play a significant rule in structural commitments of the grammar.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GPT
+[smell-category]PROXY
+[smell-name]Throwaway
+[smell-description]A nonterminal that is used only once, may be useful to shorten production rules (see TooWide), and may occasionally convey a useful abstraction with its name. Beyond those circumstances it is a smell and a candidate for refactoring.
+[smell-aka]GXTW
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GPW
+[smell-category]PROXY
+[smell-name]Weak
+[smell-description]When the right hand side of a nonterminal is formed from several symbols that happen to occur one after another, without forming a proper abstraction, this can hinder grammar’s understanding.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GPG
+[smell-category]PROXY
+[smell-name]Ghost
+[smell-description]If an expression, especially a Common subexpression, could have formed a proper abstraction, but is not made into a separate nonterminal, we speak of it as a Ghost. An example of a Ghost could be an omnipresent qualified identifier that is always used as Id ("." Id)*.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GPM
+[smell-category]PROXY
+[smell-name]Multitool
+[smell-description]This takes place when a nonterminal violates the single responsibility principle, and represents several (hopefully related) abstractions, such as a type name and a variable name.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GDD
+[smell-category]DEPENDENCY
+[smell-name]Diamond
+[smell-description]A well-known pattern in dependency and inclusion is when a class A inherits from class X and class B also inherits from class X, but class C inherits from both A and B and thus gets to see double of each of X’s elements. The problem is solved differently in different programming and modelling languages—in grammars, it causes an ambiguity.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GDR
+[smell-category]DEPENDENCY
+[smell-name]Rivalry
+[smell-description]Modern frameworks are more advanced and versatile, they feature several kinds of negation, conjunction, ordered choices, precede and follow restrictions, etc. However, there is none that explicitly provides an exclusive disjunction combinator, even though it was the original intent behind the choice: thus, a statement may be a conditional statement or a print statement, but not both at the same time. This smell is about such situations: it occurs whenever languages of alternative siblings overlap and create an ambiguity.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GDO
+[smell-category]DEPENDENCY
+[smell-name]Ouroboros
+[smell-description]If nonterminals are mutually, say, left recursive, and have no non-recursive alternatives, they are useless and cannot express a proper syntactic commitment. However, a similar issue may be encountered on the level of modules, and it is harder to detect for a human because modular grammars are already stretching comprehension capabilities of a grammar engineer.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GDS
+[smell-category]DEPENDENCY
+[smell-name]Soulmates
+[smell-description]If enough information is available about the evolution of the grammar (e.g., in a form of a versioned repository or a piece of documentation describing all changes), one can notice two nonterminals having a so-called co-change relationship when each revision that changes one, also changes the other. The smell occurs when this co-change relationship in the revision log does not correspond to explicit dependencies between modules and nonterminals.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GDSP
+[smell-category]DEPENDENCY
+[smell-name]Spillover
+[smell-description]Spillover happens when some symbols that should have been a part of the nonterminal definition, are not included in its right hand side, and appended every time to its use. This creates a co-change relationship between the nonterminal and the context of its use. With Spillover, every time a definition of a nonterminal is changed in a particular way, all occurrences of the same nonterminal needs to be updated.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GDM
+[smell-category]DEPENDENCY
+[smell-name]Mythic
+[smell-description]If a grammar contains a feature that is never exercised by any program in the actual codebase, it is a Mythic feature that, does not have to be supported for an analysis or migration tool to be useful and applicable.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GXTW
+[smell-category]COMPLEXITY
+[smell-name]TooWide
+[smell-description]This smell is designed to recognise production rules which are too wide—that is, their right hand side is too long. There could be at least three ways to define what is “too long”: 1) The number of consequent terminals is too high, which is harmful because long streaks of consequent terminals obscure the syntactic structure. 2) The number of nonterminals is too high, which is harmful because it requires knowledge about referenced nonterminals to debug a grammar (so we should not count preterminals). 3) The number of metasymbols (stars, optionals, crosses, separator lists and other combinators) is too high, which is harmful because the importance of knowing the notation is stressed when a grammar engineer needs to understand such a production rule.
+[smell-aka]GPT
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GXTR
+[smell-category]COMPLEXITY
+[smell-name]TooRamose
+[smell-description]In grammars cyclomatic complexity is easy to estimate if we think of the parsing semantics, and it will be rather close for any other concrete application of the grammar. Alternatives and all kinds of disjunction obviously contribute to its increase, as well as repetition metasymbols. Conjunction, if present, also contributes to the branching since a construct like A & B means that both the parser and the grammar engineer will have to explore both branches related to A as well as to B.
+[smell-aka]GXTN
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GXTRE
+[smell-category]COMPLEXITY
+[smell-name]TooRecursive
+[smell-description]If recursion and mutual recursion are too prevalent in a grammar, it can be confusing even if it is not 1SidedRecursion.
+[smell-aka]GPS
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GXTN
+[smell-category]COMPLEXITY
+[smell-name]TooNested
+[smell-description]Subsequences (often called groups) may be used to avoid Misformat, but really hamper the understanding of the system if used excessively. This smell often correlates with production rules being TooRamose.
+[smell-aka]GXTRE
+[smell-aka]GCM
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GXTT
+[smell-category]COMPLEXITY
+[smell-name]TooTall
+[smell-description]For each nonterminal we can calculate its minimal distance from the starting symbol, as the minimal number of productions in a full derivation that contains it. The maximum of all these distances for all nonterminals, is what is referred to as the height of the grammar. Out of two grammars of comparable size with respect to number of terminals, nonterminals and production rules, a taller grammar will be more complex to understand—thus, it is advisable to refactor a grammar that has grown too tall.
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GXTL
+[smell-category]COMPLEXITY
+[smell-name]TooLonely
+[smell-description]A variant of the well-known Insufficient Modularisation smell, ported to grammars: if the size of a grammar is much larger than expected, the time has come to split it up in modules.
+[smell-aka]GXTM
+[smell-aka]GXGR
+[smell-aka]GXTC
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GXTM
+[smell-category]COMPLEXITY
+[smell-name]TooModular
+[smell-description]On the other side of the spectrum from TooLonely, a grammar can be too modular and split into so many modules that each of them is meaninglessly tiny, yet their combination is unbearably unintelligible.
+[smell-aka]GXTL
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GXGR
+[smell-category]COMPLEXITY
+[smell-name]Greedy
+[smell-description]Similarly to TooLonely but not quite identical to it, there is a scenario when a grammar is modularised, but still insufficiently: in particular, if there is one module that is much greedier than the rest and does too much compared to any other module. In realistic grammars this smell is quite common, and the culture of proper modularisation with close to uniform distribution of responsibilities among modules, has not yet developed.
+[smell-aka]GXTL
+[smell-aka]GXLZ
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GXLZ
+[smell-category]COMPLEXITY
+[smell-name]Lazy
+[smell-description]The opposite of Greedy, a Lazy module is the one that does not do much: it is empty or contains just one nonterminal.
+[smell-aka]GXGR
+[smell-ref]Mats2017
+[smell-end]
+
+[smell]
+[smell-id]GXTC
+[smell-category]COMPLEXITY
+[smell-name]TooCoupled
+[smell-description]Modularity can not only be broken or insufficient, it can also be weakened. A grammar split into several modules that have high coupling among them and low cohesion inside each of them, had better stayed as TooLonely.
+[smell-aka]GXTL
+[smell-ref]Mats2017
 [smell-end]

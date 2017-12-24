@@ -31,6 +31,16 @@ class HtmlGenerator(object):
                 result.append(cat)
         return result
 
+    def get_all_descendent_categories(self, category):
+        result = set([category])
+        for cat in self.category_list:
+            if cat.parent_obj == category:
+                result.add(cat)
+                descendents = self.get_all_descendent_categories(cat)
+                for a_descendent in descendents:
+                    result.add(a_descendent)
+        return result
+
     def write_html_top_stuff(self, path):
         self.writeFile(path, FixedText.TOP_TEXT)
         self.appendFile(path, FixedText.BODY_TOP_PART)
@@ -159,9 +169,12 @@ class HtmlGenerator(object):
 
     def get_smell_count_in_category(self, cat):
         count = 0
-        for smell in self.smell_list:
-            if smell.category_obj == cat:
-                count += 1
+
+        cat_hierarchy_list = self.get_all_descendent_categories(cat)
+        for aCat in cat_hierarchy_list:
+            for smell in self.smell_list:
+                if smell.category_obj == aCat:
+                    count += 1
         return count
 
     def is_sub_category(self, subCat, cat):

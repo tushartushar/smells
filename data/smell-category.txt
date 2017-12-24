@@ -75,3 +75,87 @@
 [smell-category-name]Performance Smells
 [smell-category-parent]CODE
 [define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]GRAMMAR
+[smell-category-name]Grammar Smells
+[smell-category-parent]
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]ORGANISATION
+[smell-category-name]Organisation Smells
+[smell-category-parent]GRAMMAR
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]NAVIGATION
+[smell-category-name]Navigation Smells
+[smell-category-parent]GRAMMAR
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]STRUCTURE
+[smell-category-name]Structure Smells
+[smell-category-parent]GRAMMAR
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]CONVENTION
+[smell-category-name]Convention Smells
+[smell-category-parent]ORGANISATION
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]NOTATION
+[smell-category-name]Notation Smells
+[smell-category-parent]ORGANISATION
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]PARSING
+[smell-category-name]Parsing Smells
+[smell-category-parent]ORGANISATION
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]DUPLICATION
+[smell-category-name]Duplication Smells
+[smell-category-parent]ORGANISATION
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]SPAGHETTI
+[smell-category-name]Spaghetti Smells
+[smell-category-parent]NAVIGATION
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]SHORTAGE
+[smell-category-name]Shortage Smells
+[smell-category-parent]NAVIGATION
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]MIXTURE
+[smell-category-name]Mixture Smells
+[smell-category-parent]NAVIGATION
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]PROXY
+[smell-category-name]Proxy Smells
+[smell-category-parent]STRUCTURE
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]DEPENDENCY
+[smell-category-name]Dependency Smells
+[smell-category-parent]STRUCTURE
+[define-smell-category-end]
+
+[define-smell-category]
+[smell-category-id]COMPLEXITY
+[smell-category-name]Complexity Smells
+[smell-category-parent]STRUCTURE
+[define-smell-category-end]
