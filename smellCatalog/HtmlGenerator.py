@@ -109,6 +109,7 @@ class HtmlGenerator(object):
         self.appendFile(path, total_text)
         self.appendFile(path, FixedText.HOW_TEXT)
         self.appendFile(path, FixedText.ADDITIONAL_TEXT)
+        self.appendFile(path, FixedText.SURVEY_PAPER_TEXT)
         self.appendFile(path, FixedText.ACKOWLEDGEMENTS)
         today = datetime.datetime.today()
         self.appendFile(path, "<hr><p>Last updated: " + str(today.strftime("%B %d, %Y")) + "</p>")

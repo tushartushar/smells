@@ -35,7 +35,7 @@ BODY_LOW_PART = "</div>" +\
 BODY_MAIN_TOP = "<div class=\"w3-main\" style=\"margin-left:340px;margin-right:40px\">"
 
 ATTRIBUTION_TEXT = "<div class=\"w3-light-grey w3-container w3-padding-32\" style=\"margin-top:75px;padding-right:58px\">"+\
-                   "<p class=\"w3-right\">All rights reserved (c) <a href=\"http://www.tusharma.in\">Tushar Sharma</a> 2017.</p></div>"
+                   "<p class=\"w3-right\">All rights reserved (c) <a href=\"http://www.tusharma.in\">Tushar Sharma</a> 2017-18.</p></div>"
 HTML_END_TEXT = "</body></html>"
 
 TRACKING_TEXT = "<script>" +\
@@ -53,6 +53,8 @@ ADDITIONAL_TEXT = "<p>This taxonomy is evolving. I plan to add more smells and p
     "If you would like to see something relevant which is currently missing, feel free to offer a pull request. " +\
     "<b>Here is the URL to the <a href=\"https://github.com/tushartushar/smells\">open-source repository</a></b>. " +\
     "You may also contact me at tusharsharma@ieee.org.</p>"
+
+SURVEY_PAPER_TEXT = "<p><h4>A survey on software smells: </h4> Our survey paper titled <a href=\"https://www.sciencedirect.com/science/article/pii/S0164121217303114\" target=\"_blank\">\"A survey on software smells\"</a> published in the April 2018 issue of <em>Journal of Systems and Software</em> may interest you. The paper provides a comprehensive overview of many dimensions concerning smells including definition, types, effects, causes, and detection.</p><p><a href=\"https://www.sciencedirect.com/science/article/pii/S0164121217303114\" target=\"_blank\"><img src=\"smells-overview.jpg\" style=\"width:700px;\"></a></p>"
 
 ACKOWLEDGEMENTS = "<p><h4>Acknowledgements:</h4> I would like to thank Prof. Diomidis Spinellis for suggesting me many improvements.</p>" +\
     "<p>My sincere thanks to the following contributors: Neil Ernst, Vadim Zaytsev.</p>"
