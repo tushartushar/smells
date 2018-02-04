@@ -1278,6 +1278,7 @@
 [smell-description]This smell arises when a column is used to store a non-atomic attribute. For instance, storing comma-separated lists for an attribute to avoid creating an intersection table for a many-to-many relationship or storing a JSON file which is not used atomically. \nEach attribute value must be stored and retrieved atomically. If a table does not adhere to this practice, the resultant schema introduces multiple problems. For instance, a user has to write more complex queries (using pattern-matching expressions) to retrieve data from this table. Such complex queries are prone to inaccurate results. Also, such queries cannot exploit available indexes. Even further, these queries are not portable due to vendor specific support to pattern-matching expressions.
 [smell-example]CREATE TABLE Books (\nbook_id SERIAL PRIMARY KEY,\nbook_title VARCHAR (1000),\nauthors VARCHAR (1000), -- comma-separated list \n--, , ,\n};
 [smell-ref]Karwin
+[smell-tool]DBDEO
 [smell-end]
 
 [smell]
@@ -1287,6 +1288,7 @@
 [smell-description]The smell occurs when an attribute in a table refers another row in the same table i.e., a table has a recursive relationship to model hierarchical structure. \nQuerying a tree with adjacency list is quite difficult and error-prone. Specifically, deleting a node from a tree which is modelled using adjacency list is non-trivial and prone to introduce errors in the database.
 [smell-example]CREATE TABLE Comments (\ncomment_id SERIAL PRIMARY KEY,\nparent_id BIGINT UNSIGNED,\n-- ,  ,  ,\nFOREIGN KEY (parent_id) REFERENCES Comments (comment_id),\n--, , ,\n};
 [smell-ref]Karwin
+[smell-tool]DBDEO
 [smell-end]
 
 [smell]
@@ -1314,6 +1316,7 @@
 [smell-description]This smell occurs when metadata is stored as data in the form of EAV (Entity-Attribute-Value) pattern.\nIn a relational table, all the attributes are equally applicable for all the rows in the table. It is tempting to implement EAV pattern when a subset of attributes applicable for a subset of rows and the rest of attributes for rest of the rows. However, this arrangement introduces many deficiencies in the database; for example, one can't use native SQL data types (leading to invalid data), one can't enforce referential integrity, and one can't make up attribute names.
 [smell-example]CREATE TABLE IssueAttributes (\nissue_id    BIGINT UNSIGNED NOT NULL,\nattr_name   VARCHAR(100) NOT NULL,\nattr_value  VARCHAR(100),\nPRIMARY KEY (issue_id, attr_name),\nFOREIGN KEY (issue_id) REFERENCES Issues(issue_id)\n);
 [smell-ref]Karwin
+[smell-tool]DBDEO
 [smell-end]
 
 [smell]
@@ -1332,6 +1335,7 @@
 [smell-description]This smell arises when multiple serial columns are created for an attribute.\nIn cases when an attribute may have one or more values, it is tempting to create multiple columns for the attribute in a table. However, such a schema design makes querying the table very difficult and verbose.
 [smell-example]CREATE TABLE Bugs (\nbug_id SERIAL PRIMARY KEY,\ndescription VARCHAR(1000),\ntag1 VARCHAR(20),\ntag2 VARCHAR(20),\ntag3 VARCHAR(20)\n);
 [smell-ref]Karwin
+[smell-tool]DBDEO
 [smell-end]
 
 
@@ -1342,6 +1346,7 @@
 [smell-description]This smell occurs when a table is split horizontally in multiple tables using some criterion (for example, year) to achieve scalability.\nThis smell not only makes the querying difficult but also introduces problems managing data integrity.
 [smell-example]CREATE TABLE Bugs_2008 ( . . . );\nCREATE TABLE Bugs_2009 ( . . . );\nCREATE TABLE Bugs_2010 ( . . . );
 [smell-ref]Karwin
+[smell-tool]DBDEO
 [smell-end]
 
 [smell]
@@ -1351,6 +1356,7 @@
 [smell-description]This smell arises when specific values are defined in an attribute definition to restrict possible values of the attribute.\nSpecifying all possible values for an attribute in schema definition mixes metadata with data which is not recommended. This smell makes it difficult to extend or modify the list of accepted values for an attribute.
 [smell-example]CREATE TABLE Bugs (\n-- other columns\nstatus VARCHAR(20) CHECK (status IN ('NEW', 'IN PROGRESS', 'FIXED'))\n);
 [smell-ref]Karwin
+[smell-tool]DBDEO
 [smell-end]
 
 
@@ -1360,6 +1366,7 @@
 [smell-name]Index Abuse
 [smell-description]This smell arises when the indexes are used poorly. This smell has the following variants: 1) Missing indexes, 2) Insufficient indexes, and 3) Unused indexes.\nCreating effective indexes is not trivial; it requires judicious planning. A database with a deficient plan for indexes performs poorly.
 [smell-ref]Karwin
+[smell-tool]DBDEO
 [smell-end]
 
 
@@ -1370,6 +1377,7 @@
 [smell-description]This smell arises when a table contains excessive number of attributes.\nExcessive number of attributes tend to violate the principles of normalization which in turn introduce a variety of problems. Additionally, it impacts maintainability of the database.
 [smell-example]CREATE TABLE bet_matches( id TEXT PRIMARY KEY, tx0_index INTEGER, tx0_hash TEXT, tx0_address TEXT, tx1_index INTEGER, tx1_hash TEXT, tx1_address TEXT, tx0_bet_type INTEGER, tx1_bet_type INTEGER, feed_address TEXT, initial_value INTEGER, deadline INTEGER, target_value REAL, leverage INTEGER, forward_quantity INTEGER, backward_quantity INTEGER, tx0_block_index INTEGER, tx1_block_index INTEGER, block_index INTEGER, tx0_expiration INTEGER, tx1_expiration INTEGER, match_expire_index INTEGER, fee_fraction_int INTEGER, status TEXT, FOREIGN KEY (tx0_index, tx0_hash, tx0_block_index) REFERENCES transactions(tx_index, tx_hash, block_index), FOREIGN KEY (tx1_index, tx1_hash, tx1_block_index) REFERENCES transactions(tx_index, tx_hash, block_index));
 [smell-ref]Redgate
+[smell-tool]DBDEO
 [smell-end]
 
 
@@ -1389,6 +1397,7 @@
 [smell-description]This smell occurs when two or more attributes are defined with identical names but as distinct data types in different tables.\nIdentical names with different data types create confusion and could lead to subtle bugs in queries.
 [smell-example]CREATE TABLE `spell_override` (\n`comment` LONGTEXT NOT NULL,\n-- other columns\n);\nCREATE TABLE `creature_text` (\n`comment` varchar(255) DEFAULT, -- overloaded attribute\n-- other columns\n);
 [smell-ref]Redgate
+[smell-tool]DBDEO
 [smell-end]
 
 [smell]

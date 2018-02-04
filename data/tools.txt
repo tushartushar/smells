@@ -17,6 +17,14 @@
 [tool-end]
 
 [tool]
+[tool-id]DBDEO
+[tool-name]DbDeo
+[tool-description]DbDeo extracts and analyzes SQL statements to reveal database schema smells.
+[tool-url]https://github.com/tushartushar/DbDeo
+[tool-supported-languages]SQL
+[tool-end]
+
+[tool]
 [tool-id]SLIDEQ
 [tool-name]SlideQ
 [tool-description]SlideQ detects smells in presentations. It is realized as a plug-in for Microsoft Powerpoint.
