@@ -2275,3 +2275,75 @@
 [smell-aka]GXTL
 [smell-ref]Mats2017
 [smell-end]
+
+[smell]
+[smell-id]IMN
+[smell-category]IMPL
+[smell-name]Magic Number
+[smell-description]This smell occurs when an unexplained number is used in an expression.
+[smell-aka]
+[smell-ref]Tushar2017
+[smell-end]
+
+[smell]
+[smell-id]IECB
+[smell-category]IMPL
+[smell-name]Empty Catch Block
+[smell-description]This smell occurs when a catch block of an exception is empty.
+[smell-aka]
+[smell-ref]Tushar2017
+[smell-end]
+
+[smell]
+[smell-id]ICC
+[smell-category]IMPL
+[smell-name]Complex Conditional
+[smell-description]This smell occurs when a conditional statement is complex.
+[smell-aka]
+[smell-ref]Tushar2017
+[smell-end]
+
+[smell]
+[smell-id]ILS
+[smell-category]IMPL
+[smell-name]Long Statement
+[smell-description]This smell occurs when a statement is excessively lengthy.
+[smell-aka]
+[smell-ref]Tushar2017
+[smell-end]
+
+[smell]
+[smell-id]ILI
+[smell-category]IMPL
+[smell-name]Long Identifier
+[smell-description]This smell occurs when an identifier is excessively lengthy.
+[smell-aka]
+[smell-ref]Tushar2017
+[smell-end]
+
+[smell]
+[smell-id]ICM
+[smell-category]IMPL
+[smell-name]Complex Method
+[smell-description]This smell occurs when a method has high cyclomatic complexity.
+[smell-aka]
+[smell-ref]Tushar2017
+[smell-end]
+
+[smell]
+[smell-id]IVCC
+[smell-category]IMPL
+[smell-name]Virtual Method Call from Constructor
+[smell-description]This smell occurs when a constructor calls a virtual method.
+[smell-aka]
+[smell-ref]Tushar2017
+[smell-end]
+
+[smell]
+[smell-id]IMD
+[smell-category]IMPL
+[smell-name]Missing Default
+[smell-description]This smell occurs when a switch statement does not contain a default case.
+[smell-aka]
+[smell-ref]Tushar2017
+[smell-end]
