@@ -9,6 +9,14 @@
 [tool-end]
 
 [tool]
+[tool-id]DESIGNITEJAVA
+[tool-name]DesigniteJava
+[tool-description]DesigniteJava is a code quality assessment tool for code written in Java. It detects numerous design and implementation smells. It also computes many commonly used object-oriented metrics. The tool is open-source.
+[tool-url]https://www.designite-tools.com/designitejava/
+[tool-supported-languages]Java
+[tool-end]
+
+[tool]
 [tool-id]PUPPETEER
 [tool-name]Puppeteer
 [tool-description]Puppeteer is a design configuration smell detection tool for Puppet code.

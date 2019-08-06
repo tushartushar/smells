@@ -35,7 +35,7 @@ BODY_LOW_PART = "</div>" +\
 BODY_MAIN_TOP = "<div class=\"w3-main\" style=\"margin-left:340px;margin-right:40px\">"
 
 ATTRIBUTION_TEXT = "<div class=\"w3-light-grey w3-container w3-padding-32\" style=\"margin-top:75px;padding-right:58px\">"+\
-                   "<p class=\"w3-right\">All rights reserved (c) <a href=\"http://www.tusharma.in\">Tushar Sharma</a> 2017-18.</p></div>"
+                   "<p class=\"w3-right\">All rights reserved (c) <a href=\"http://www.tusharma.in\">Tushar Sharma</a> 2017-19.</p></div>"
 HTML_END_TEXT = "</body></html>"
 
 TRACKING_TEXT = "<script>" +\

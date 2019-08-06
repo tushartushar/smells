@@ -16,6 +16,7 @@
 [smell-ref]Girish
 [smell-aka]POL
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -36,6 +37,7 @@
 [smell-aka]DC3
 [smell-aka]SAK
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -47,6 +49,7 @@
 [smell-aka]LC2
 [smell-aka]POL
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -59,6 +62,7 @@
 [smell-aka]OC
 [smell-aka]UP
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -81,6 +85,7 @@
 [smell-description]This smell occurs when the declared accessibility of one or more members of an abstraction is more permissive than actually required.
 [smell-ref]Girish
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -110,6 +115,7 @@
 [smell-aka]SS2
 [smell-aka]TQ
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -120,6 +126,7 @@
 [smell-aka]DC4
 [smell-ref]Girish
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -134,6 +141,7 @@
 [smell-aka]TLP
 [smell-ref]Girish
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -145,6 +153,7 @@
 [smell-aka]DCP
 [smell-ref]Girish
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -154,6 +163,7 @@
 [smell-description]This smell arises when an abstraction has dependencies (both incoming and outgoing) with a large number of other abstractions.
 [smell-ref]Girish
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -164,6 +174,7 @@
 [smell-aka]SS2
 [smell-ref]Girish
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -193,6 +204,7 @@
 [smell-description]This smell arises when an inheritance hierarchy is "too" wide indicating that intermediate types may be missing.
 [smell-ref]Girish
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -212,6 +224,7 @@
 [smell-aka]TDIH
 [smell-ref]Girish
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -222,6 +235,7 @@
 [smell-aka]RB
 [smell-ref]Girish
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -232,6 +246,7 @@
 [smell-aka]SDRM
 [smell-ref]Girish
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -241,6 +256,7 @@
 [smell-description]This smell arises when a subtype inherits both directly as well as indirectly from a supertype leading to unnecessary inheritance paths in the hierarchy.
 [smell-ref]Girish
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -250,6 +266,7 @@
 [smell-description]This smell arises when a supertype in a hierarchy depends on any of its subtypes.
 [smell-ref]Girish
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -271,6 +288,7 @@
 [smell-aka]
 [smell-ref]Fowler
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -293,6 +311,7 @@
 [smell-aka]
 [smell-ref]Fowler
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -2346,4 +2365,162 @@
 [smell-description]This smell occurs when a switch statement does not contain a default case.
 [smell-aka]
 [smell-ref]Tushar2017
+[smell-end]
+
+[smell]
+[smell-id]IGMA
+[smell-category]IMPL
+[smell-name]“Get” - more than an accessor
+[smell-description]A getter that performs actions other than returning the corresponding attribute without documenting it. \nExample: method getImageData which, no matter the attribute value, every time returns a new object.
+[smell-aka]
+[smell-ref]Arnaoudova2016
+[smell-end]
+
+[smell]
+[smell-id]IIRB
+[smell-category]IMPL
+[smell-name]“Is” returns more than a Boolean
+[smell-description]The name of a method is a predicate suggesting a true/false value in return. However the return type is not Boolean but rather a more complex type thus allowing a wider range of values without documenting them. \nExample: isValid with return type int.
+[smell-aka]INAQ
+[smell-ref]Arnaoudova2016
+[smell-end]
+
+
+[smell]
+[smell-id]ISMR
+[smell-category]IMPL
+[smell-name]“Set” method returns
+[smell-description]A set method having a return type different than void and not documenting the return type/values with an appropriate comment.
+[smell-aka]
+[smell-ref]Arnaoudova2016
+[smell-end]
+
+[smell]
+[smell-id]IENG
+[smell-category]IMPL
+[smell-name]Expecting but not getting a single instance
+[smell-description]The name of a method indicates that a single object is returned but the return type is a collection. \nExample: method getExpansion returning a list.
+[smell-aka]IEGC
+[smell-ref]Arnaoudova2016
+[smell-end]
+
+[smell]
+[smell-id]IVMC
+[smell-category]IMPL
+[smell-name]Validation method does not confirm
+[smell-description]A validation method (e.g., name starting with “validate”, “check”, “ensure”) does not confirm the validation, i.e., the method neither provides a return value informing whether the validation was successful, nor documents how to proceed.
+[smell-aka]ITMR
+[smell-ref]Arnaoudova2016
+[smell-end]
+
+[smell]
+[smell-id]IGNR
+[smell-category]IMPL
+[smell-name]“Get” method does not return
+[smell-description]The name suggests that the method returns something (e.g., name starts with “get” or “return”) but the return type is void. The documentation should explain where the resulting data is stored and how to obtain it.
+[smell-aka]
+[smell-ref]Arnaoudova2016
+[smell-end]
+
+[smell]
+[smell-id]INAQ
+[smell-category]IMPL
+[smell-name]Not answered question
+[smell-description]The name of a method is in the form of predicate whereas the return type is not Boolean. \nExample: method isValid with return type void.
+[smell-aka]IIRB
+[smell-ref]Arnaoudova2016
+[smell-end]
+
+
+[smell]
+[smell-id]ITMR
+[smell-category]IMPL
+[smell-name]Transform method does not return
+[smell-description]The name of a method suggests the transformation of an object but there is no return value and it is not clear from the documentation where the result is stored. \nExample: method javaToNative with return type void.
+[smell-aka]IVMC
+[smell-ref]Arnaoudova2016
+[smell-end]
+
+
+[smell]
+[smell-id]IEGC
+[smell-category]IMPL
+[smell-name]Expecting but not getting a collection
+[smell-description]The name of a method suggests that a collection should be returned but a single object or nothing is returned. \nExample: method getStats with return type Boolean.
+[smell-aka]IENG
+[smell-ref]Arnaoudova2016
+[smell-end]
+
+
+[smell]
+[smell-id]IMRO
+[smell-category]IMPL
+[smell-name]Method name and return type are opposite
+[smell-description]The intent of the method suggested by its name is in contradiction with what it returns. \nExample: method disable with return type ControlEnableState. The inconsistency comes from “disable” and “enable” having opposite meanings.
+[smell-aka]IATO
+[smell-aka]IACO
+[smell-aka]IACO
+[smell-ref]Arnaoudova2016
+[smell-end]
+
+
+[smell]
+[smell-id]IMCO
+[smell-category]IMPL
+[smell-name]Method signature and comment are opposite
+[smell-description]The documentation of a method is in contradiction with its declaration. \nExample: method isNavigateForwardEnabled is in contradiction with its comment documenting ”a back navigation”, as “forward” and “back” are antonyms.
+[smell-aka]IATO
+[smell-aka]IMRO
+[smell-aka]IACO
+[smell-ref]Arnaoudova2016
+[smell-end]
+
+[smell]
+[smell-id]ISOM
+[smell-category]IMPL
+[smell-name]Says one but contains many
+[smell-description]The name of an attribute suggests a single instance, while its type suggests that the attribute stores a collection of objects. \nExample: attribute target of type Vector. It is unclear whether a change affects one or multiple instances in the collection.
+[smell-aka]ISMO
+[smell-ref]Arnaoudova2016
+[smell-end]
+
+[smell]
+[smell-id]INBN
+[smell-category]IMPL
+[smell-name]Name suggests Boolean but type does not
+[smell-description]The name of an attribute suggests that its value is true or false, but its declaring type is not Boolean. \nExample: attribute isReached of type int[] where the declared type and values are not documented.
+[smell-aka]
+[smell-ref]Arnaoudova2016
+[smell-end]
+
+
+[smell]
+[smell-id]ISMO
+[smell-category]IMPL
+[smell-name]Says many but contains one
+[smell-description]The name of an attribute suggests multiple instances, but its type suggests a single one. \nExample: attribute stats of type Boolean. Documenting such inconsistencies avoids additional comprehension effort to understand the purpose of the attribute.
+[smell-aka]ISOM
+[smell-ref]Arnaoudova2016
+[smell-end]
+
+[smell]
+[smell-id]IATO
+[smell-category]IMPL
+[smell-name]Attribute name and type are opposite
+[smell-description]The name of an attribute is in contradiction with its type as they contain antonyms. \nExample: attribute start of type MAssociationEnd. The use of antonyms can induce wrong assumptions.
+[smell-aka]IMCO
+[smell-aka]IMRO
+[smell-aka]IACO
+[smell-ref]Arnaoudova2016
+[smell-end]
+
+[smell]
+[smell-id]IACO
+[smell-category]IMPL
+[smell-name]Attribute signature and comment are opposite
+[smell-description]The declaration of an attribute is in contradiction with its documentation. \nExample: attribute INCLUDE NAME DEFAULT whose comment documents an “exclude pattern”. Whether the pattern is included or excluded is thus unclear.
+[smell-aka]IMCO
+[smell-aka]IMRO
+[smell-aka]IATO
+[smell-ref]Arnaoudova2016
 [smell-end]

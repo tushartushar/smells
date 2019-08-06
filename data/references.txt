@@ -429,7 +429,14 @@
 
 [reference]
 [ref-id]Tushar2017
-[ref-text]Tushar Sharma, Marios Fragkoulis, and Diomidis Spinellis. “House of Cards: Code Smells in Open-Source C# Repositories. in ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM). 424-429. 10.1109/ESEM.2017.57.
+[ref-text]Tushar Sharma, Marios Fragkoulis, and Diomidis Spinellis. “House of Cards: Code Smells in Open-Source C# Repositories". in ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM). 424-429. 10.1109/ESEM.2017.57.
 [ref-image]
 [ref-url]http://ieeexplore.ieee.org/document/8170129/
+[ref-end]
+
+[reference]
+[ref-id]Arnaoudova2016
+[ref-text]Venera Arnaoudova, Massimiliano Di Penta, Giuliano Antoniol.  “Linguistic antipatterns: what they are and how developers perceive them". in Empirical Software Engineering (ESEM), 21(1), Feb 2016. 104-158. 10.1007/s10664-014-9350-8
+[ref-image]
+[ref-url]https://doi.org/10.1007/s10664-014-9350-8
 [ref-end]
