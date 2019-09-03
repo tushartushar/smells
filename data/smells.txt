@@ -781,6 +781,7 @@
 [smell-aka]CMC
 [smell-ref]Lippert
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -802,6 +803,7 @@
 [smell-aka]BL
 [smell-ref]Lippert
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -1252,6 +1254,7 @@
 [smell-description]Scattered Parasitic Functionality describes a system where multiple components are responsible for realizing the same high-level concern and, additionally, some of those components are responsible for orthogonal concerns. This smell violates the principle of separation of concerns.
 [smell-ref]Joshua
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -1261,6 +1264,7 @@
 [smell-description]Ambiguous Interfaces are interfaces that offer only a single, general entry-point into a component. This smell appears especially in event-based publish-subscribe systems, where interactions are not explicitly modeled and multiple components exchange event messages via a shared event bus.
 [smell-ref]Joshua
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -1278,6 +1282,7 @@
 [smell-description]A component suffers from the feature concentration architecture smell when one architectural component realizes more than one architecture concern.
 [smell-ref]Hugo
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
@@ -1287,6 +1292,7 @@
 [smell-description]Stable Abstractions principle states that components that are maximally stable should be maximally abstract and unstable components must be concrete. Unstable dependency architecture smell arises in a component when the component depends on a less stable component.
 [smell-ref]Fontana
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 
@@ -1734,6 +1740,7 @@
 [smell-aka]DCP
 [smell-ref]Mo
 [smell-tool]DESIGNITE
+[smell-tool]DESIGNITEJAVA
 [smell-end]
 
 [smell]
